@@ -37,22 +37,24 @@ public class Assignment1 {
     private static final int PAUSE_TIME_SLOW = 1000;
     
     private static final int IMAGE_MOVE_STEP = 5;
-    
+
     private static final int ANIMATION_STEP = 1;
+    private static final double ANIMATION_ROTATE_STEP_RADIANS = Math.PI / 180;
     private static final int ANIMATION_TARGET_X = 300;
     private static final int ANIMATION_TARGET_Y = 300;
-    
+
+    private static final double RADIANS_PER_DEGREE = Math.PI / 180;
     private static final int WALKING_CYCLE_FRAMES = 80;
-    private static final double FULL_CIRCLE_DEGREES = 360.0;
-    private static final double RIGHT_ANGLE_DEGREES = 90.0;
-    private static final double HALF_CYCLE_DEGREES = 180.0;
-    
+    private static final double FULL_CIRCLE_RADIANS = 2 * Math.PI;
+    private static final double RIGHT_ANGLE_RADIANS = Math.PI / 2;
+    private static final double HALF_CYCLE_RADIANS = Math.PI;
+
     private static final int LINE_MODE_X = 100;
     private static final int LINE_MODE_Y = 100;
     private static final int LINE_MODE_RADIUS = 20;
     private static final int LINE_MODE_ANGLE = 0;
-    private static final int LINE_ROTATE_90 = 90;
-    private static final int LINE_ROTATE_MINUS_90 = -90;
+    private static final double LINE_ROTATE_RIGHT_ANGLE_RADIANS = Math.PI / 2;
+    private static final double LINE_ROTATE_MINUS_RIGHT_ANGLE_RADIANS = -Math.PI / 2;
     
     private static final int AVATAR_MOVE_X = 300;
     private static final int AVATAR_MOVE_Y = 300;
@@ -76,11 +78,11 @@ public class Assignment1 {
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_LONG);
 
-            testLine.rotate(LINE_ROTATE_90);
+            testLine.rotate(LINE_ROTATE_RIGHT_ANGLE_RADIANS);
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_SHORT);
 
-            testLine.rotate(LINE_ROTATE_MINUS_90);
+            testLine.rotate(LINE_ROTATE_MINUS_RIGHT_ANGLE_RADIANS);
             editor.refresh();
         }
 
@@ -93,7 +95,7 @@ public class Assignment1 {
             while (nextY <= ANIMATION_TARGET_Y && nextX <= ANIMATION_TARGET_X) {
                 testLine.setX(nextX);
                 testLine.setY(nextY);
-                testLine.rotate(ANIMATION_STEP);
+                testLine.rotate(ANIMATION_ROTATE_STEP_RADIANS);
                 editor.refresh();
                 ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
                 nextX = testLine.getX() + ANIMATION_STEP;
@@ -105,7 +107,7 @@ public class Assignment1 {
             editor.refresh();
     
             while (true) {
-                testLine.rotate(ANIMATION_STEP);
+                testLine.rotate(ANIMATION_ROTATE_STEP_RADIANS);
                 ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
                 editor.refresh();
             }
@@ -132,35 +134,40 @@ public class Assignment1 {
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
             
-            testAvatar.rotate(RIGHT_ANGLE_DEGREES);
+            testAvatar.rotate(RIGHT_ANGLE_RADIANS);
             editor.refresh();
         }
 
         else if (mode == "Angle") {
-            AngleInterface testAngle = new Angle(100, 100, 50, RIGHT_ANGLE_DEGREES, RIGHT_ANGLE_DEGREES);
+            AngleInterface testAngle = new Angle(100, 100, 50, RIGHT_ANGLE_RADIANS, RIGHT_ANGLE_RADIANS);
             OEFrame editor = ObjectEditor.edit(testAngle);
             editor.refresh();
         }
 
         else if (mode == "WalkingLegs") {
-            AngleInterface testLegs = new Angle(200, 400, 100, RIGHT_ANGLE_DEGREES, RIGHT_ANGLE_DEGREES);
+            AngleInterface testLegs = new Angle(200, 400, 100, RIGHT_ANGLE_RADIANS, RIGHT_ANGLE_RADIANS);
 
             OEFrame editor = ObjectEditor.edit(testLegs);
 
-            double omegaDeg = FULL_CIRCLE_DEGREES / WALKING_CYCLE_FRAMES;
-            double swingAmplitude = ANIMATION_STEP / (100.0 * omegaDeg);
+            // One full leg-swing revolution spread over the walk cycle.
+            double omegaRadians = FULL_CIRCLE_RADIANS / WALKING_CYCLE_FRAMES;
+            // Preserve the original (sub-degree) swing amplitude, now expressed in radians.
+            // The original derived the amplitude in degrees from a degree-based omega, so the
+            // degree-to-radian conversion applies twice: once for omega, once for the amplitude.
+            double swingAmplitudeRadians =
+                    ANIMATION_STEP / (100.0 * omegaRadians) * RADIANS_PER_DEGREE * RADIANS_PER_DEGREE;
 
             int frame = 0;
             while (true) {
                 testLegs.move(ANIMATION_STEP, 0);
 
-                double phaseDeg = (frame % WALKING_CYCLE_FRAMES) * omegaDeg;
+                double phaseRadians = (frame % WALKING_CYCLE_FRAMES) * omegaRadians;
 
-                double leftAngleDeg = RIGHT_ANGLE_DEGREES + swingAmplitude * Math.sin(Math.toRadians(phaseDeg));
-                double rightAngleDeg = RIGHT_ANGLE_DEGREES + swingAmplitude * Math.sin(Math.toRadians(phaseDeg + HALF_CYCLE_DEGREES));
+                double leftAngleRadians = RIGHT_ANGLE_RADIANS + swingAmplitudeRadians * Math.sin(phaseRadians);
+                double rightAngleRadians = RIGHT_ANGLE_RADIANS + swingAmplitudeRadians * Math.sin(phaseRadians + HALF_CYCLE_RADIANS);
 
-                testLegs.getLeftLine().setAngle(leftAngleDeg);
-                testLegs.getRightLine().setAngle(rightAngleDeg);
+                testLegs.getLeftLine().setAngle(leftAngleRadians);
+                testLegs.getRightLine().setAngle(rightAngleRadians);
 
                 editor.refresh();
                 ThreadSupport.sleep(PAUSE_TIME_ANIMATION);

@@ -26,6 +26,6 @@ public interface AvatarInterface {
     LineInterface getBody();
     AngleInterface getLegs();
     void move(int moveX, int moveY);
-    void rotate(double degrees);
+    void rotate(double radians);
     void scale(double scaleMultiplier);
 }
