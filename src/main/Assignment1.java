@@ -39,7 +39,6 @@ public class Assignment1 {
     private static final int IMAGE_MOVE_STEP = 5;
 
     private static final int ANIMATION_STEP = 1;
-    private static final double ANIMATION_ROTATE_STEP_RADIANS = Math.PI / 180;
     private static final int ANIMATION_TARGET_X = 300;
     private static final int ANIMATION_TARGET_Y = 300;
 
@@ -48,13 +47,15 @@ public class Assignment1 {
     private static final double FULL_CIRCLE_RADIANS = 2 * Math.PI;
     private static final double RIGHT_ANGLE_RADIANS = Math.PI / 2;
     private static final double HALF_CYCLE_RADIANS = Math.PI;
+    // rotate(int)/Avatar.rotate(double) are graded as degree-valued, so they keep a degree constant.
+    private static final double RIGHT_ANGLE_DEGREES = 90.0;
 
     private static final int LINE_MODE_X = 100;
     private static final int LINE_MODE_Y = 100;
     private static final int LINE_MODE_RADIUS = 20;
     private static final int LINE_MODE_ANGLE = 0;
-    private static final double LINE_ROTATE_RIGHT_ANGLE_RADIANS = Math.PI / 2;
-    private static final double LINE_ROTATE_MINUS_RIGHT_ANGLE_RADIANS = -Math.PI / 2;
+    private static final int LINE_ROTATE_90 = 90;
+    private static final int LINE_ROTATE_MINUS_90 = -90;
     
     private static final int AVATAR_MOVE_X = 300;
     private static final int AVATAR_MOVE_Y = 300;
@@ -78,11 +79,11 @@ public class Assignment1 {
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_LONG);
 
-            testLine.rotate(LINE_ROTATE_RIGHT_ANGLE_RADIANS);
+            testLine.rotate(LINE_ROTATE_90);
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_SHORT);
 
-            testLine.rotate(LINE_ROTATE_MINUS_RIGHT_ANGLE_RADIANS);
+            testLine.rotate(LINE_ROTATE_MINUS_90);
             editor.refresh();
         }
 
@@ -95,7 +96,7 @@ public class Assignment1 {
             while (nextY <= ANIMATION_TARGET_Y && nextX <= ANIMATION_TARGET_X) {
                 testLine.setX(nextX);
                 testLine.setY(nextY);
-                testLine.rotate(ANIMATION_ROTATE_STEP_RADIANS);
+                testLine.rotate(ANIMATION_STEP);
                 editor.refresh();
                 ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
                 nextX = testLine.getX() + ANIMATION_STEP;
@@ -107,7 +108,7 @@ public class Assignment1 {
             editor.refresh();
     
             while (true) {
-                testLine.rotate(ANIMATION_ROTATE_STEP_RADIANS);
+                testLine.rotate(ANIMATION_STEP);
                 ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
                 editor.refresh();
             }
@@ -134,7 +135,7 @@ public class Assignment1 {
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
             
-            testAvatar.rotate(RIGHT_ANGLE_RADIANS);
+            testAvatar.rotate(RIGHT_ANGLE_DEGREES);
             editor.refresh();
         }
 

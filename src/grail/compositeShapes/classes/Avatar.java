@@ -145,9 +145,11 @@ public class Avatar implements AvatarInterface {
     }
 
     @Override
-    public void rotate(double radians) {
-        this.legs.rotate(radians);
-        this.body.rotate(radians);
+    public void rotate(double degrees) {
+        int rotationUnits = (int) Math.round(degrees);
+
+        this.legs.rotate(rotationUnits);
+        this.body.rotate(rotationUnits);
 
         // Neck remains the body endpoint after body rotation
         int neckX = this.body.getX() + this.body.getEnd().getX();
@@ -157,7 +159,7 @@ public class Avatar implements AvatarInterface {
         int armMoveX = neckX - this.arms.getLeftLine().getX();
         int armMoveY = neckY - this.arms.getLeftLine().getY();
         this.arms.move(armMoveX, armMoveY);
-        this.arms.rotate(radians);
+        this.arms.rotate(rotationUnits);
 
         // Position head along the current body direction so it turns with the avatar
         double bodyAngleRadians = this.body.getAngle();

@@ -27,7 +27,7 @@ public interface LineInterface {
 
     PointInterface getEnd();
     
-    void rotate(double radians);
+    void rotate(int units);
     void move(int moveX, int moveY);
     void scale(double scaleMultiplier);
 }

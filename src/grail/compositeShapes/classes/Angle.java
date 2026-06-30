@@ -58,8 +58,8 @@ public class Angle implements AngleInterface {
     }
 
     @Override
-    public void rotate(double radians) {
-        this.leftLine.rotate(radians);
-        this.rightLine.rotate(radians);
+    public void rotate(int angle) {
+        this.leftLine.rotate(angle);
+        this.rightLine.rotate(angle);
     }
 }
