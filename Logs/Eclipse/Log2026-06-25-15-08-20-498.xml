@@ -1,0 +1,851 @@
+<Events startTimestamp="1782414500498" logVersion="1.0.0.202508221008">
+  <Command __id="3" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:08:35 EDT 2026" starttimestamp="1782414500498" timestamp="14655" />
+  <Command __id="4" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:08:35 EDT 2026" starttimestamp="1782414500498" timestamp="14736" />
+  <Command __id="5" _type="ShellCommand" date="Thu Jun 25 15:08:35 EDT 2026" starttimestamp="1782414500498" timestamp="14740" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6" _type="ShellCommand" date="Thu Jun 25 15:08:43 EDT 2026" starttimestamp="1782414500498" timestamp="23284" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="7" _type="ShellCommand" date="Thu Jun 25 15:08:48 EDT 2026" starttimestamp="1782414500498" timestamp="28108" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="8" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:08:48 EDT 2026" starttimestamp="1782414500498" timestamp="28137" />
+  <Command __id="9" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:08:48 EDT 2026" starttimestamp="1782414500498" timestamp="28143" />
+  <Command __id="10" _type="ShellCommand" date="Thu Jun 25 15:08:54 EDT 2026" starttimestamp="1782414500498" timestamp="34303" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="22" _type="CopyCommand" date="Thu Jun 25 15:09:21 EDT 2026" starttimestamp="1782414500498" timestamp="60941" />
+  <Command __id="24" _type="MoveCaretCommand" caretOffset="0" date="Thu Jun 25 15:09:22 EDT 2026" docOffset="0" starttimestamp="1782414500498" timestamp="61982" />
+  <Command __id="25" _type="MoveCaretCommand" caretOffset="53" date="Thu Jun 25 15:09:22 EDT 2026" docOffset="53" starttimestamp="1782414500498" timestamp="62359" />
+  <Command __id="26" _type="EclipseCommand" commandID="org.eclipse.ui.edit.selectAll" date="Thu Jun 25 15:09:23 EDT 2026" starttimestamp="1782414500498" timestamp="62618" />
+  <Command __id="28" _type="PasteCommand" date="Thu Jun 25 15:09:23 EDT 2026" starttimestamp="1782414500498" timestamp="62932" />
+  <Command __id="29" _type="MoveCaretCommand" caretOffset="224" date="Thu Jun 25 15:09:24 EDT 2026" docOffset="224" starttimestamp="1782414500498" timestamp="64212" />
+  <Command __id="18" _type="DiffBasedFileOpenCommand" date="Thu Jun 25 15:09:19 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment0" starttimestamp="1782414500498" timestamp="58855">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment0\src\main\RunSS26A0Tests.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp301ss24.assignment0.SS24Assignment0Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+
+public class RunSS26A0Tests {
+	public static void main(String[] args) {
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed
+		GraderBasicsTraceUtility.setBufferTracedMessages(true);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		GraderBasicsTraceUtility.setMaxPrintedTraces(600);
+		// Change this number if all traces together are longer than 2000
+		GraderBasicsTraceUtility.setMaxTraces(2000);
+		// Change this number if your process times out prematurely
+		BasicProjectExecution.setProcessTimeOut(5);
+		// You need to always call such a method
+		SS24Assignment0Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="23" _type="DiffBasedFileOpenCommand" date="Thu Jun 25 15:09:22 EDT 2026" docASTNodeCount="6" docActiveCodeLength="53" docExpressionCount="2" docLength="53" projectName="Assignment1" starttimestamp="1782414500498" timestamp="61910">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;public class RunSS26A1Tests {}")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <DocumentChange __id="27" _type="Replace" date="Thu Jun 25 15:09:23 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" endLine="5" insertionLength="991" int_docASTNodeCount="1" int_docActiveCodeLength="0" int_docExpressionCount="0" int_docLength="0" length="53" offset="0" startLine="0" starttimestamp="1782414500498" timestamp="62913">
+    <deletedText><![CDATA[package main;
+
+public class RunSS26A1Tests {
+
+}
+]]></deletedText>
+    <insertedText><![CDATA[package main;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp301ss24.assignment0.SS24Assignment0Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+
+public class RunSS26A0Tests {
+	public static void main(String[] args) {
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed
+		GraderBasicsTraceUtility.setBufferTracedMessages(true);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		GraderBasicsTraceUtility.setMaxPrintedTraces(600);
+		// Change this number if all traces together are longer than 2000
+		GraderBasicsTraceUtility.setMaxTraces(2000);
+		// Change this number if your process times out prematurely
+		BasicProjectExecution.setProcessTimeOut(5);
+		// You need to always call such a method
+		SS24Assignment0Suite.main(args);
+	}
+}
+]]></insertedText>
+  </DocumentChange>
+  <Command __id="30" _type="MoveCaretCommand" caretOffset="217" date="Thu Jun 25 15:09:27 EDT 2026" docOffset="217" starttimestamp="1782414500498" timestamp="66559" />
+  <DocumentChange __id="31" _type="Delete" date="Thu Jun 25 15:09:28 EDT 2026" docASTNodeCount="71" docActiveCodeLength="600" docExpressionCount="50" docLength="990" endLine="6" length="1" offset="216" startLine="6" starttimestamp="1782414500498" timestamp="67904">
+    <text><![CDATA[0]]></text>
+  </DocumentChange>
+  <Command __id="32" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Jun 25 15:09:28 EDT 2026" starttimestamp="1782414500498" timestamp="67909" />
+  <Command __id="34" _type="InsertStringCommand" date="Thu Jun 25 15:09:28 EDT 2026" starttimestamp="1782414500498" timestamp="68081" timestamp2="68081">
+    <data><![CDATA[1]]></data>
+  </Command>
+  <Command __id="35" _type="MoveCaretCommand" caretOffset="965" date="Thu Jun 25 15:09:33 EDT 2026" docOffset="965" starttimestamp="1782414500498" timestamp="72930" />
+  <Command __id="37" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Jun 25 15:09:33 EDT 2026" starttimestamp="1782414500498" timestamp="73199" />
+  <Command __id="39" _type="InsertStringCommand" date="Thu Jun 25 15:09:33 EDT 2026" starttimestamp="1782414500498" timestamp="73402" timestamp2="73402">
+    <data><![CDATA[1]]></data>
+  </Command>
+  <Command __id="40" _type="MoveCaretCommand" caretOffset="15" date="Thu Jun 25 15:09:40 EDT 2026" docOffset="15" starttimestamp="1782414500498" timestamp="80217" />
+  <Command __id="41" _type="MoveCaretCommand" caretOffset="115" date="Thu Jun 25 15:09:43 EDT 2026" docOffset="115" starttimestamp="1782414500498" timestamp="83215" />
+  <Command __id="43" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Jun 25 15:09:44 EDT 2026" starttimestamp="1782414500498" timestamp="83507" />
+  <Command __id="45" _type="InsertStringCommand" date="Thu Jun 25 15:09:44 EDT 2026" starttimestamp="1782414500498" timestamp="83680" timestamp2="83680">
+    <data><![CDATA[1]]></data>
+  </Command>
+  <Command __id="46" _type="MoveCaretCommand" caretOffset="224" date="Thu Jun 25 15:09:44 EDT 2026" docOffset="224" starttimestamp="1782414500498" timestamp="84247" />
+  <Command __id="47" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Thu Jun 25 15:09:45 EDT 2026" starttimestamp="1782414500498" timestamp="84790" />
+  <Command __id="48" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:09:45 EDT 2026" starttimestamp="1782414500498" timestamp="84885" />
+  <Command __id="49" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:09:45 EDT 2026" starttimestamp="1782414500498" timestamp="84894" />
+  <Command __id="50" _type="MoveCaretCommand" caretOffset="991" date="Thu Jun 25 15:10:05 EDT 2026" docOffset="991" starttimestamp="1782414500498" timestamp="105436" />
+  <Command __id="52" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:10:53 EDT 2026" starttimestamp="1782414500498" timestamp="153338" />
+  <Command __id="53" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:10:53 EDT 2026" starttimestamp="1782414500498" timestamp="153388" />
+  <Command __id="54" _type="ShellCommand" date="Thu Jun 25 15:10:54 EDT 2026" starttimestamp="1782414500498" timestamp="153870" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="55" _type="EclipseCommand" commandID="org.eclipse.ui.file.properties" date="Thu Jun 25 15:10:54 EDT 2026" starttimestamp="1782414500498" timestamp="153886" />
+  <Command __id="56" _type="MoveCaretCommand" caretOffset="986" date="Thu Jun 25 15:10:57 EDT 2026" docOffset="986" starttimestamp="1782414500498" timestamp="156600" />
+  <Command __id="57" _type="MoveCaretCommand" caretOffset="193" date="Thu Jun 25 15:10:59 EDT 2026" docOffset="193" starttimestamp="1782414500498" timestamp="158894" />
+  <Command __id="58" _type="MoveCaretCommand" caretOffset="131" date="Thu Jun 25 15:11:02 EDT 2026" docOffset="131" starttimestamp="1782414500498" timestamp="161543" />
+  <Command __id="60" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Thu Jun 25 15:11:02 EDT 2026" starttimestamp="1782414500498" timestamp="162473" />
+  <Command __id="62" _type="InsertStringCommand" date="Thu Jun 25 15:11:03 EDT 2026" starttimestamp="1782414500498" timestamp="162611" timestamp2="162611">
+    <data><![CDATA[1]]></data>
+  </Command>
+  <Command __id="63" _type="MoveCaretCommand" caretOffset="224" date="Thu Jun 25 15:11:03 EDT 2026" docOffset="224" starttimestamp="1782414500498" timestamp="163374" />
+  <Command __id="64" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Thu Jun 25 15:11:04 EDT 2026" starttimestamp="1782414500498" timestamp="164390" />
+  <Command __id="65" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:11:05 EDT 2026" starttimestamp="1782414500498" timestamp="164534" />
+  <Command __id="66" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:11:05 EDT 2026" starttimestamp="1782414500498" timestamp="164555" />
+  <Command __id="67" _type="MoveCaretCommand" caretOffset="989" date="Thu Jun 25 15:11:06 EDT 2026" docOffset="989" starttimestamp="1782414500498" timestamp="165686" />
+  <Command __id="68" _type="MoveCaretCommand" caretOffset="989" date="Thu Jun 25 15:11:10 EDT 2026" docOffset="989" starttimestamp="1782414500498" timestamp="170099" />
+  <Command __id="69" _type="EclipseCommand" commandID="org.eclipse.jdt.debug.ui.localJavaShortcut.run" date="Thu Jun 25 15:11:13 EDT 2026" starttimestamp="1782414500498" timestamp="172710" />
+  <Command __id="70" _type="ProgramExecutionEvent" className="/Assignment1/src/main/RunSS26A1Tests.java" date="Thu Jun 25 15:11:13 EDT 2026" kind="Run" projectName="Assignment1" starttimestamp="1782414500498" timestamp="172861" type="Run" />
+  <Command __id="71" _type="RunCommand" className="/Assignment1/src/main/RunSS26A1Tests.java" date="Thu Jun 25 15:11:13 EDT 2026" kind="Run" projectName="Assignment1" starttimestamp="1782414500498" timestamp="172861" type="Run" />
+  <Command __id="72" _type="MoveCaretCommand" caretOffset="989" date="Thu Jun 25 15:11:14 EDT 2026" docOffset="989" starttimestamp="1782414500498" timestamp="173902" />
+  <Command __id="73" _type="ShellCommand" date="Thu Jun 25 15:11:17 EDT 2026" starttimestamp="1782414500498" timestamp="176576" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="74" _type="ShellCommand" date="Thu Jun 25 15:11:17 EDT 2026" starttimestamp="1782414500498" timestamp="176679" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="75" _type="ProgramExecutionEvent" className="/Assignment1/src/main/RunSS26A1Tests.java" date="Thu Jun 25 15:11:17 EDT 2026" kind="HitBreakPoint" projectName="Assignment1" starttimestamp="1782414500498" timestamp="176849" type="Run" />
+  <Command __id="76" _type="ProgramExecutionEvent" className="/Assignment1/src/main/RunSS26A1Tests.java" date="Thu Jun 25 15:11:17 EDT 2026" kind="Terminate" projectName="Assignment1" starttimestamp="1782414500498" timestamp="176850" type="Run" />
+  <Command __id="77" _type="MoveCaretCommand" caretOffset="989" date="Thu Jun 25 15:11:17 EDT 2026" docOffset="989" starttimestamp="1782414500498" timestamp="177348" />
+  <Command __id="78" _type="EclipseCommand" commandID="org.eclipse.jdt.debug.ui.localJavaShortcut.debug" date="Thu Jun 25 15:11:20 EDT 2026" starttimestamp="1782414500498" timestamp="179663" />
+  <Command __id="79" _type="ProgramExecutionEvent" className="/Assignment1/src/main/RunSS26A1Tests.java" date="Thu Jun 25 15:11:20 EDT 2026" kind="Run" projectName="Assignment1" starttimestamp="1782414500498" timestamp="179867" type="Run" />
+  <Command __id="80" _type="RunCommand" className="/Assignment1/src/main/RunSS26A1Tests.java" date="Thu Jun 25 15:11:20 EDT 2026" kind="Run" projectName="Assignment1" starttimestamp="1782414500498" timestamp="179868" type="Run" />
+  <Command __id="81" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Jun 25 15:11:20 EDT 2026" kind="Run" projectName="(Unknown)" starttimestamp="1782414500498" timestamp="180201" type="Run" />
+  <Command __id="82" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Jun 25 15:11:20 EDT 2026" kind="StepInto" projectName="(Unknown)" starttimestamp="1782414500498" timestamp="180216" type="Run" />
+  <Command __id="83" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Jun 25 15:11:20 EDT 2026" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1782414500498" timestamp="180395" type="Run" />
+  <Command __id="84" _type="ShellCommand" date="Thu Jun 25 15:11:20 EDT 2026" starttimestamp="1782414500498" timestamp="180397" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="85" _type="ShellCommand" date="Thu Jun 25 15:11:24 EDT 2026" starttimestamp="1782414500498" timestamp="184166" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="86" _type="ShellCommand" date="Thu Jun 25 15:11:26 EDT 2026" starttimestamp="1782414500498" timestamp="185909" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="87" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188384" type="ConsoleOutput">
+    <outputString><![CDATA[>>Running suite BridgeScene
+<<
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="88" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188430" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test TaggedAvatar
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Running suite BridgeScene"), Diff(INSERT,"Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test TaggedAvatar"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="89" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188434" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test TaggedRotatingLine
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test Tagged"), Diff(DELETE,"Avatar"), Diff(INSERT,"RotatingLine"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="90" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188442" type="ConsoleOutput">
+    <outputString><![CDATA[>>Steps traced since last test:
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test TaggedRotatingLine¶<<"), Diff(INSERT,"Steps traced since last test:"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="91" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188447" type="ConsoleOutput">
+    <outputString><![CDATA[>>TaggedRotatingLine test execution time (ms):9<<
+>>Test Result:
+TaggedRotatingLine,0.0% complete,0.0,2.0,No class in project matching name/tag:RotatingLine
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Steps traced since last test:"), Diff(INSERT,"TaggedRotatingLine test execution time (ms):9<<¶>>Test Result:¶TaggedRotatingLine,0.0% complete,0.0,2.0,No class in project matching name/tag:RotatingLine¶<<"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="92" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188451" type="ConsoleOutput">
+    <outputString><![CDATA[>>Steps traced since last test:
+
+>>TaggedAvatar test execution time (ms):14<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"TaggedRotatingLine test execution time (ms):9<<¶>>Te"), Diff(INSERT,"Steps traced since la"), Diff(EQUAL,"st "), Diff(DELETE,"R"), Diff(INSERT,"t"), Diff(EQUAL,"es"), Diff(DELETE,"ul"), Diff(EQUAL,"t:¶"), Diff(INSERT,"¶>>"), Diff(EQUAL,"Tagged"), Diff(DELETE,"RotatingLine,0.0% complete,0.0,2.0,No class in project matching name/tag:RotatingLine¶"), Diff(INSERT,"Avatar test execution time (ms):14"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="93" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188455" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+TaggedAvatar,0.0% complete,0.0,2.0,
+Preceding test TaggedRotatingLine failed.
+Please correct the problems identified by preceding test:TaggedRotatingLine before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test AvatarHeadProperty: 
+Checks that property has the expected name and its interface type has expected name, tag, or pattern
+<<
+>>AvatarHeadProperty test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Steps traced since last test:¶¶>>TaggedAvatar"), Diff(INSERT,"Test Result:¶TaggedAvatar,0.0% complete,0.0,2.0,¶Preceding test TaggedRotatingLine failed.¶Please correct the problems identified by preceding test:TaggedRotatingLine before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test AvatarHeadProperty: ¶Checks that property has the expected name and its interface type has expected name, tag, or pattern¶<<¶>>AvatarHeadProperty"), Diff(EQUAL," test execution time (ms):"), Diff(DELETE,"14"), Diff(INSERT,"2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="94" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188460" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+AvatarHeadProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedAvatar failed.
+Please correct the problems identified by preceding test:TaggedAvatar before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test AvatarStringShapeProperty: 
+Checks that property has the expected name and its interface type has expected name, tag, or pattern
+<<
+>>AvatarStringShapeProperty test execution time (ms):2<<
+>>Test Result:
+AvatarStringShapeProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedAvatar failed.
+Please correct the problems identified by preceding test:TaggedAvatar before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test AvatarArmsProperty: 
+Checks that property has the expected name and its interface type has expected name, tag, or pattern
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Test Result:¶"), Diff(DELETE,"Tagged"), Diff(EQUAL,"Avatar"), Diff(INSERT,"HeadProperty"), Diff(EQUAL,",0.0% complete,0.0,2.0,¶Preceding test Tagged"), Diff(DELETE,"RotatingLine"), Diff(INSERT,"Avatar"), Diff(EQUAL," failed.¶Please correct the problems identified by preceding test:Tagged"), Diff(DELETE,"RotatingLine"), Diff(INSERT,"Avatar"), Diff(EQUAL," before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test Avatar"), Diff(DELETE,"Head"), Diff(INSERT,"StringShape"), Diff(EQUAL,"Property: ¶Checks that property has the expected name and its interface type has expected name, tag, or pattern¶<<¶>>Avatar"), Diff(DELETE,"Head"), Diff(INSERT,"StringShape"), Diff(EQUAL,"Property test execution time (ms):2<<¶"), Diff(INSERT,">>Test Result:¶AvatarStringShapeProperty,0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test AvatarArmsProperty: ¶Checks that property has the expected name and its interface type has expected name, tag, or pattern¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="95" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188463" type="ConsoleOutput">
+    <outputString><![CDATA[>>AvatarArmsProperty test execution time (ms):3<<
+>>Test Result:
+AvatarArmsProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedAvatar failed.
+Please correct the problems identified by preceding test:TaggedAvatar before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test AvatarLegsProperty: 
+Checks that property has the expected name and its interface type has expected name, tag, or pattern
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶AvatarHeadProperty,0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test AvatarStringShapeProperty: ¶Checks that property has the expected name and its interface type has expected name, tag, or pattern¶<<¶>>AvatarStringShape"), Diff(INSERT,"AvatarArms"), Diff(EQUAL,"Property test execution time (ms):"), Diff(DELETE,"2"), Diff(INSERT,"3"), Diff(EQUAL,"<<¶>>Test Result:¶Avatar"), Diff(DELETE,"StringShape"), Diff(INSERT,"Arms"), Diff(EQUAL,"Property,0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test Avatar"), Diff(DELETE,"Arm"), Diff(INSERT,"Leg"), Diff(EQUAL,"sProperty: ¶Checks that property has the expected name and its interface type has expected name, tag, or pattern¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="96" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188465" type="ConsoleOutput">
+    <outputString><![CDATA[>>AvatarLegsProperty test execution time (ms):2<<
+>>Test Result:
+AvatarLegsProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedAvatar failed.
+Please correct the problems identified by preceding test:TaggedAvatar before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test AvatarInstantiatesAngle
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Avatar"), Diff(DELETE,"Arm"), Diff(INSERT,"Leg"), Diff(EQUAL,"sProperty test execution time (ms):"), Diff(DELETE,"3"), Diff(INSERT,"2"), Diff(EQUAL,"<<¶>>Test Result:¶Avatar"), Diff(DELETE,"Arm"), Diff(INSERT,"Leg"), Diff(EQUAL,"sProperty,0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test Avatar"), Diff(DELETE,"LegsProperty: ¶Checks that property has the expected name and its interface type has expected name, tag, or pattern"), Diff(INSERT,"InstantiatesAngle"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="97" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188468" type="ConsoleOutput">
+    <outputString><![CDATA[>>AvatarInstantiatesAngle test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Avatar"), Diff(DELETE,"LegsProperty test execution time (ms):2<<¶>>Test Result:¶AvatarLegsProperty,0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test AvatarInstantiatesAngle¶"), Diff(INSERT,"InstantiatesAngle test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="98" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188469" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+AvatarInstantiatesAngle,0.0% complete,0.0,2.0,
+Preceding test AvatarArmsProperty failed.
+Please correct the problems identified by preceding test:AvatarArmsProperty before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test TaggedBridgeScene
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"AvatarInstantiatesAngle"), Diff(DELETE," test execution time (ms):2"), Diff(INSERT,",0.0% complete,0.0,2.0,¶Preceding test AvatarArmsProperty failed.¶Please correct the problems identified by preceding test:AvatarArmsProperty before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test TaggedBridgeScene¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="99" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188472" type="ConsoleOutput">
+    <outputString><![CDATA[>>TaggedBridgeScene test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>T"), Diff(DELETE,"est Result:¶AvatarInstantiatesAngle,0.0% complete,0.0,2.0,¶Preceding test AvatarArmsProperty failed.¶Please correct the problems identified by preceding test:AvatarArmsProperty before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test TaggedBridgeScene¶"), Diff(INSERT,"aggedBridgeScene test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="100" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188474" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+TaggedBridgeScene,0.0% complete,0.0,2.0,
+Preceding test TaggedAvatar failed.
+Please correct the problems identified by preceding test:TaggedAvatar before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test BridgeSceneInstantiatesAvatar
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"TaggedBridgeScene"), Diff(DELETE," test execution time (ms):2"), Diff(INSERT,",0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneInstantiatesAvatar¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="101" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188475" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test BridgeSceneArthurProperty
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,">>Test Result:¶TaggedBridgeScene,0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶"), Diff(EQUAL,">>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeScene"), Diff(DELETE,"InstantiatesAvatar"), Diff(INSERT,"ArthurProperty"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="102" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188476" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneArthurProperty test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneArthurProperty¶"), Diff(INSERT,"BridgeSceneArthurProperty test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="103" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188477" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneArthurProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedBridgeScene failed.
+Please correct the problems identified by preceding test:TaggedBridgeScene before running this test
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneArthurProperty"), Diff(DELETE," test execution time (ms):2"), Diff(INSERT,",0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="104" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188480" type="ConsoleOutput">
+    <outputString><![CDATA[>>Steps traced since last test:
+
+>>BridgeSceneInstantiatesAvatar test execution time (ms):5<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶BridgeSceneArthurProperty,0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶"), Diff(INSERT,"Steps traced since last test:¶¶>>BridgeSceneInstantiatesAvatar test execution time (ms):5"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="105" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188482" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneInstantiatesAvatar,0.0% complete,0.0,2.0,
+Preceding test BridgeSceneArthurProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneArthurProperty before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test BridgeSceneGalahadProperty
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Steps traced since last test:¶¶>>BridgeSceneInstantiatesAvatar test execution time (ms):5"), Diff(INSERT,"Test Result:¶BridgeSceneInstantiatesAvatar,0.0% complete,0.0,2.0,¶Preceding test BridgeSceneArthurProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneArthurProperty before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneGalahadProperty¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="106" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188483" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneGalahadProperty test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶BridgeSceneInstantiatesAvatar,0.0% complete,0.0,2.0,¶Preceding test BridgeSceneArthurProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneArthurProperty before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneGalahadProperty¶"), Diff(INSERT,"BridgeSceneGalahadProperty test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="107" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188488" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneGalahadProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedBridgeScene failed.
+Please correct the problems identified by preceding test:TaggedBridgeScene before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test BridgeSceneLancelotProperty
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneGalahadProperty"), Diff(DELETE," test execution time (ms):2"), Diff(INSERT,",0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneLancelotProperty¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="108" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188490" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneLancelotProperty test execution time (ms):6<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶BridgeSceneGalahadProperty,0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneLancelotProperty¶"), Diff(INSERT,"BridgeSceneLancelotProperty test execution time (ms):6"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="109" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188492" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneLancelotProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedBridgeScene failed.
+Please correct the problems identified by preceding test:TaggedBridgeScene before running this test
+<<
+>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test BridgeSceneRobinProperty
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneLancelotProperty"), Diff(DELETE," test execution time (ms):6"), Diff(INSERT,",0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneRobinProperty¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="110" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188494" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneRobinProperty test execution time (ms):1<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶BridgeSceneLancelotProperty,0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶<<¶>>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneRobinProperty¶"), Diff(INSERT,"BridgeSceneRobinProperty test execution time (ms):1"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="111" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188495" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneRobinProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedBridgeScene failed.
+Please correct the problems identified by preceding test:TaggedBridgeScene before running this test
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneRobinProperty"), Diff(DELETE," test execution time (ms):1"), Diff(INSERT,",0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="112" _type="ConsoleOutput" date="Thu Jun 25 15:11:28 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188499" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:28 EDT 2026<<
+>>Running test BridgeSceneGuardProperty
+<<
+>>BridgeSceneGuardProperty test execution time (ms):2<<
+>>Test Result:
+BridgeSceneGuardProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedBridgeScene failed.
+Please correct the problems identified by preceding test:TaggedBridgeScene before running this test
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,">>Thu Jun 25 15:11:28 EDT 2026<<¶>>Running test BridgeSceneGuardProperty¶<<¶>>BridgeSceneGuardProperty test execution time (ms):2<<¶"), Diff(EQUAL,">>Test Result:¶BridgeScene"), Diff(DELETE,"Robin"), Diff(INSERT,"Guard"), Diff(EQUAL,"Property,0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="113" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188506" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:29 EDT 2026<<
+>>Running test BridgeSceneArthurLeftArmMovesWithAvatar
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Thu Jun 25 15:11:2"), Diff(DELETE,"8"), Diff(INSERT,"9"), Diff(EQUAL," EDT 2026<<¶>>Running test BridgeScene"), Diff(DELETE,"GuardProperty¶<<¶>>BridgeSceneGuardProperty test execution time (ms):2<<¶>>Test Result:¶BridgeSceneGuardProperty,0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test"), Diff(INSERT,"ArthurLeftArmMovesWithAvatar"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="114" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188507" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneArthurLeftArmMovesWithAvatar test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Thu Jun 25 15:11:29 EDT 2026<<¶>>Running test "), Diff(EQUAL,"BridgeSceneArthurLeftArmMovesWithAvatar"), Diff(DELETE,"¶"), Diff(INSERT," test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="115" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188508" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneArthurLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneArthurProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneArthurProperty before running this test
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneArthurLeftArmMovesWithAvatar"), Diff(DELETE," test execution time (ms):2"), Diff(INSERT,",0.0% complete,0.0,5.0,¶Preceding test BridgeSceneArthurProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneArthurProperty before running this test¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="116" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188511" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:29 EDT 2026<<
+>>Running test BridgeSceneLancelotLeftArmMovesWithAvatar
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>T"), Diff(DELETE,"est Result:¶BridgeSceneArthurLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,¶Preceding test BridgeSceneArthurProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneArthurProperty before running this test"), Diff(INSERT,"hu Jun 25 15:11:29 EDT 2026<<¶>>Running test BridgeSceneLancelotLeftArmMovesWithAvatar"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="117" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188512" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneLancelotLeftArmMovesWithAvatar test execution time (ms):3<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Thu Jun 25 15:11:29 EDT 2026<<¶>>Running test "), Diff(EQUAL,"BridgeSceneLancelotLeftArmMovesWithAvatar"), Diff(DELETE,"¶"), Diff(INSERT," test execution time (ms):3"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="118" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188514" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneLancelotLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneLancelotProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneLancelotProperty before running this test
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneLancelotLeftArmMovesWithAvatar"), Diff(DELETE," test execution time (ms):3"), Diff(INSERT,",0.0% complete,0.0,5.0,¶Preceding test BridgeSceneLancelotProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneLancelotProperty before running this test¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="119" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188516" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:29 EDT 2026<<
+>>Running test BridgeSceneGalahadLeftArmMovesWithAvatar
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>T"), Diff(DELETE,"est Result:¶BridgeSceneLancelotLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,¶Preceding test BridgeSceneLancelotProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneLancelotProperty before running this test"), Diff(INSERT,"hu Jun 25 15:11:29 EDT 2026<<¶>>Running test BridgeSceneGalahadLeftArmMovesWithAvatar"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="120" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188517" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneGalahadLeftArmMovesWithAvatar test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Thu Jun 25 15:11:29 EDT 2026<<¶>>Running test "), Diff(EQUAL,"BridgeSceneGalahadLeftArmMovesWithAvatar"), Diff(DELETE,"¶"), Diff(INSERT," test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="121" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188520" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneGalahadLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneGalahadProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneGalahadProperty before running this test
+<<
+>>Thu Jun 25 15:11:29 EDT 2026<<
+>>Running test BridgeSceneRobinLeftArmMovesWithAvatar
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneGalahadLeftArmMovesWithAvatar"), Diff(DELETE," test execution time (ms):2"), Diff(INSERT,",0.0% complete,0.0,5.0,¶Preceding test BridgeSceneGalahadProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneGalahadProperty before running this test¶<<¶>>Thu Jun 25 15:11:29 EDT 2026<<¶>>Running test BridgeSceneRobinLeftArmMovesWithAvatar¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="122" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188522" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneRobinLeftArmMovesWithAvatar test execution time (ms):3<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶"), Diff(EQUAL,"BridgeScene"), Diff(DELETE,"Galahad"), Diff(INSERT,"Robin"), Diff(EQUAL,"LeftArmMovesWithAvatar"), Diff(DELETE,",0.0% complete,0.0,5.0,¶Preceding test BridgeSceneGalahadProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneGalahadProperty before running this test¶<<¶>>Thu Jun 25 15:11:29 EDT 2026<<¶>>Running test BridgeSceneRobinLeftArmMovesWithAvatar¶"), Diff(INSERT," test execution time (ms):3"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="123" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188524" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneRobinLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneRobinProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneRobinProperty before running this test
+<<
+>>Thu Jun 25 15:11:29 EDT 2026<<
+>>Running test BridgeSceneGuardLeftArmMovesWithAvatar
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneRobinLeftArmMovesWithAvatar"), Diff(DELETE," test execution time (ms):3"), Diff(INSERT,",0.0% complete,0.0,5.0,¶Preceding test BridgeSceneRobinProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneRobinProperty before running this test¶<<¶>>Thu Jun 25 15:11:29 EDT 2026<<¶>>Running test BridgeSceneGuardLeftArmMovesWithAvatar¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="124" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188526" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneGuardLeftArmMovesWithAvatar test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶"), Diff(EQUAL,"BridgeScene"), Diff(DELETE,"Robin"), Diff(INSERT,"Guard"), Diff(EQUAL,"LeftArmMovesWithAvatar"), Diff(DELETE,",0.0% complete,0.0,5.0,¶Preceding test BridgeSceneRobinProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneRobinProperty before running this test¶<<¶>>Thu Jun 25 15:11:29 EDT 2026<<¶>>Running test BridgeSceneGuardLeftArmMovesWithAvatar¶"), Diff(INSERT," test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="125" _type="ConsoleOutput" date="Thu Jun 25 15:11:29 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="188527" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneGuardLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneGuardProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneGuardProperty before running this test
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneGuardLeftArmMovesWithAvatar"), Diff(DELETE," test execution time (ms):2"), Diff(INSERT,",0.0% complete,0.0,5.0,¶Preceding test BridgeSceneGuardProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneGuardProperty before running this test¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="126" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Jun 25 15:11:29 EDT 2026" kind="HitBreakPoint" projectName="(Unknown)" starttimestamp="1782414500498" timestamp="188724" type="Run" />
+  <Command __id="127" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200682" type="ConsoleOutput">
+    <outputString><![CDATA[>>Running suite BridgeSceneScale
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶BridgeSceneGuardLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,¶Preceding test BridgeSceneGuardProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneGuardProperty before running this test"), Diff(INSERT,"Running suite BridgeSceneScale"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="128" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200686" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:41 EDT 2026<<
+>>Running test AvatarScaleDefined
+<<
+>>AvatarScaleDefined test execution time (ms):2<<
+>>Test Result:
+AvatarScaleDefined,0.0% complete,0.0,2.0,
+Preceding test TaggedAvatar failed.
+Please correct the problems identified by preceding test:TaggedAvatar before running this test
+<<
+>>Thu Jun 25 15:11:41 EDT 2026<<
+>>Running test BridgeSceneArthurHeadScales
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Running suite"), Diff(INSERT,"Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test AvatarScaleDefined¶<<¶>>AvatarScaleDefined test execution time (ms):2<<¶>>Test Result:¶AvatarScaleDefined,0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test"), Diff(EQUAL," BridgeScene"), Diff(INSERT,"ArthurHead"), Diff(EQUAL,"Scale"), Diff(INSERT,"s"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="129" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200690" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneArthurHeadScales test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test AvatarScaleDefined¶<<¶>>AvatarScaleDefined test execution time (ms):2<<¶>>Test Result:¶AvatarScaleDefined,0.0% complete,0.0,2.0,¶Preceding test TaggedAvatar failed.¶Please correct the problems identified by preceding test:TaggedAvatar before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeSceneArthurHeadScales¶"), Diff(INSERT,"BridgeSceneArthurHeadScales test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="130" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200692" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneArthurHeadScales,0.0% complete,0.0,0.0,
+Preceding test AvatarScaleDefined failed.
+Please correct the problems identified by preceding test:AvatarScaleDefined before running this test
+<<
+>>Thu Jun 25 15:11:41 EDT 2026<<
+>>Running test BridgeSceneArthurLeftArmScales
+<<
+>>BridgeSceneArthurLeftArmScales test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneArthurHeadScales"), Diff(INSERT,",0.0% complete,0.0,0.0,¶Preceding test AvatarScaleDefined failed.¶Please correct the problems identified by preceding test:AvatarScaleDefined before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeSceneArthurLeftArmScales¶<<¶>>BridgeSceneArthurLeftArmScales"), Diff(EQUAL," test execution time (ms):2<<¶")]]]></diff>
+  </Command>
+  <Command __id="131" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200693" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneArthurLeftArmScales,0.0% complete,0.0,4.0,
+Preceding test AvatarScaleDefined failed.
+Please correct the problems identified by preceding test:AvatarScaleDefined before running this test
+<<
+>>Thu Jun 25 15:11:41 EDT 2026<<
+>>Running test BridgeSceneGalahadLeftArmScales
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Test Result:¶BridgeSceneArthur"), Diff(DELETE,"Head"), Diff(INSERT,"LeftArm"), Diff(EQUAL,"Scales,0.0% complete,0.0,"), Diff(DELETE,"0"), Diff(INSERT,"4"), Diff(EQUAL,".0,¶Preceding test AvatarScaleDefined failed.¶Please correct the problems identified by preceding test:AvatarScaleDefined before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeScene"), Diff(DELETE,"ArthurLeftArmScales¶<<¶>>BridgeSceneArthurLeftArmScales test execution time (ms):2"), Diff(INSERT,"GalahadLeftArmScales¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="132" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200696" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneGalahadLeftArmScales test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶"), Diff(EQUAL,"BridgeScene"), Diff(DELETE,"Arthur"), Diff(INSERT,"Galahad"), Diff(EQUAL,"LeftArmScales"), Diff(DELETE,",0.0% complete,0.0,4.0,¶Preceding test AvatarScaleDefined failed.¶Please correct the problems identified by preceding test:AvatarScaleDefined before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeSceneGalahadLeftArmScales¶"), Diff(INSERT," test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="133" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200697" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneGalahadLeftArmScales,0.0% complete,0.0,4.0,
+Preceding test AvatarScaleDefined failed.
+Please correct the problems identified by preceding test:AvatarScaleDefined before running this test
+<<
+>>Thu Jun 25 15:11:41 EDT 2026<<
+>>Running test BridgeSceneLancelotLeftArmScales
+<<
+>>BridgeSceneLancelotLeftArmScales test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"BridgeSceneGalahadLeftArmScales"), Diff(INSERT,",0.0% complete,0.0,4.0,¶Preceding test AvatarScaleDefined failed.¶Please correct the problems identified by preceding test:AvatarScaleDefined before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeSceneLancelotLeftArmScales¶<<¶>>BridgeSceneLancelotLeftArmScales"), Diff(EQUAL," test execution time (ms):2<<¶")]]]></diff>
+  </Command>
+  <Command __id="134" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200707" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+BridgeSceneLancelotLeftArmScales,0.0% complete,0.0,4.0,
+Preceding test BridgeSceneLancelotProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneLancelotProperty before running this test
+<<
+>>Thu Jun 25 15:11:41 EDT 2026<<
+>>Running test BridgeSceneRobinLeftArmScales
+<<
+>>BridgeSceneRobinLeftArmScales test execution time (ms):1<<
+>>Test Result:
+BridgeSceneRobinLeftArmScales,0.0% complete,0.0,4.0,
+Preceding test BridgeSceneRobinProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneRobinProperty before running this test
+<<
+>>Thu Jun 25 15:11:41 EDT 2026<<
+>>Running test BridgeSceneGuardLeftArmScales
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Test Result:¶BridgeScene"), Diff(DELETE,"Galahad"), Diff(INSERT,"Lancelot"), Diff(EQUAL,"LeftArmScales,0.0% complete,0.0,4.0,¶Preceding test "), Diff(DELETE,"AvatarScaleDefined"), Diff(INSERT,"BridgeSceneLancelotProperty"), Diff(EQUAL," failed.¶Please correct the problems identified by preceding test:"), Diff(DELETE,"AvatarScaleDefined"), Diff(INSERT,"BridgeSceneLancelotProperty"), Diff(EQUAL," before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeScene"), Diff(DELETE,"Lancelot"), Diff(INSERT,"Robin"), Diff(EQUAL,"LeftArmScales¶<<¶>>BridgeScene"), Diff(DELETE,"Lancelot"), Diff(INSERT,"Robin"), Diff(EQUAL,"LeftArmScales test execution time (ms):"), Diff(DELETE,"2"), Diff(INSERT,"1<<¶>>Test Result:¶BridgeSceneRobinLeftArmScales,0.0% complete,0.0,4.0,¶Preceding test BridgeSceneRobinProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneRobinProperty before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeSceneGuardLeftArmScales¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="135" _type="ConsoleOutput" date="Thu Jun 25 15:11:41 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="200716" type="ConsoleOutput">
+    <outputString><![CDATA[>>BridgeSceneGuardLeftArmScales test execution time (ms):2<<
+>>Test Result:
+BridgeSceneGuardLeftArmScales,0.0% complete,0.0,4.0,
+Preceding test AvatarScaleDefined failed.
+Please correct the problems identified by preceding test:AvatarScaleDefined before running this test
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶BridgeSceneLancelotLeftArmScales,0.0% complete,0.0,4.0,¶Preceding test BridgeSceneLancelotProperty failed.¶Please correct the problems identified by preceding test:BridgeSceneLancelotProperty before running this test¶<<¶>>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeSceneRobinLeftArmScales¶<<¶>>BridgeSceneRobin"), Diff(INSERT,"BridgeSceneGuard"), Diff(EQUAL,"LeftArmScales test execution time (ms):"), Diff(DELETE,"1"), Diff(INSERT,"2"), Diff(EQUAL,"<<¶>>Test Result:¶BridgeScene"), Diff(DELETE,"Robin"), Diff(INSERT,"Guard"), Diff(EQUAL,"LeftArmScales,0.0% complete,0.0,4.0,¶Preceding test "), Diff(DELETE,"BridgeSceneRobinProperty"), Diff(INSERT,"AvatarScaleDefined"), Diff(EQUAL," failed.¶Please correct the problems identified by preceding test:"), Diff(DELETE,"BridgeSceneRobinProperty"), Diff(INSERT,"AvatarScaleDefined"), Diff(EQUAL," before running this test¶<<¶"), Diff(DELETE,">>Thu Jun 25 15:11:41 EDT 2026<<¶>>Running test BridgeSceneGuardLeftArmScales¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="136" _type="ConsoleOutput" date="Thu Jun 25 15:11:42 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="202086" type="ConsoleOutput">
+    <outputString><![CDATA[>>Running suite A1Main
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"BridgeSceneGuardLeftArmScales test execution time (ms):2<<¶>>Test Result:¶BridgeSceneGuardLeftArmScales,0.0% complete,0.0,4.0,¶Preceding test AvatarScaleDefined failed.¶Please correct the problems identified by preceding test:AvatarScaleDefined before running this test"), Diff(INSERT,"Running suite A1Main"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="137" _type="ConsoleOutput" date="Thu Jun 25 15:11:42 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="202089" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:42 EDT 2026<<
+>>Running test A1MainInstantiatesBridgeScene
+<<
+>>A1MainInstantiatesBridgeScene test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,">>Thu Jun 25 15:11:42 EDT 2026<<¶"), Diff(EQUAL,">>Running "), Diff(DELETE,"sui"), Diff(EQUAL,"te"), Diff(INSERT,"st"), Diff(EQUAL," A1Main"), Diff(DELETE,"¶"), Diff(INSERT,"InstantiatesBridgeScene¶<<¶>>A1MainInstantiatesBridgeScene test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="138" _type="ConsoleOutput" date="Thu Jun 25 15:11:42 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="202092" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+A1MainInstantiatesBridgeScene,0.0% complete,0.0,2.0,
+Preceding test TaggedBridgeScene failed.
+Please correct the problems identified by preceding test:TaggedBridgeScene before running this test
+<<
+>>Thu Jun 25 15:11:42 EDT 2026<<
+>>Running test A1MainCallSleep
+<<
+Please run the checkstle plugin on your project
+Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project 
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,">>Test Result:¶A1MainInstantiatesBridgeScene,0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶<<¶"), Diff(EQUAL,">>Thu Jun 25 15:11:42 EDT 2026<<¶>>Running test A1Main"), Diff(DELETE,"InstantiatesBridgeScene¶<<¶>>A1MainInstantiatesBridgeScene test execution time (ms):2<<"), Diff(INSERT,"CallSleep¶<<¶Please run the checkstle plugin on your project¶Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project "), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="139" _type="ConsoleOutput" date="Thu Jun 25 15:11:42 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="202098" type="ConsoleOutput">
+    <outputString><![CDATA[>>Steps traced since last test:
+
+>>A1MainCallSleep test execution time (ms):2<<
+>>Test Result:
+A1MainCallSleep,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Test Result:¶A1MainInstantiatesBridgeScene,0.0% complete,0.0,2.0,¶Preceding test TaggedBridgeScene failed.¶Please correct the problems identified by preceding test:TaggedBridgeScene before running this test¶<<¶>>Thu Jun 25 15:11:42 EDT 2026<<¶>>Running test A1MainCallSleep¶<<¶Please run the"), Diff(INSERT,"Steps traced since last test:¶¶>>A1MainCallSleep test execution time (ms):2<<¶>>Test Result:¶A1MainCallSleep,0.0% complete,0.0,2.0,No"), Diff(EQUAL," checkst"), Diff(INSERT,"y"), Diff(EQUAL,"le "), Diff(DELETE,"plugin on your project¶Could not initialize checkstyle. Please make sure you have installed the plugin and run checkstyle on the project "), Diff(INSERT,"output, check console error messages¶<<"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="140" _type="LocalChecksRawCommand" date="Thu Jun 25 15:11:42 EDT 2026" starttimestamp="1782414500498" timestamp="202228">
+    <CSVRow><![CDATA[1,Thu Jun 25 15:11:41 EDT 2026,0,0,BridgeSceneScale, , ,AvatarArmsProperty AvatarHeadProperty AvatarInstantiatesAngle AvatarLegsProperty AvatarScaleDefined+ AvatarStringShapeProperty BridgeSceneArthurHeadScales+ BridgeSceneArthurLeftArmMovesWithAvatar BridgeSceneArthurLeftArmScales+ BridgeSceneArthurProperty BridgeSceneGalahadLeftArmMovesWithAvatar BridgeSceneGalahadLeftArmScales+ BridgeSceneGalahadProperty BridgeSceneGuardLeftArmMovesWithAvatar BridgeSceneGuardLeftArmScales+ BridgeSceneGuardProperty BridgeSceneInstantiatesAvatar BridgeSceneLancelotLeftArmMovesWithAvatar BridgeSceneLancelotLeftArmScales+ BridgeSceneLancelotProperty BridgeSceneRobinLeftArmMovesWithAvatar BridgeSceneRobinLeftArmScales+ BridgeSceneRobinProperty TaggedAvatar TaggedBridgeScene TaggedRotatingLine ,A1InterfaceAsType A1MainCallSleep A1MainInstantiatesBridgeScene A1NamedConstants A1NoStarImports A1PublicMethodsOverride AngleInstantiatesLine AngleLeftLineProperty AngleMoveDefined AngleRightLineProperty DetachedRotatingLineFortyFiveDegree DetachedRotatingLineMinusFortyFiveDegree LeftLineMovesWithAngle LineAngleEditableProperty LineAngleProperty LineMoveDefined LineRadiusEditableProperty LineRadiusProperty LineRotateDefined LineXEditableProperty LineXProperty LineYEditableProperty LineYProperty MovingRotatingLineFortyFiveDegree MovingRotatingLineMinusFortyFiveDegree RightLineMovesWithAngle RotatingLine180Degree RotatingLineFortyFiveDegree RotatingLineNinetyDegree RotatingLineZeroDegree TaggedAngle ,0,1,true,AvatarScaleDefined BridgeSceneArthurHeadScales BridgeSceneArthurLeftArmScales BridgeSceneGalahadLeftArmScales BridgeSceneGuardLeftArmScales BridgeSceneLancelotLeftArmScales BridgeSceneRobinLeftArmScales , ,AvatarScaleDefined BridgeSceneArthurHeadScales BridgeSceneArthurLeftArmScales BridgeSceneGalahadLeftArmScales BridgeSceneGuardLeftArmScales BridgeSceneLancelotLeftArmScales BridgeSceneRobinLeftArmScales ,AvatarScaleDefined-(0.0/2.0) BridgeSceneArthurHeadScales-(0.0/0.0) BridgeSceneArthurLeftArmScales-(0.0/4.0) BridgeSceneGalahadLeftArmScales-(0.0/4.0) BridgeSceneGuardLeftArmScales-(0.0/4.0) BridgeSceneLancelotLeftArmScales-(0.0/4.0) BridgeSceneRobinLeftArmScales-(0.0/4.0) , ,]]></CSVRow>
+  </Command>
+  <Command __id="141" _type="LocalChecksRawCommand" date="Thu Jun 25 15:11:42 EDT 2026" starttimestamp="1782414500498" timestamp="202228">
+    <CSVRow><![CDATA[2,Thu Jun 25 15:11:42 EDT 2026,0,0,A1Main, , ,A1MainCallSleep+ A1MainInstantiatesBridgeScene+ AvatarArmsProperty AvatarHeadProperty AvatarInstantiatesAngle AvatarLegsProperty AvatarScaleDefined AvatarStringShapeProperty BridgeSceneArthurHeadScales BridgeSceneArthurLeftArmMovesWithAvatar BridgeSceneArthurLeftArmScales BridgeSceneArthurProperty BridgeSceneGalahadLeftArmMovesWithAvatar BridgeSceneGalahadLeftArmScales BridgeSceneGalahadProperty BridgeSceneGuardLeftArmMovesWithAvatar BridgeSceneGuardLeftArmScales BridgeSceneGuardProperty BridgeSceneInstantiatesAvatar BridgeSceneLancelotLeftArmMovesWithAvatar BridgeSceneLancelotLeftArmScales BridgeSceneLancelotProperty BridgeSceneRobinLeftArmMovesWithAvatar BridgeSceneRobinLeftArmScales BridgeSceneRobinProperty TaggedAvatar TaggedBridgeScene TaggedRotatingLine ,A1InterfaceAsType A1NamedConstants A1NoStarImports A1PublicMethodsOverride AngleInstantiatesLine AngleLeftLineProperty AngleMoveDefined AngleRightLineProperty DetachedRotatingLineFortyFiveDegree DetachedRotatingLineMinusFortyFiveDegree LeftLineMovesWithAngle LineAngleEditableProperty LineAngleProperty LineMoveDefined LineRadiusEditableProperty LineRadiusProperty LineRotateDefined LineXEditableProperty LineXProperty LineYEditableProperty LineYProperty MovingRotatingLineFortyFiveDegree MovingRotatingLineMinusFortyFiveDegree RightLineMovesWithAngle RotatingLine180Degree RotatingLineFortyFiveDegree RotatingLineNinetyDegree RotatingLineZeroDegree TaggedAngle ,0,2,true,A1MainCallSleep A1MainInstantiatesBridgeScene , , ,A1MainCallSleep-(0.0/2.0) A1MainInstantiatesBridgeScene-(0.0/2.0) , ,]]></CSVRow>
+  </Command>
+  <Command __id="142" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203299" type="ConsoleOutput">
+    <outputString><![CDATA[>>Running suite Angle
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Steps traced since last test:¶¶>>A1MainCallSleep test execution time (ms):2<<¶>>Test Result:¶A1MainCallSleep,0.0% complete,0.0,2.0,No checkstyle output, check console error messages"), Diff(INSERT,"Running suite Angle"), Diff(EQUAL,"¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="143" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203301" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:43 EDT 2026<<
+>>Running test TaggedAngle
+<<
+>>TaggedAngle test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"Running suite Angle¶"), Diff(INSERT,"Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test TaggedAngle¶<<¶>>TaggedAngle test execution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="144" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203304" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+TaggedAngle,0.0% complete,0.0,2.0,
+Preceding test TaggedRotatingLine failed.
+Please correct the problems identified by preceding test:TaggedRotatingLine before running this test
+<<
+>>Thu Jun 25 15:11:43 EDT 2026<<
+>>Running test AngleLeftLineProperty: 
+Checks that property has the expected name and its interface type has expected name, tag, or pattern
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>T"), Diff(DELETE,"hu Jun 25 15:11:43 EDT 2026<<¶>>Running test TaggedAngle¶<<¶>>TaggedAngle test"), Diff(INSERT,"est Result:¶TaggedAngle,0.0% complete,0.0,2.0,¶Preceding test TaggedRotatingLine failed.¶Please correct the problems identified by preceding test:TaggedRotatingLine before running this test¶<<¶>>Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test AngleLeftLineProperty: ¶Checks that property has the"), Diff(EQUAL," ex"), Diff(INSERT,"p"), Diff(EQUAL,"ec"), Diff(DELETE,"ution time (ms):2"), Diff(INSERT,"ted name and its interface type has expected name, tag, or pattern¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="145" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203306" type="ConsoleOutput">
+    <outputString><![CDATA[>>Thu Jun 25 15:11:43 EDT 2026<<
+>>Running test AngleMoveDefined
+<<
+>>AngleMoveDefined test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>T"), Diff(DELETE,"est Result:¶TaggedAngle,0.0% complete,0.0,2.0,¶Preceding test TaggedRotatingLine failed.¶Please correct the problems identified by preceding test:TaggedRotatingLine before running this test¶<<¶>>Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test AngleLeftLineProperty: ¶Checks that property has the expected name and its interface type has"), Diff(INSERT,"hu Jun 25 15:11:43 EDT 2026<<¶>>Running test AngleMoveDefined¶<<¶>>AngleMoveDefined test"), Diff(EQUAL," ex"), Diff(DELETE,"p"), Diff(EQUAL,"ec"), Diff(DELETE,"ted name, tag, or pattern¶"), Diff(INSERT,"ution time (ms):2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="146" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203309" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+AngleMoveDefined,0.0% complete,0.0,2.0,
+Preceding test TaggedAngle failed.
+Please correct the problems identified by preceding test:TaggedAngle before running this test
+<<
+>>Steps traced since last test:
+
+>>AngleLeftLineProperty test execution time (ms):4<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>T"), Diff(DELETE,"hu Jun 25 15:11:43 EDT 2026<<¶>>Running test AngleMoveDefined¶<<¶>>AngleMoveDefined"), Diff(INSERT,"est Result:¶AngleMoveDefined,0.0% complete,0.0,2.0,¶Preceding test TaggedAngle failed.¶Please correct the problems identified by preceding test:TaggedAngle before running this test¶<<¶>>Steps traced since last test:¶¶>>AngleLeftLineProperty"), Diff(EQUAL," test execution time (ms):"), Diff(DELETE,"2"), Diff(INSERT,"4"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="147" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203311" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+AngleLeftLineProperty,0.0% complete,0.0,2.0,
+Preceding test AngleMoveDefined failed.
+Please correct the problems identified by preceding test:AngleMoveDefined before running this test
+<<
+>>Thu Jun 25 15:11:43 EDT 2026<<
+>>Running test AngleRightLineProperty: 
+Checks that property has the expected name and its interface type has expected name, tag, or pattern
+<<
+>>AngleRightLineProperty test execution time (ms):2<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Test Result:¶Angle"), Diff(DELETE,"MoveDefined"), Diff(INSERT,"LeftLineProperty"), Diff(EQUAL,",0.0% complete,0.0,2.0,¶Preceding test "), Diff(DELETE,"TaggedAngle"), Diff(INSERT,"AngleMoveDefined"), Diff(EQUAL," failed.¶Please correct the problems identified by preceding test:"), Diff(DELETE,"TaggedAngle"), Diff(INSERT,"AngleMoveDefined"), Diff(EQUAL," before running this test¶<<¶>>"), Diff(DELETE,"Steps traced since last test:¶"), Diff(INSERT,"Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test AngleRightLineProperty: ¶Checks that property has the expected name and its interface type has expected name, tag, or pattern¶<<"), Diff(EQUAL,"¶>>Angle"), Diff(DELETE,"Lef"), Diff(INSERT,"Righ"), Diff(EQUAL,"tLineProperty test execution time (ms):"), Diff(DELETE,"4"), Diff(INSERT,"2"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="148" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203313" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+AngleRightLineProperty,0.0% complete,0.0,2.0,
+Preceding test TaggedAngle failed.
+Please correct the problems identified by preceding test:TaggedAngle before running this test
+<<
+>>Thu Jun 25 15:11:43 EDT 2026<<
+>>Running test AngleInstantiatesLine
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>Test Result:¶Angle"), Diff(DELETE,"Lef"), Diff(INSERT,"Righ"), Diff(EQUAL,"tLineProperty,0.0% complete,0.0,2.0,¶Preceding test "), Diff(DELETE,"AngleMoveDefined"), Diff(INSERT,"TaggedAngle"), Diff(EQUAL," failed.¶Please correct the problems identified by preceding test:"), Diff(DELETE,"AngleMoveDefined"), Diff(INSERT,"TaggedAngle"), Diff(EQUAL," before running this test¶<<¶>>Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test Angle"), Diff(DELETE,"RightLineProperty: ¶Checks that property has the expected name and its interface type has expected name, tag, or pattern¶<<¶>>AngleRightLineProperty test execution time (ms):2"), Diff(INSERT,"InstantiatesLine¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="149" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203315" type="ConsoleOutput">
+    <outputString><![CDATA[>>AngleInstantiatesLine test execution time (ms):2<<
+>>Test Result:
+AngleInstantiatesLine,0.0% complete,0.0,2.0,
+Preceding test AngleLeftLineProperty failed.
+Please correct the problems identified by preceding test:AngleLeftLineProperty before running this test
+<<
+>>Thu Jun 25 15:11:43 EDT 2026<<
+>>Running test LeftLineMovesWithAngle
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,">>AngleInstantiatesLine test execution time (ms):2<<¶"), Diff(EQUAL,">>Test Result:¶Angle"), Diff(DELETE,"RightLineProperty"), Diff(INSERT,"InstantiatesLine"), Diff(EQUAL,",0.0% complete,0.0,2.0,¶Preceding test "), Diff(DELETE,"TaggedAngle"), Diff(INSERT,"AngleLeftLineProperty"), Diff(EQUAL," failed.¶Please correct the problems identified by preceding test:"), Diff(DELETE,"TaggedAngle"), Diff(INSERT,"AngleLeftLineProperty"), Diff(EQUAL," before running this test¶<<¶>>Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test "), Diff(DELETE,"AngleInstantiatesLin"), Diff(INSERT,"LeftLineMovesWithAngl"), Diff(EQUAL,"e¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="150" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203316" type="ConsoleOutput">
+    <outputString><![CDATA[>>LeftLineMovesWithAngle test execution time (ms):1<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(DELETE,"AngleInstantiatesLin"), Diff(INSERT,"LeftLineMovesWithAngl"), Diff(EQUAL,"e test execution time (ms):"), Diff(DELETE,"2<<¶>>Test Result:¶AngleInstantiatesLine,0.0% complete,0.0,2.0,¶Preceding test AngleLeftLineProperty failed.¶Please correct the problems identified by preceding test:AngleLeftLineProperty before running this test¶<<¶>>Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test LeftLineMovesWithAngle¶"), Diff(INSERT,"1"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="151" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203318" type="ConsoleOutput">
+    <outputString><![CDATA[>>Test Result:
+LeftLineMovesWithAngle,0.0% complete,0.0,6.0,
+Preceding test AngleLeftLineProperty failed.
+Please correct the problems identified by preceding test:AngleLeftLineProperty before running this test
+<<
+>>Thu Jun 25 15:11:43 EDT 2026<<
+>>Running test RightLineMovesWithAngle
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,">>"), Diff(INSERT,"Test Result:¶"), Diff(EQUAL,"LeftLineMovesWithAngle"), Diff(DELETE," test execution time (ms):1"), Diff(INSERT,",0.0% complete,0.0,6.0,¶Preceding test AngleLeftLineProperty failed.¶Please correct the problems identified by preceding test:AngleLeftLineProperty before running this test¶<<¶>>Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test RightLineMovesWithAngle¶"), Diff(EQUAL,"<<¶")]]]></diff>
+  </Command>
+  <Command __id="152" _type="ConsoleOutput" date="Thu Jun 25 15:11:43 EDT 2026" overflow="false" starttimestamp="1782414500498" timestamp="203319" type="ConsoleOutput">
+    <outputString><![CDATA[>>RightLineMovesWithAngle test execution time (ms):1<<
+>>Test Result:
+RightLineMovesWithAngle,0.0% complete,0.0,6.0,
+Preceding test AngleLeftLineProperty failed.
+Please correct the problems identified by preceding test:AngleLeftLineProperty before running this test
+<<
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,">>RightLineMovesWithAngle test execution time (ms):1<<¶"), Diff(EQUAL,">>Test Result:¶"), Diff(DELETE,"Lef"), Diff(INSERT,"Righ"), Diff(EQUAL,"tLineMovesWithAngle,0.0% complete,0.0,6.0,¶Preceding test AngleLeftLineProperty failed.¶Please correct the problems identified by preceding test:AngleLeftLineProperty before running this test¶<<¶"), Diff(DELETE,">>Thu Jun 25 15:11:43 EDT 2026<<¶>>Running test RightLineMovesWithAngle¶<<¶")]]]></diff>
+  </Command>
+  <Command __id="161" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Jun 25 15:11:48 EDT 2026" kind="Terminate" projectName="(Unknown)" starttimestamp="1782414500498" timestamp="207773" type="Debug" />
+  <Command __id="162" _type="ProgramExecutionEvent" className="/Assignment1/src/main/RunSS26A1Tests.java" date="Thu Jun 25 15:11:48 EDT 2026" kind="HitBreakPoint" projectName="Assignment1" starttimestamp="1782414500498" timestamp="207774" type="Run" />
+  <Command __id="163" _type="ProgramExecutionEvent" className="(Unknown)" date="Thu Jun 25 15:11:48 EDT 2026" kind="Terminate" projectName="(Unknown)" starttimestamp="1782414500498" timestamp="207774" type="Debug" />
+  <Command __id="164" _type="ProgramExecutionEvent" className="/Assignment1/src/main/RunSS26A1Tests.java" date="Thu Jun 25 15:11:48 EDT 2026" kind="Terminate" projectName="Assignment1" starttimestamp="1782414500498" timestamp="207774" type="Run" />
+  <Command __id="165" _type="LocalChecksRawCommand" date="Thu Jun 25 15:11:48 EDT 2026" starttimestamp="1782414500498" timestamp="207786">
+    <CSVRow><![CDATA[3,Thu Jun 25 15:11:43 EDT 2026,0,0,Angle, , ,A1MainCallSleep A1MainInstantiatesBridgeScene AngleInstantiatesLine+ AngleLeftLineProperty+ AngleMoveDefined+ AngleRightLineProperty+ AvatarArmsProperty AvatarHeadProperty AvatarInstantiatesAngle AvatarLegsProperty AvatarScaleDefined AvatarStringShapeProperty BridgeSceneArthurHeadScales BridgeSceneArthurLeftArmMovesWithAvatar BridgeSceneArthurLeftArmScales BridgeSceneArthurProperty BridgeSceneGalahadLeftArmMovesWithAvatar BridgeSceneGalahadLeftArmScales BridgeSceneGalahadProperty BridgeSceneGuardLeftArmMovesWithAvatar BridgeSceneGuardLeftArmScales BridgeSceneGuardProperty BridgeSceneInstantiatesAvatar BridgeSceneLancelotLeftArmMovesWithAvatar BridgeSceneLancelotLeftArmScales BridgeSceneLancelotProperty BridgeSceneRobinLeftArmMovesWithAvatar BridgeSceneRobinLeftArmScales BridgeSceneRobinProperty LeftLineMovesWithAngle+ RightLineMovesWithAngle+ TaggedAngle+ TaggedAvatar TaggedBridgeScene TaggedRotatingLine ,A1InterfaceAsType A1NamedConstants A1NoStarImports A1PublicMethodsOverride DetachedRotatingLineFortyFiveDegree DetachedRotatingLineMinusFortyFiveDegree LineAngleEditableProperty LineAngleProperty LineMoveDefined LineRadiusEditableProperty LineRadiusProperty LineRotateDefined LineXEditableProperty LineXProperty LineYEditableProperty LineYProperty MovingRotatingLineFortyFiveDegree MovingRotatingLineMinusFortyFiveDegree RotatingLine180Degree RotatingLineFortyFiveDegree RotatingLineNinetyDegree RotatingLineZeroDegree ,0,3,true,AngleInstantiatesLine AngleLeftLineProperty AngleMoveDefined AngleRightLineProperty LeftLineMovesWithAngle RightLineMovesWithAngle TaggedAngle , , ,AngleInstantiatesLine-(0.0/2.0) AngleLeftLineProperty-(0.0/2.0) AngleMoveDefined-(0.0/2.0) AngleRightLineProperty-(0.0/2.0) LeftLineMovesWithAngle-(0.0/6.0) RightLineMovesWithAngle-(0.0/6.0) TaggedAngle-(0.0/2.0) , ,]]></CSVRow>
+  </Command>
+  <Command __id="166" _type="LocalChecksRawCommand" date="Thu Jun 25 15:11:48 EDT 2026" starttimestamp="1782414500498" timestamp="207786">
+    <CSVRow><![CDATA[4,Thu Jun 25 15:11:45 EDT 2026,0,0,A1Style, , ,A1InterfaceAsType+ A1MainCallSleep A1MainInstantiatesBridgeScene A1NamedConstants+ A1NoStarImports+ A1PublicMethodsOverride+ AngleInstantiatesLine AngleLeftLineProperty AngleMoveDefined AngleRightLineProperty AvatarArmsProperty AvatarHeadProperty AvatarInstantiatesAngle AvatarLegsProperty AvatarScaleDefined AvatarStringShapeProperty BridgeSceneArthurHeadScales BridgeSceneArthurLeftArmMovesWithAvatar BridgeSceneArthurLeftArmScales BridgeSceneArthurProperty BridgeSceneGalahadLeftArmMovesWithAvatar BridgeSceneGalahadLeftArmScales BridgeSceneGalahadProperty BridgeSceneGuardLeftArmMovesWithAvatar BridgeSceneGuardLeftArmScales BridgeSceneGuardProperty BridgeSceneInstantiatesAvatar BridgeSceneLancelotLeftArmMovesWithAvatar BridgeSceneLancelotLeftArmScales BridgeSceneLancelotProperty BridgeSceneRobinLeftArmMovesWithAvatar BridgeSceneRobinLeftArmScales BridgeSceneRobinProperty LeftLineMovesWithAngle RightLineMovesWithAngle TaggedAngle TaggedAvatar TaggedBridgeScene TaggedRotatingLine ,DetachedRotatingLineFortyFiveDegree DetachedRotatingLineMinusFortyFiveDegree LineAngleEditableProperty LineAngleProperty LineMoveDefined LineRadiusEditableProperty LineRadiusProperty LineRotateDefined LineXEditableProperty LineXProperty LineYEditableProperty LineYProperty MovingRotatingLineFortyFiveDegree MovingRotatingLineMinusFortyFiveDegree RotatingLine180Degree RotatingLineFortyFiveDegree RotatingLineNinetyDegree RotatingLineZeroDegree ,0,4,true,A1InterfaceAsType A1NamedConstants A1NoStarImports A1PublicMethodsOverride , , ,A1InterfaceAsType-(0.0/10.0) A1NamedConstants-(0.0/16.0) A1NoStarImports-(0.0/2.0) A1PublicMethodsOverride-(0.0/10.0) , ,]]></CSVRow>
+  </Command>
+  <Command __id="167" _type="ShellCommand" date="Thu Jun 25 15:11:50 EDT 2026" starttimestamp="1782414500498" timestamp="210230" type="ECLIPSE_GAINED_FOCUS" />
+  <DocumentChange __id="33" _type="Insert" date="Thu Jun 25 15:09:28 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" length="1" offset="216" starttimestamp="1782414500498" timestamp="68074">
+    <text><![CDATA[1]]></text>
+  </DocumentChange>
+  <DocumentChange __id="36" _type="Delete" date="Thu Jun 25 15:09:33 EDT 2026" docASTNodeCount="71" docActiveCodeLength="600" docExpressionCount="50" docLength="990" endLine="20" length="1" offset="964" startLine="20" starttimestamp="1782414500498" timestamp="73197">
+    <text><![CDATA[0]]></text>
+  </DocumentChange>
+  <DocumentChange __id="38" _type="Insert" date="Thu Jun 25 15:09:33 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" length="1" offset="964" starttimestamp="1782414500498" timestamp="73396">
+    <text><![CDATA[1]]></text>
+  </DocumentChange>
+  <DocumentChange __id="42" _type="Delete" date="Thu Jun 25 15:09:44 EDT 2026" docASTNodeCount="71" docActiveCodeLength="600" docExpressionCount="50" docLength="990" endLine="3" length="1" offset="114" startLine="3" starttimestamp="1782414500498" timestamp="83503">
+    <text><![CDATA[0]]></text>
+  </DocumentChange>
+  <DocumentChange __id="44" _type="Insert" date="Thu Jun 25 15:09:44 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" length="1" offset="114" starttimestamp="1782414500498" timestamp="83674">
+    <text><![CDATA[1]]></text>
+  </DocumentChange>
+  <DocumentChange __id="59" _type="Delete" date="Thu Jun 25 15:11:02 EDT 2026" docASTNodeCount="71" docActiveCodeLength="600" docExpressionCount="50" docLength="990" endLine="3" length="1" offset="130" startLine="3" starttimestamp="1782414500498" timestamp="162469">
+    <text><![CDATA[0]]></text>
+  </DocumentChange>
+  <DocumentChange __id="61" _type="Insert" date="Thu Jun 25 15:11:03 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" length="1" offset="130" starttimestamp="1782414500498" timestamp="162603">
+    <text><![CDATA[1]]></text>
+  </DocumentChange>
+  <Command __id="173" _type="CopyCommand" date="Thu Jun 25 15:12:24 EDT 2026" starttimestamp="1782414500498" timestamp="244041" />
+  <Command __id="174" _type="PasteCommand" date="Thu Jun 25 15:12:25 EDT 2026" starttimestamp="1782414500498" timestamp="245027" />
+  <Command __id="175" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:12:25 EDT 2026" starttimestamp="1782414500498" timestamp="245169" />
+  <Command __id="176" _type="EclipseCommand" commandID="" date="Thu Jun 25 15:12:25 EDT 2026" starttimestamp="1782414500498" timestamp="245171" />
+  <Command __id="178" _type="MoveCaretCommand" caretOffset="0" date="Thu Jun 25 15:12:28 EDT 2026" docOffset="0" starttimestamp="1782414500498" timestamp="247977" />
+  <Command __id="179" _type="MoveCaretCommand" caretOffset="547" date="Thu Jun 25 15:12:30 EDT 2026" docOffset="547" starttimestamp="1782414500498" timestamp="249643" />
+  <Command __id="177" _type="DiffBasedFileOpenCommand" date="Thu Jun 25 15:12:27 EDT 2026" projectName="Assignment1" starttimestamp="1782414500498" timestamp="247353">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\Logs\LocalChecks\unc_checks_301_A0.xml]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <Command __id="181" _type="DiffBasedFileOpenCommand" date="Thu Jun 25 15:12:32 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment1" starttimestamp="1782414500498" timestamp="251842">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;"), Diff(DELETE,"public class RunSS26A1Tests {"), Diff(INSERT,"import grader.basics.execution.BasicProjectExecution;import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;import trace.grader.basics.GraderBasicsTraceUtility;public class RunSS26A1Tests {	public static void main(String[] args) {		// if you set this to false, grader steps will not be traced		GraderBasicsTraceUtility.setTracerShowInfo(true);		// if you set this to false, all grader steps will be traced,		// not just the ones that failed		GraderBasicsTraceUtility.setBufferTracedMessages(true);		// Change this number if a test trace gets longer than 600 and is clipped		GraderBasicsTraceUtility.setMaxPrintedTraces(600);		// Change this number if all traces together are longer than 2000		GraderBasicsTraceUtility.setMaxTraces(2000);		// Change this number if your process times out prematurely		BasicProjectExecution.setProcessTimeOut(5);		// You need to always call such a method		SS24Assignment1Suite.main(args);	}"), Diff(EQUAL,"}")]]></diff>
+    <snapshot><![CDATA[package main;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+
+public class RunSS26A1Tests {
+	public static void main(String[] args) {
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed
+		GraderBasicsTraceUtility.setBufferTracedMessages(true);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		GraderBasicsTraceUtility.setMaxPrintedTraces(600);
+		// Change this number if all traces together are longer than 2000
+		GraderBasicsTraceUtility.setMaxTraces(2000);
+		// Change this number if your process times out prematurely
+		BasicProjectExecution.setProcessTimeOut(5);
+		// You need to always call such a method
+		SS24Assignment1Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="180" _type="MoveCaretCommand" caretOffset="438" date="Thu Jun 25 15:12:31 EDT 2026" docOffset="438" starttimestamp="1782414500498" timestamp="250850" />
+  <Command __id="182" _type="MoveCaretCommand" caretOffset="989" date="Thu Jun 25 15:12:32 EDT 2026" docOffset="989" starttimestamp="1782414500498" timestamp="251926" />
+  <Command __id="183" _type="MoveCaretCommand" caretOffset="384" date="Thu Jun 25 15:12:33 EDT 2026" docOffset="384" starttimestamp="1782414500498" timestamp="252613" />
+  <Command __id="185" _type="MoveCaretCommand" caretOffset="946" date="Thu Jun 25 15:12:36 EDT 2026" docOffset="946" starttimestamp="1782414500498" timestamp="255793" />
+  <Command __id="186" _type="ShellCommand" date="Thu Jun 25 15:12:37 EDT 2026" starttimestamp="1782414500498" timestamp="256589" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="187" _type="ShellCommand" date="Thu Jun 25 15:15:27 EDT 2026" starttimestamp="1782414500498" timestamp="426994" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="188" _type="ShellCommand" date="Thu Jun 25 15:15:29 EDT 2026" starttimestamp="1782414500498" timestamp="428963" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="189" _type="ShellCommand" date="Thu Jun 25 15:41:27 EDT 2026" starttimestamp="1782414500498" timestamp="1986737" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="190" _type="MoveCaretCommand" caretOffset="991" date="Thu Jun 25 15:41:28 EDT 2026" docOffset="991" starttimestamp="1782414500498" timestamp="1987754" />
+  <Command __id="191" _type="MoveCaretCommand" caretOffset="991" date="Thu Jun 25 15:41:28 EDT 2026" docOffset="991" starttimestamp="1782414500498" timestamp="1987754" />
+  <Command __id="192" _type="ShellCommand" date="Thu Jun 25 15:41:31 EDT 2026" starttimestamp="1782414500498" timestamp="1990837" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="193" _type="ShellCommand" date="Thu Jun 25 15:43:58 EDT 2026" starttimestamp="1782414500498" timestamp="2137846" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="194" _type="MoveCaretCommand" caretOffset="989" date="Thu Jun 25 15:43:58 EDT 2026" docOffset="989" starttimestamp="1782414500498" timestamp="2137909" />
+  <Command __id="195" _type="MoveCaretCommand" caretOffset="989" date="Thu Jun 25 15:43:58 EDT 2026" docOffset="989" starttimestamp="1782414500498" timestamp="2137910" />
+  <Command __id="196" _type="MoveCaretCommand" caretOffset="991" date="Thu Jun 25 15:43:59 EDT 2026" docOffset="991" starttimestamp="1782414500498" timestamp="2138829" />
+  <Command __id="197" _type="MoveCaretCommand" caretOffset="991" date="Thu Jun 25 15:43:59 EDT 2026" docOffset="991" starttimestamp="1782414500498" timestamp="2138830" />
+  <Command __id="198" _type="ShellCommand" date="Thu Jun 25 15:44:00 EDT 2026" starttimestamp="1782414500498" timestamp="2140053" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="199" _type="ShellCommand" date="Thu Jun 25 15:44:01 EDT 2026" starttimestamp="1782414500498" timestamp="2141055" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="200" _type="ShellCommand" date="Thu Jun 25 15:44:01 EDT 2026" starttimestamp="1782414500498" timestamp="2141076" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="201" _type="ShellCommand" date="Thu Jun 25 15:45:09 EDT 2026" starttimestamp="1782414500498" timestamp="2208717" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="202" _type="ShellCommand" date="Thu Jun 25 15:45:12 EDT 2026" starttimestamp="1782414500498" timestamp="2212105" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="203" _type="BalloonCommand" date="Thu Jun 25 16:08:20 EDT 2026" message="*******************************************
+Worked 4 minutes(fixed)/36 minutes(context based) from
+Thu Jun 25 15:08:20 EDT 2026 to Thu Jun 25 15:45:12 EDT 2026
+Edited 1 Projects: 
+	Assignment1
+Edited 1 Files: 
+	C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java
+Number of insert: 4
+Number of delete: 4
+" starttimestamp="1782414500498" timestamp="3600143">
+    <fineGrainedWorkTime><![CDATA[36]]></fineGrainedWorkTime>
+    <insert><![CDATA[4]]></insert>
+    <startTime><![CDATA[1782414500589]]></startTime>
+    <endTime><![CDATA[1782416712603]]></endTime>
+    <workTime><![CDATA[4]]></workTime>
+    <delete><![CDATA[4]]></delete>
+  </Command>
+  <Command __id="208" _type="MoveCaretCommand" caretOffset="982" date="Thu Jun 25 19:19:52 EDT 2026" docOffset="982" starttimestamp="1782414500498" timestamp="15092213" />
+  <Command __id="209" _type="ShellCommand" date="Thu Jun 25 19:19:55 EDT 2026" starttimestamp="1782414500498" timestamp="15094537" type="ECLIPSE_CLOSED" />
+  <Command __id="184" _type="DiffBasedFileOpenCommand" date="Thu Jun 25 15:12:36 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment1" starttimestamp="1782414500498" timestamp="255734">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;import grader.basics.execution.BasicProjectExecution;import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;import trace.grader.basics.GraderBasicsTraceUtility;public class RunSS26A1Tests {	public static void main(String[] args) {		// if you set this to false, grader steps will not be traced		GraderBasicsTraceUtility.setTracerShowInfo(true);		// if you set this to false, all grader steps will be traced,		// not just the ones that failed		GraderBasicsTraceUtility.setBufferTracedMessages(true);		// Change this number if a test trace gets longer than 600 and is clipped		GraderBasicsTraceUtility.setMaxPrintedTraces(600);		// Change this number if all traces together are longer than 2000		GraderBasicsTraceUtility.setMaxTraces(2000);		// Change this number if your process times out prematurely		BasicProjectExecution.setProcessTimeOut(5);		// You need to always call such a method		SS24Assignment1Suite.main(args);	}}")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+</Events>

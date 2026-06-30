@@ -1,0 +1,980 @@
+<Events startTimestamp="1782497416074" logVersion="1.0.0.202508221008">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="861" date="Fri Jun 26 14:10:16 EDT 2026" docOffset="982" starttimestamp="1782497416074" timestamp="320" />
+  <Command __id="2" _type="ShellCommand" date="Fri Jun 26 16:43:03 EDT 2026" starttimestamp="1782497416074" timestamp="9167503" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="3" _type="ShellCommand" date="Fri Jun 26 16:43:04 EDT 2026" starttimestamp="1782497416074" timestamp="9168159" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="4" _type="ShellCommand" date="Fri Jun 26 20:18:31 EDT 2026" starttimestamp="1782497416074" timestamp="22095869" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="5" _type="MoveCaretCommand" caretOffset="870" date="Fri Jun 26 20:18:31 EDT 2026" docOffset="991" starttimestamp="1782497416074" timestamp="22095925" />
+  <Command __id="6" _type="ShellCommand" date="Fri Jun 26 20:19:46 EDT 2026" starttimestamp="1782497416074" timestamp="22170010" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="7" _type="ShellCommand" date="Fri Jun 26 20:21:50 EDT 2026" starttimestamp="1782497416074" timestamp="22293992" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="8" _type="MoveCaretCommand" caretOffset="865" date="Fri Jun 26 20:21:50 EDT 2026" docOffset="986" starttimestamp="1782497416074" timestamp="22294072" />
+  <Command __id="9" _type="ShellCommand" date="Fri Jun 26 20:21:54 EDT 2026" starttimestamp="1782497416074" timestamp="22298178" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="10" _type="ShellCommand" date="Fri Jun 26 20:32:13 EDT 2026" starttimestamp="1782497416074" timestamp="22916973" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="11" _type="MoveCaretCommand" caretOffset="868" date="Fri Jun 26 20:32:13 EDT 2026" docOffset="989" starttimestamp="1782497416074" timestamp="22917020" />
+  <Command __id="13" _type="ShellCommand" date="Fri Jun 26 21:16:26 EDT 2026" starttimestamp="1782497416074" timestamp="25569927" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="14" _type="ShellCommand" date="Fri Jun 26 21:16:36 EDT 2026" starttimestamp="1782497416074" timestamp="25580381" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="15" _type="ShellCommand" date="Fri Jun 26 21:16:39 EDT 2026" starttimestamp="1782497416074" timestamp="25583558" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="16" _type="MoveCaretCommand" caretOffset="870" date="Fri Jun 26 21:16:39 EDT 2026" docOffset="991" starttimestamp="1782497416074" timestamp="25583623" />
+  <Command __id="17" _type="ShellCommand" date="Fri Jun 26 21:16:40 EDT 2026" starttimestamp="1782497416074" timestamp="25584165" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="18" _type="ShellCommand" date="Fri Jun 26 21:17:49 EDT 2026" starttimestamp="1782497416074" timestamp="25653252" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="19" _type="ShellCommand" date="Fri Jun 26 21:17:50 EDT 2026" starttimestamp="1782497416074" timestamp="25654253" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="20" _type="ShellCommand" date="Fri Jun 26 21:17:51 EDT 2026" starttimestamp="1782497416074" timestamp="25655823" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="21" _type="ShellCommand" date="Fri Jun 26 21:17:53 EDT 2026" starttimestamp="1782497416074" timestamp="25657896" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="22" _type="BalloonCommand" date="Fri Jun 26 21:18:36 EDT 2026" message="*******************************************
+Worked 0 minutes(fixed)/58 minutes(context based) from
+Fri Jun 26 20:19:46 EDT 2026 to Fri Jun 26 21:17:53 EDT 2026
+Edited 0 Projects: 
+Edited 0 Files: 
+Number of insert: 0
+Number of delete: 0
+" starttimestamp="1782497416074" timestamp="25700806">
+    <fineGrainedWorkTime><![CDATA[58]]></fineGrainedWorkTime>
+    <insert><![CDATA[0]]></insert>
+    <startTime><![CDATA[1782519586084]]></startTime>
+    <endTime><![CDATA[1782523073970]]></endTime>
+    <workTime><![CDATA[0]]></workTime>
+    <delete><![CDATA[0]]></delete>
+  </Command>
+  <Command __id="23" _type="ShellCommand" date="Fri Jun 26 21:51:37 EDT 2026" starttimestamp="1782497416074" timestamp="27681463" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="24" _type="ShellCommand" date="Fri Jun 26 21:51:38 EDT 2026" starttimestamp="1782497416074" timestamp="27682874" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="25" _type="ShellCommand" date="Fri Jun 26 22:12:32 EDT 2026" starttimestamp="1782497416074" timestamp="28936281" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="26" _type="ShellCommand" date="Fri Jun 26 22:12:38 EDT 2026" starttimestamp="1782497416074" timestamp="28942593" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="27" _type="ShellCommand" date="Fri Jun 26 22:12:41 EDT 2026" starttimestamp="1782497416074" timestamp="28945293" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="28" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:12:41 EDT 2026" starttimestamp="1782497416074" timestamp="28945392" />
+  <Command __id="29" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:12:41 EDT 2026" starttimestamp="1782497416074" timestamp="28945468" />
+  <Command __id="30" _type="ShellCommand" date="Fri Jun 26 22:13:03 EDT 2026" starttimestamp="1782497416074" timestamp="28967177" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="31" _type="ShellCommand" date="Fri Jun 26 22:13:13 EDT 2026" starttimestamp="1782497416074" timestamp="28977161" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="32" _type="ShellCommand" date="Fri Jun 26 22:13:26 EDT 2026" starttimestamp="1782497416074" timestamp="28990520" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="33" _type="ShellCommand" date="Fri Jun 26 22:13:47 EDT 2026" starttimestamp="1782497416074" timestamp="29011080" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="34" _type="EclipseCommand" commandID="org.eclipse.ui.file.refresh" date="Fri Jun 26 22:13:51 EDT 2026" starttimestamp="1782497416074" timestamp="29014963" />
+  <Command __id="35" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:13:51 EDT 2026" starttimestamp="1782497416074" timestamp="29015096" />
+  <Command __id="36" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:13:51 EDT 2026" starttimestamp="1782497416074" timestamp="29015161" />
+  <Command __id="37" _type="ShellCommand" date="Fri Jun 26 22:13:52 EDT 2026" starttimestamp="1782497416074" timestamp="29016182" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="38" _type="ShellCommand" date="Fri Jun 26 22:13:55 EDT 2026" starttimestamp="1782497416074" timestamp="29019040" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="40" _type="MoveCaretCommand" caretOffset="0" date="Fri Jun 26 22:13:56 EDT 2026" docOffset="0" starttimestamp="1782497416074" timestamp="29020020" />
+  <Command __id="41" _type="MoveCaretCommand" caretOffset="54" date="Fri Jun 26 22:13:56 EDT 2026" docOffset="54" starttimestamp="1782497416074" timestamp="29020464" />
+  <Command __id="42" _type="MoveCaretCommand" caretOffset="49" date="Fri Jun 26 22:13:57 EDT 2026" docOffset="49" starttimestamp="1782497416074" timestamp="29021218" />
+  <Command __id="43" _type="ShellCommand" date="Fri Jun 26 22:13:59 EDT 2026" starttimestamp="1782497416074" timestamp="29023858" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="44" _type="ShellCommand" date="Fri Jun 26 22:14:01 EDT 2026" starttimestamp="1782497416074" timestamp="29025154" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="46" _type="MoveCaretCommand" caretOffset="870" date="Fri Jun 26 22:14:01 EDT 2026" docOffset="991" starttimestamp="1782497416074" timestamp="29025379" />
+  <Command __id="47" _type="ShellCommand" date="Fri Jun 26 22:14:10 EDT 2026" starttimestamp="1782497416074" timestamp="29034190" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 14:10:16 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment1" starttimestamp="1782497416074" timestamp="184">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+
+public class RunSS26A1Tests {
+	public static void main(String[] args) {
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed
+		GraderBasicsTraceUtility.setBufferTracedMessages(true);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		GraderBasicsTraceUtility.setMaxPrintedTraces(600);
+		// Change this number if all traces together are longer than 2000
+		GraderBasicsTraceUtility.setMaxTraces(2000);
+		// Change this number if your process times out prematurely
+		BasicProjectExecution.setProcessTimeOut(5);
+		// You need to always call such a method
+		SS24Assignment1Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="39" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 22:13:56 EDT 2026" docASTNodeCount="6" docActiveCodeLength="54" docExpressionCount="2" docLength="54" projectName="Assignment1" starttimestamp="1782497416074" timestamp="29019940">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\Assignment1.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+public class Assignment1 {
+    
+}
+]]></snapshot>
+  </Command>
+  <Command __id="45" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 22:14:01 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment1" starttimestamp="1782497416074" timestamp="29025315">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;import grader.basics.execution.BasicProjectExecution;import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;import trace.grader.basics.GraderBasicsTraceUtility;public class RunSS26A1Tests {	public static void main(String[] args) {		// if you set this to false, grader steps will not be traced		GraderBasicsTraceUtility.setTracerShowInfo(true);		// if you set this to false, all grader steps will be traced,		// not just the ones that failed		GraderBasicsTraceUtility.setBufferTracedMessages(true);		// Change this number if a test trace gets longer than 600 and is clipped		GraderBasicsTraceUtility.setMaxPrintedTraces(600);		// Change this number if all traces together are longer than 2000		GraderBasicsTraceUtility.setMaxTraces(2000);		// Change this number if your process times out prematurely		BasicProjectExecution.setProcessTimeOut(5);		// You need to always call such a method		SS24Assignment1Suite.main(args);	}}")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <Command __id="49" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 22:14:47 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment0" starttimestamp="1782497416074" timestamp="29070975">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment0\src\main\RunSS26A0Tests.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+import grader.basics.execution.BasicProjectExecution;
+import gradingTools.comp301ss24.assignment0.SS24Assignment0Suite;
+import trace.grader.basics.GraderBasicsTraceUtility;
+
+public class RunSS26A0Tests {
+	public static void main(String[] args) {
+		// if you set this to false, grader steps will not be traced
+		GraderBasicsTraceUtility.setTracerShowInfo(true);
+		// if you set this to false, all grader steps will be traced,
+		// not just the ones that failed
+		GraderBasicsTraceUtility.setBufferTracedMessages(true);
+		// Change this number if a test trace gets longer than 600 and is clipped
+		GraderBasicsTraceUtility.setMaxPrintedTraces(600);
+		// Change this number if all traces together are longer than 2000
+		GraderBasicsTraceUtility.setMaxTraces(2000);
+		// Change this number if your process times out prematurely
+		BasicProjectExecution.setProcessTimeOut(5);
+		// You need to always call such a method
+		SS24Assignment0Suite.main(args);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="51" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 22:14:48 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment1" starttimestamp="1782497416074" timestamp="29072190">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;import grader.basics.execution.BasicProjectExecution;import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;import trace.grader.basics.GraderBasicsTraceUtility;public class RunSS26A1Tests {	public static void main(String[] args) {		// if you set this to false, grader steps will not be traced		GraderBasicsTraceUtility.setTracerShowInfo(true);		// if you set this to false, all grader steps will be traced,		// not just the ones that failed		GraderBasicsTraceUtility.setBufferTracedMessages(true);		// Change this number if a test trace gets longer than 600 and is clipped		GraderBasicsTraceUtility.setMaxPrintedTraces(600);		// Change this number if all traces together are longer than 2000		GraderBasicsTraceUtility.setMaxTraces(2000);		// Change this number if your process times out prematurely		BasicProjectExecution.setProcessTimeOut(5);		// You need to always call such a method		SS24Assignment1Suite.main(args);	}}")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <Command __id="53" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 22:14:49 EDT 2026" docASTNodeCount="103" docActiveCodeLength="827" docExpressionCount="68" docLength="12048" projectName="JavaTeaching" starttimestamp="1782497416074" timestamp="29073131">
+    <filePath><![CDATA[C:\Users\imarg\git\JavaTeaching\src\lectures\scanning\AConsoleReadingUpperCasePrinter.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[
+/*
+ * RUNNING A PROGRAM
+ * This is an example of a Java program containing an executable class.
+ * Let us start by executing this class.
+ * 
+ * There are many ways to execute a class,
+ * If you are editing the class and your insertion point is in it,
+ * Right click->Debug As->Java Application provides one way.
+ * Use it or some other way you know to run this program.
+ * Enter some input and observe the output.
+ * 
+ * Let us now look at the code 
+ * 
+ */
+
+package lectures.scanning; 
+	
+import java.util.Scanner; //comment out when asked
+	
+public class AConsoleReadingUpperCasePrinter { 	
+	/*
+	 * Lesson Comment
+	 * 
+	 * CLASS	
+	 *  
+	 * A class is like a file in non object oriented languages.
+	 * A class name should be camelCase starting with an upper case letter.
+	 * That is, the first word in the name should be a lowercase letter
+	 * and  each subsequent word should start with an uppercase letter.
+	 */
+	/*
+	 * Lesson Comment:
+	 * 
+	 * A class (named AConsoleReadingUpperCasePrinter below) may be contained in 
+	 * a named hierarchical package much as a file can be in a named hierarchical folder
+	 * This class is in a package called scanning which is a sub-package of lectures.
+	 * In fact, for each package, the OS creates a folder and for each class in a 
+	 * package it creates a file in the folder of its package.
+	 * This correspondence means that two different packages can 
+	 * contain classes with the same short name. However a package cannot 
+	 * contain two classes with the same name.
+	 * A package name should start with a lower case letter.
+	 * 
+	 */
+	/*
+	 * Sakai questions you can now answer
+	 *
+	 * T/F For each class, a folder is created.
+	 * T/F For each class, a file is created.
+	 * 	 
+	 * T/F For each package, a folder is created.
+	 * T/F For each package, a file is created.
+	 */
+	/*
+	 * 
+	 * FULL vs SHORT NAME	 
+	 * 
+	 * The package name followed the short name of the class is 
+	 * its full or long name.
+	 * 
+	 * The full name of this class is lectures.scanning.AConsoleReadingUpperCasePrinter 
+	 * (if you have made a copy
+	 * it is lectures.scanning.copy.AConsoleReadingUpperCasePrinter).
+	 *
+	 * 
+	 */
+	/*
+	 * Sakai questions you can now answer
+	 * 
+	 * FULL VS SHORT NAME
+	 * T/F The full name of a class contains its package and class name.
+	 * T/F The short name of a class is its package name.
+	 */
+	/*
+	 * Lesson Comment  
+	 * 
+	 * IMPORTS	 *
+	 * 
+	 * If a class C1 refers a class C2 in a different (external) package, 
+	 * then it must use either the full name of class C2 or import C2.
+	 * 
+	 * Above, we are importing an external class not in the package of this class.
+	 * Experiment:
+	 * 
+	 * Do you get any errors  if you comment this import out?
+	 * 
+	 * Now execute CTRL-SHIFT-O and make the selection of the
+	 * commented out class. 
+	 * The import should reappear.
+	 * 
+	 * This is a good way to import classes whose full names you do not remember or know.
+	 */
+	/*
+	 * Sakai questions you can now answer
+	 * 
+	 * T/F It makes sense for a class to import only those classes that are 
+	 * not in its package.
+	 */
+	
+		
+	public static void main(String[] args) 
+	/*
+	 * Every runnable program must have at least one class that declares a main method.
+	 * The syntax of main method header is shown above. This is the first method called when
+	 * the program is run, and can of course call other methods.
+	 * Methods correspond to procedures and functions in other languages.
+	 * A method name should be camelCase 
+	 * Everything before the first curly brace is the method header.
+	 * 
+	 */
+	
+	/*
+	 * Sakai Quiz Questions you can now answer
+	 *  
+	 * T/F Only a class with a main method can be executed.  
+     * T/F A main method is the: first method executed when its class is run.
+     * T/F A main method is the last method executed when its class is run.
+     */
+	
+	
+	
+//	public static void main(String args) 
+//	public static void main(String[] anArgs) 
+//	public static void main(String anArgs[]) 
+//	public void main(String anArgs[]) 
+//	public static int main(String anArgs[]) 
+	/*
+	 * We see above alternative ways to declare the main method headers
+	 * We will now perform  experiments involving commenting out 
+	 * the current header uncommenting each the above headers
+	 * You can comment and uncomment a set of selected lines using the 
+	 * shortcut CTRL-/ (CTRL and / pressed together)
+	 * In the case of a single line, it is sufficient to have the insertion point 
+	 * in the line.
+	 * 
+	 * Experiment with each of the above headers and see if you can run the
+	 * program with each alternative header.
+	 * 
+	 * You cannot execute the program if you do not see the Java Application option 
+	 * in the Run As or Debug As menu command, or if you see the console message, 
+	 * cannot find or load main method.
+	 */
+	/*
+	 * You can now answer the following questions.
+	 * 
+	 *  MAIN METHOD CONSTRAINTS
+	 * T/F A main method must have an argument named args.
+	 * T/F A main method can have a int argument.
+	 * 
+	 */
+	/*
+	 
+	 * 
+	 * The above exercise shows that a method with an arbitrary header cannot be
+	 * considered a main method. To understand why such constraints are necessary,
+	 * consider two entities, the Java interpreter and a human reading your code,
+	 * that must be able to search for the main method.
+	 * When you execute a class, the Java interpreter must find the method so
+	 * it can execute it and pass it the expected parameters.
+	 * When humans  reads your code, they must be able to determine the 
+	 * starting method without relying on perhaps missing or obsolete comments.
+	 * 	 
+	 */
+	/*
+	 * You can now answer the following questions.
+	 * 
+	 *  RATIONALE FOR MAIN METHOD CONSTRAINTS
+	 *
+	 * T/F Constraints put on the header of the main method makes it easier for
+	 *  a human being to find it in the containing main class
+	 * T/F Constraints put on the header of the main main method make it easier
+	 *     for the Java interpreter, which executes a main method, to find it in the containing class.
+	 * T/F Constraints put on the header of the main method can prevent 
+	 *     programming errors such as returning a value that is not processed by the interpreter.
+	 * 
+	 */
+
+	/*
+	* Lesson Comment
+	* METHOD BODY
+	* The code between the outermost curly braces is the method body.
+	* A method body is a sequence of statements terminated with semicolons;
+	*/
+	{
+		System.out.println ("Please enter a string with uppercase and lower case letters.");
+		 /* Use of library, nothing conceptual here, just some syntax */
+		/*
+		 * The next statement needs to be executed once per console reading program
+		 */
+		Scanner scanner = new Scanner(System.in);
+		/*		 
+		 * The next statement gives the next line input by the user on the console. 
+		 * Hover on method name, nextLine, to see its description and answer the 
+		 * questions below	
+		 *
+		 */
+		/*
+		 * The Scanner nextLine() method:
+		 * 	(a) returns the remainder of the current line input by the user 
+		 *     and advances to the next line.
+		 * 
+		 *  (b) advances to the next line and returns all the characters in it.
+		 * 
+		 * The next statement gives the next line input by the user on the console. 
+		 * Hover on method name, nextLine, to see its description and answer the 
+		 * questions above.	
+		 *
+		 */
+		String scannedString = scanner.nextLine(); 
+		
+		int index = 0; // variable names should be camel case starting with lower case letters 
+		
+		while (index < scannedString.length()) {
+		/*
+		 * Lesson Comment
+		 * 
+		 * Syntax of Java while loop shown above
+		 * The loop  "scans" scannedString, that is, 
+		 * it examines every character in the string and finds
+		 * substrings of interest called tokens.
+		 * 
+		 * A substring SS of a string S is a sequence of consecutive characters
+		 * in S.
+		 * 
+		 * Not every character of a scanned string S is of interest, and thus,
+		 * part of an output token.
+		 * 	
+		 * Characters are letters, digits, spaces and other values you can enter 
+		 * from the keyboard.
+		 * A string can be considered an array or sequence of characters.
+		 * 
+		 * How many characters in each token identified by this loop?
+		 * Is this use of the term "scanning" consistent with its use in the 
+		 * English language?
+		 */
+		/*
+		 * Sakai Quiz Questions
+		 * 
+		 * SCANNING AND WHILE LOOPS
+		 * 
+		 * (T/F) A token produced by scanning a string can have non consecutive 
+		 *       characters of the string.
+		 * (T/F) A string scanned by a scanner is a concatenation of all the tokens 
+		 * 		 detected by the scanner.
+		 */
+			
+			
+			char nextLetter = scannedString.charAt(index);
+			
+			/* 
+			 *
+			 * charAt() gives character at index, hover over its name to get its 
+			 * behavior and answer the questions below.
+			 * A char is a type defined to store characters.
+			 */
+			/* 
+			 * Sakai Questions
+			 * 
+			 * The charAt() operation returns a value of type:
+			 * 	 (a) String.
+			 *   (b) char.
+			 *   (c) none of the above
+			 *  If L is the length of the String on which charAt() is invoked,
+			 * 		legal arguments of charAt() are in the range: 
+			 *   (a) 0..L
+			 *   (b) 1..L
+			 *   (c) 0..L-1
+			 *   (d) 1..L-1
+			 *   (e) None of the above
+			 *
+			 */
+			
+			
+			if (nextLetter >= 'A' && nextLetter <= 'Z') {
+				System.out.println("Token:" + nextLetter); // + here means string concatenation
+			}
+			// just showing the else syntax below
+//			else {
+//				System.out.println("Skipping:" + nextLetter);
+//			}
+			index++;
+			/*
+			 * Lesson Comment: STRING + AND CHARACTER ORDERING
+			 * 
+			 *
+			 * Syntax of if statement with optional else shown above.
+			 * 
+			 * The if statement check shows that characters are ordered
+			 * This ordering  preserves letter and digit ordering
+			 * You should only compare digits, lowercase letters and upper case 
+			 * letters with each other, not digits and letters or lower case 
+			 * and upper case with each other as these orderings are not fundamental.
+			*/
+			/*
+			 * Sakai Questions
+			 * 
+			 * STRING + AND CHARACTER ORDERING
+			 * 
+			 * Which is true:
+			 *     (a) The character 'a' is greater than the character 'b'.
+			 *     (b) The character 'a' is smaller than the character 'b'.
+			 *     (c) The character 'a' and 'b' cannot be compared.
+			 *      
+			 * Which is true:
+			 * 	   (a) The character 'a' and '0' cannot be compared in Java.
+			 *     (b) The character 'a' and '0' can be compared in Java but 
+			 *         it is not good style to make this comparison.
+			 *     (c) The character 'a' and '0' can be compared in Java and it
+			 *         is good style to make this comparison.
+			 *        
+			 * (T/F) Given strings s1 and s2, s1 + s2 is 
+			 * 		(a)the sum of the lengths of (number of characters in) s1 and s2.		 * 
+			 * 		(b)the result of appending s2 to s1.
+			 *      (c)none of the above.
+			 * 
+			 *
+			*/
+		}
+		/*
+		 * Experiment:
+		 * 
+		 * Now that you understand tokens and how this program executes
+		 * run the program to answer the following Sakai questions
+		 * 
+		 * Sakai Questions
+		 * 
+		 * When the String "Albert Einstein" is input, the tokens produced are
+		 * the strings:
+		 *     (a) "Albert" and "Einstein"
+		 *     (b) "A" and "E"
+		 *     (c) None of the above
+		 *     
+		 *  The values of variable, index, when the print is executed are:
+		 *      (a) Each of the values in the range 0..scannedString.length()-1
+		 *      (b) Each of the values in the range 0..scannedString.length()
+		 *      (c) 0 and 7
+		 *      (d) 1 and 8
+		 *      (e) None of the above		
+		 */
+		
+		scanner.close(); // we are done with the scanner, we are actually just done
+		System.out.println ("Program ends.");
+	}
+	/*
+	 * Next class to visit {AModularConsoleReadingUpperCasePrinter}
+	*/
+	
+}
+]]></snapshot>
+  </Command>
+  <Command __id="55" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 22:14:49 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment1" starttimestamp="1782497416074" timestamp="29073754">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;import grader.basics.execution.BasicProjectExecution;import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;import trace.grader.basics.GraderBasicsTraceUtility;public class RunSS26A1Tests {	public static void main(String[] args) {		// if you set this to false, grader steps will not be traced		GraderBasicsTraceUtility.setTracerShowInfo(true);		// if you set this to false, all grader steps will be traced,		// not just the ones that failed		GraderBasicsTraceUtility.setBufferTracedMessages(true);		// Change this number if a test trace gets longer than 600 and is clipped		GraderBasicsTraceUtility.setMaxPrintedTraces(600);		// Change this number if all traces together are longer than 2000		GraderBasicsTraceUtility.setMaxTraces(2000);		// Change this number if your process times out prematurely		BasicProjectExecution.setProcessTimeOut(5);		// You need to always call such a method		SS24Assignment1Suite.main(args);	}}")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <Command __id="57" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 22:14:51 EDT 2026" docASTNodeCount="6" docActiveCodeLength="54" docExpressionCount="2" docLength="54" projectName="Assignment1" starttimestamp="1782497416074" timestamp="29075293">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\Assignment1.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;public class Assignment1 {    }")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <DocumentChange __id="59" _type="Insert" date="Fri Jun 26 22:14:54 EDT 2026" docASTNodeCount="6" docActiveCodeLength="62" docExpressionCount="2" docLength="62" length="8" offset="49" repeat="8" starttimestamp="1782497416074" timestamp="29078578" timestamp2="29079703">
+    <text><![CDATA[pubglic ]]></text>
+  </DocumentChange>
+  <DocumentChange __id="75" _type="Delete" date="Fri Jun 26 22:14:56 EDT 2026" docASTNodeCount="6" docActiveCodeLength="57" docExpressionCount="2" docLength="57" endLine="3" length="5" offset="52" repeat="5" startLine="3" starttimestamp="1782497416074" timestamp="29080294" timestamp2="29081166">
+    <text><![CDATA[glic ]]></text>
+  </DocumentChange>
+  <Command __id="48" _type="ShellCommand" date="Fri Jun 26 22:14:46 EDT 2026" starttimestamp="1782497416074" timestamp="29070331" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="50" _type="SelectTextCommand" caretOffset="870" date="Fri Jun 26 22:14:47 EDT 2026" end="870" start="0" starttimestamp="1782497416074" timestamp="29071060" />
+  <Command __id="52" _type="MoveCaretCommand" caretOffset="991" date="Fri Jun 26 22:14:48 EDT 2026" docOffset="991" starttimestamp="1782497416074" timestamp="29072271" />
+  <Command __id="54" _type="MoveCaretCommand" caretOffset="111" date="Fri Jun 26 22:14:49 EDT 2026" docOffset="561" starttimestamp="1782497416074" timestamp="29073202" />
+  <Command __id="56" _type="MoveCaretCommand" caretOffset="991" date="Fri Jun 26 22:14:49 EDT 2026" docOffset="991" starttimestamp="1782497416074" timestamp="29073830" />
+  <Command __id="58" _type="MoveCaretCommand" caretOffset="49" date="Fri Jun 26 22:14:51 EDT 2026" docOffset="49" starttimestamp="1782497416074" timestamp="29075340" />
+  <Command __id="60" _type="InsertStringCommand" date="Fri Jun 26 22:14:54 EDT 2026" starttimestamp="1782497416074" timestamp="29078584" timestamp2="29078584">
+    <data><![CDATA[p]]></data>
+  </Command>
+  <Command __id="62" _type="InsertStringCommand" date="Fri Jun 26 22:14:54 EDT 2026" starttimestamp="1782497416074" timestamp="29078636" timestamp2="29078636">
+    <data><![CDATA[u]]></data>
+  </Command>
+  <Command __id="64" _type="InsertStringCommand" date="Fri Jun 26 22:14:55 EDT 2026" starttimestamp="1782497416074" timestamp="29078950" timestamp2="29078950">
+    <data><![CDATA[b]]></data>
+  </Command>
+  <Command __id="66" _type="InsertStringCommand" date="Fri Jun 26 22:14:55 EDT 2026" starttimestamp="1782497416074" timestamp="29078956" timestamp2="29078956">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="68" _type="InsertStringCommand" date="Fri Jun 26 22:14:55 EDT 2026" starttimestamp="1782497416074" timestamp="29079122" timestamp2="29079122">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="70" _type="InsertStringCommand" date="Fri Jun 26 22:14:55 EDT 2026" starttimestamp="1782497416074" timestamp="29079208" timestamp2="29079208">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="72" _type="InsertStringCommand" date="Fri Jun 26 22:14:55 EDT 2026" starttimestamp="1782497416074" timestamp="29079537" timestamp2="29079537">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="74" _type="InsertStringCommand" date="Fri Jun 26 22:14:55 EDT 2026" starttimestamp="1782497416074" timestamp="29079705" timestamp2="29079705">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="76" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Jun 26 22:14:56 EDT 2026" starttimestamp="1782497416074" timestamp="29080296" />
+  <Command __id="78" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Jun 26 22:14:56 EDT 2026" starttimestamp="1782497416074" timestamp="29080424" />
+  <Command __id="80" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Jun 26 22:14:56 EDT 2026" starttimestamp="1782497416074" timestamp="29080530" />
+  <Command __id="82" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Jun 26 22:14:56 EDT 2026" starttimestamp="1782497416074" timestamp="29080641" />
+  <Command __id="84" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Jun 26 22:14:57 EDT 2026" starttimestamp="1782497416074" timestamp="29081167" />
+  <Command __id="86" _type="InsertStringCommand" date="Fri Jun 26 22:14:59 EDT 2026" starttimestamp="1782497416074" timestamp="29082957" timestamp2="29082957">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="88" _type="InsertStringCommand" date="Fri Jun 26 22:14:59 EDT 2026" starttimestamp="1782497416074" timestamp="29083033" timestamp2="29083033">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="90" _type="InsertStringCommand" date="Fri Jun 26 22:14:59 EDT 2026" starttimestamp="1782497416074" timestamp="29083270" timestamp2="29083270">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="92" _type="InsertStringCommand" date="Fri Jun 26 22:14:59 EDT 2026" starttimestamp="1782497416074" timestamp="29083410" timestamp2="29083410">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="94" _type="InsertStringCommand" date="Fri Jun 26 22:15:00 EDT 2026" starttimestamp="1782497416074" timestamp="29083985" timestamp2="29083985">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <DocumentChange __id="85" _type="Insert" date="Fri Jun 26 22:14:59 EDT 2026" docASTNodeCount="12" docActiveCodeLength="78" docExpressionCount="3" docLength="78" length="21" offset="52" repeat="21" starttimestamp="1782497416074" timestamp="29082954" timestamp2="29086798">
+    <text><![CDATA[lic static void main ]]></text>
+  </DocumentChange>
+  <Command __id="96" _type="InsertStringCommand" date="Fri Jun 26 22:15:00 EDT 2026" starttimestamp="1782497416074" timestamp="29084191" timestamp2="29084191">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="98" _type="InsertStringCommand" date="Fri Jun 26 22:15:00 EDT 2026" starttimestamp="1782497416074" timestamp="29084303" timestamp2="29084303">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="100" _type="InsertStringCommand" date="Fri Jun 26 22:15:00 EDT 2026" starttimestamp="1782497416074" timestamp="29084461" timestamp2="29084461">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="102" _type="InsertStringCommand" date="Fri Jun 26 22:15:00 EDT 2026" starttimestamp="1782497416074" timestamp="29084799" timestamp2="29084799">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="104" _type="InsertStringCommand" date="Fri Jun 26 22:15:01 EDT 2026" starttimestamp="1782497416074" timestamp="29085038" timestamp2="29085038">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="106" _type="InsertStringCommand" date="Fri Jun 26 22:15:01 EDT 2026" starttimestamp="1782497416074" timestamp="29085142" timestamp2="29085142">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="108" _type="InsertStringCommand" date="Fri Jun 26 22:15:01 EDT 2026" starttimestamp="1782497416074" timestamp="29085658" timestamp2="29085658">
+    <data><![CDATA[v]]></data>
+  </Command>
+  <Command __id="110" _type="InsertStringCommand" date="Fri Jun 26 22:15:01 EDT 2026" starttimestamp="1782497416074" timestamp="29085727" timestamp2="29085727">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="112" _type="InsertStringCommand" date="Fri Jun 26 22:15:01 EDT 2026" starttimestamp="1782497416074" timestamp="29085797" timestamp2="29085797">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="114" _type="InsertStringCommand" date="Fri Jun 26 22:15:02 EDT 2026" starttimestamp="1782497416074" timestamp="29086125" timestamp2="29086125">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="116" _type="InsertStringCommand" date="Fri Jun 26 22:15:02 EDT 2026" starttimestamp="1782497416074" timestamp="29086202" timestamp2="29086202">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="118" _type="InsertStringCommand" date="Fri Jun 26 22:15:02 EDT 2026" starttimestamp="1782497416074" timestamp="29086467" timestamp2="29086467">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="120" _type="InsertStringCommand" date="Fri Jun 26 22:15:02 EDT 2026" starttimestamp="1782497416074" timestamp="29086520" timestamp2="29086520">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="122" _type="InsertStringCommand" date="Fri Jun 26 22:15:02 EDT 2026" starttimestamp="1782497416074" timestamp="29086634" timestamp2="29086634">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="124" _type="InsertStringCommand" date="Fri Jun 26 22:15:02 EDT 2026" starttimestamp="1782497416074" timestamp="29086685" timestamp2="29086685">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="126" _type="InsertStringCommand" date="Fri Jun 26 22:15:02 EDT 2026" starttimestamp="1782497416074" timestamp="29086800" timestamp2="29086800">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <DocumentChange __id="127" _type="Delete" date="Fri Jun 26 22:15:04 EDT 2026" docASTNodeCount="12" docActiveCodeLength="77" docExpressionCount="3" docLength="77" endLine="3" length="1" offset="72" startLine="3" starttimestamp="1782497416074" timestamp="29088380">
+    <text><![CDATA[ ]]></text>
+  </DocumentChange>
+  <Command __id="128" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Jun 26 22:15:04 EDT 2026" starttimestamp="1782497416074" timestamp="29088382" />
+  <DocumentChange __id="129" _type="Insert" date="Fri Jun 26 22:15:04 EDT 2026" docASTNodeCount="12" docActiveCodeLength="80" docExpressionCount="3" docLength="80" length="3" offset="72" repeat="2" starttimestamp="1782497416074" timestamp="29088566" timestamp2="29088586">
+    <text><![CDATA[(I)]]></text>
+  </DocumentChange>
+  <Command __id="130" _type="InsertStringCommand" date="Fri Jun 26 22:15:04 EDT 2026" starttimestamp="1782497416074" timestamp="29088583" timestamp2="29088583">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="132" _type="InsertStringCommand" date="Fri Jun 26 22:15:04 EDT 2026" starttimestamp="1782497416074" timestamp="29088589" timestamp2="29088589">
+    <data><![CDATA[I]]></data>
+  </Command>
+  <DocumentChange __id="133" _type="Delete" date="Fri Jun 26 22:15:05 EDT 2026" docASTNodeCount="12" docActiveCodeLength="79" docExpressionCount="3" docLength="79" endLine="3" length="1" offset="73" startLine="3" starttimestamp="1782497416074" timestamp="29089029">
+    <text><![CDATA[I]]></text>
+  </DocumentChange>
+  <Command __id="134" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Jun 26 22:15:05 EDT 2026" starttimestamp="1782497416074" timestamp="29089031" />
+  <DocumentChange __id="135" _type="Insert" date="Fri Jun 26 22:15:05 EDT 2026" docASTNodeCount="17" docActiveCodeLength="93" docExpressionCount="5" docLength="93" length="14" offset="73" repeat="13" starttimestamp="1782497416074" timestamp="29089572" timestamp2="29096128">
+    <text><![CDATA[String[] args_]]></text>
+  </DocumentChange>
+  <Command __id="136" _type="InsertStringCommand" date="Fri Jun 26 22:15:05 EDT 2026" starttimestamp="1782497416074" timestamp="29089575" timestamp2="29089575">
+    <data><![CDATA[S]]></data>
+  </Command>
+  <Command __id="138" _type="InsertStringCommand" date="Fri Jun 26 22:15:06 EDT 2026" starttimestamp="1782497416074" timestamp="29090019" timestamp2="29090019">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="140" _type="InsertStringCommand" date="Fri Jun 26 22:15:06 EDT 2026" starttimestamp="1782497416074" timestamp="29090200" timestamp2="29090200">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="142" _type="InsertStringCommand" date="Fri Jun 26 22:15:06 EDT 2026" starttimestamp="1782497416074" timestamp="29090225" timestamp2="29090225">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="144" _type="InsertStringCommand" date="Fri Jun 26 22:15:06 EDT 2026" starttimestamp="1782497416074" timestamp="29090486" timestamp2="29090486">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="146" _type="InsertStringCommand" date="Fri Jun 26 22:15:06 EDT 2026" starttimestamp="1782497416074" timestamp="29090861" timestamp2="29090861">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="148" _type="InsertStringCommand" date="Fri Jun 26 22:15:08 EDT 2026" starttimestamp="1782497416074" timestamp="29092208" timestamp2="29092208">
+    <data><![CDATA[[]]></data>
+  </Command>
+  <Command __id="149" _type="InsertStringCommand" date="Fri Jun 26 22:15:09 EDT 2026" starttimestamp="1782497416074" timestamp="29093100" timestamp2="29093100">
+    <data><![CDATA[]]]></data>
+  </Command>
+  <Command __id="151" _type="InsertStringCommand" date="Fri Jun 26 22:15:09 EDT 2026" starttimestamp="1782497416074" timestamp="29093368" timestamp2="29093368">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="153" _type="InsertStringCommand" date="Fri Jun 26 22:15:10 EDT 2026" starttimestamp="1782497416074" timestamp="29094744" timestamp2="29094744">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="155" _type="InsertStringCommand" date="Fri Jun 26 22:15:10 EDT 2026" starttimestamp="1782497416074" timestamp="29094872" timestamp2="29094872">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="157" _type="InsertStringCommand" date="Fri Jun 26 22:15:11 EDT 2026" starttimestamp="1782497416074" timestamp="29095236" timestamp2="29095236">
+    <data><![CDATA[g]]></data>
+  </Command>
+  <Command __id="159" _type="InsertStringCommand" date="Fri Jun 26 22:15:11 EDT 2026" starttimestamp="1782497416074" timestamp="29095386" timestamp2="29095386">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="161" _type="InsertStringCommand" date="Fri Jun 26 22:15:12 EDT 2026" starttimestamp="1782497416074" timestamp="29096131" timestamp2="29096131">
+    <data><![CDATA[_]]></data>
+  </Command>
+  <DocumentChange __id="162" _type="Delete" date="Fri Jun 26 22:15:12 EDT 2026" docASTNodeCount="17" docActiveCodeLength="92" docExpressionCount="5" docLength="92" endLine="3" length="1" offset="86" startLine="3" starttimestamp="1782497416074" timestamp="29096785">
+    <text><![CDATA[_]]></text>
+  </DocumentChange>
+  <Command __id="163" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Fri Jun 26 22:15:12 EDT 2026" starttimestamp="1782497416074" timestamp="29096787" />
+  <Command __id="164" _type="InsertStringCommand" date="Fri Jun 26 22:15:13 EDT 2026" starttimestamp="1782497416074" timestamp="29097390" timestamp2="29097390">
+    <data><![CDATA[)]]></data>
+  </Command>
+  <Command __id="166" _type="InsertStringCommand" date="Fri Jun 26 22:15:13 EDT 2026" starttimestamp="1782497416074" timestamp="29097546" timestamp2="29097546">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="168" _type="InsertStringCommand" date="Fri Jun 26 22:15:14 EDT 2026" starttimestamp="1782497416074" timestamp="29098561" timestamp2="29098561">
+    <data><![CDATA[{]]></data>
+  </Command>
+  <Command __id="170" _type="InsertStringCommand" date="Fri Jun 26 22:15:15 EDT 2026" starttimestamp="1782497416074" timestamp="29099166" timestamp2="29099166">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="171" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Fri Jun 26 22:15:16 EDT 2026" starttimestamp="1782497416074" timestamp="29100855" />
+  <Command __id="172" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:15:17 EDT 2026" starttimestamp="1782497416074" timestamp="29100951" />
+  <Command __id="173" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:15:17 EDT 2026" starttimestamp="1782497416074" timestamp="29100970" />
+  <Command __id="174" _type="ShellCommand" date="Fri Jun 26 22:15:18 EDT 2026" starttimestamp="1782497416074" timestamp="29102014" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="175" _type="ShellCommand" date="Fri Jun 26 22:16:24 EDT 2026" starttimestamp="1782497416074" timestamp="29168512" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="176" _type="ShellCommand" date="Fri Jun 26 22:16:26 EDT 2026" starttimestamp="1782497416074" timestamp="29169941" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="177" _type="ShellCommand" date="Fri Jun 26 22:16:53 EDT 2026" starttimestamp="1782497416074" timestamp="29197672" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="179" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:16:54 EDT 2026" starttimestamp="1782497416074" timestamp="29198066" />
+  <Command __id="180" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:16:54 EDT 2026" starttimestamp="1782497416074" timestamp="29198087" />
+  <Command __id="181" _type="EclipseCommand" commandID="org.eclipse.ui.file.refresh" date="Fri Jun 26 22:16:58 EDT 2026" starttimestamp="1782497416074" timestamp="29202325" />
+  <Command __id="182" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:16:58 EDT 2026" starttimestamp="1782497416074" timestamp="29202481" />
+  <Command __id="183" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:16:58 EDT 2026" starttimestamp="1782497416074" timestamp="29202483" />
+  <Command __id="184" _type="ShellCommand" date="Fri Jun 26 22:17:01 EDT 2026" starttimestamp="1782497416074" timestamp="29205418" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="185" _type="ShellCommand" date="Fri Jun 26 22:17:19 EDT 2026" starttimestamp="1782497416074" timestamp="29222968" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="186" _type="MoveCaretCommand" caretOffset="164" date="Fri Jun 26 22:17:20 EDT 2026" docOffset="164" starttimestamp="1782497416074" timestamp="29224795" />
+  <Command __id="188" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:17:21 EDT 2026" starttimestamp="1782497416074" timestamp="29225104" />
+  <Command __id="189" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:17:21 EDT 2026" starttimestamp="1782497416074" timestamp="29225125" />
+  <Command __id="190" _type="ShellCommand" date="Fri Jun 26 22:17:38 EDT 2026" starttimestamp="1782497416074" timestamp="29242865" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="191" _type="BalloonCommand" date="Fri Jun 26 22:18:36 EDT 2026" message="*******************************************
+Worked 23 minutes(fixed)/60 minutes(context based) from
+Fri Jun 26 21:18:36 EDT 2026 to Fri Jun 26 22:17:38 EDT 2026
+Edited 1 Projects: 
+	Assignment1
+Edited 1 Files: 
+	C:\Users\imarg\eclipse-workspace\Assignment1\src\main\Assignment1.java
+Number of insert: 62
+Number of delete: 8
+" starttimestamp="1782497416074" timestamp="29300813">
+    <fineGrainedWorkTime><![CDATA[60]]></fineGrainedWorkTime>
+    <insert><![CDATA[62]]></insert>
+    <startTime><![CDATA[1782523116880]]></startTime>
+    <endTime><![CDATA[1782526658939]]></endTime>
+    <workTime><![CDATA[23]]></workTime>
+    <delete><![CDATA[8]]></delete>
+  </Command>
+  <Command __id="192" _type="ShellCommand" date="Fri Jun 26 22:20:17 EDT 2026" starttimestamp="1782497416074" timestamp="29401650" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="193" _type="ShellCommand" date="Fri Jun 26 22:20:23 EDT 2026" starttimestamp="1782497416074" timestamp="29407335" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="194" _type="ShellCommand" date="Fri Jun 26 22:20:43 EDT 2026" starttimestamp="1782497416074" timestamp="29427794" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="195" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:20:43 EDT 2026" starttimestamp="1782497416074" timestamp="29427895" />
+  <Command __id="196" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:20:43 EDT 2026" starttimestamp="1782497416074" timestamp="29427897" />
+  <Command __id="198" _type="ShellCommand" date="Fri Jun 26 22:20:50 EDT 2026" starttimestamp="1782497416074" timestamp="29434474" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="199" _type="EclipseCommand" commandID="org.eclipse.ui.edit.delete" date="Fri Jun 26 22:20:50 EDT 2026" starttimestamp="1782497416074" timestamp="29434485" />
+  <Command __id="200" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:20:50 EDT 2026" starttimestamp="1782497416074" timestamp="29434587" />
+  <Command __id="201" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:20:50 EDT 2026" starttimestamp="1782497416074" timestamp="29434591" />
+  <Command __id="202" _type="ShellCommand" date="Fri Jun 26 22:21:02 EDT 2026" starttimestamp="1782497416074" timestamp="29446322" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="203" _type="ShellCommand" date="Fri Jun 26 22:21:08 EDT 2026" starttimestamp="1782497416074" timestamp="29452354" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="204" _type="ShellCommand" date="Fri Jun 26 22:21:11 EDT 2026" starttimestamp="1782497416074" timestamp="29455162" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="205" _type="ShellCommand" date="Fri Jun 26 22:21:13 EDT 2026" starttimestamp="1782497416074" timestamp="29457403" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="206" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:21:13 EDT 2026" starttimestamp="1782497416074" timestamp="29457492" />
+  <Command __id="207" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:21:13 EDT 2026" starttimestamp="1782497416074" timestamp="29457494" />
+  <Command __id="208" _type="ShellCommand" date="Fri Jun 26 22:21:20 EDT 2026" starttimestamp="1782497416074" timestamp="29464656" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="209" _type="EclipseCommand" commandID="org.eclipse.ui.edit.selectAll" date="Fri Jun 26 22:21:22 EDT 2026" starttimestamp="1782497416074" timestamp="29465929" />
+  <Command __id="210" _type="ShellCommand" date="Fri Jun 26 22:21:36 EDT 2026" starttimestamp="1782497416074" timestamp="29480183" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="211" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:21:36 EDT 2026" starttimestamp="1782497416074" timestamp="29480281" />
+  <Command __id="212" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:21:36 EDT 2026" starttimestamp="1782497416074" timestamp="29480283" />
+  <Command __id="213" _type="ShellCommand" date="Fri Jun 26 22:21:41 EDT 2026" starttimestamp="1782497416074" timestamp="29485148" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="214" _type="ShellCommand" date="Fri Jun 26 22:21:46 EDT 2026" starttimestamp="1782497416074" timestamp="29490834" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="215" _type="EclipseCommand" commandID="org.eclipse.ui.file.refresh" date="Fri Jun 26 22:21:51 EDT 2026" starttimestamp="1782497416074" timestamp="29495071" />
+  <Command __id="216" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:21:51 EDT 2026" starttimestamp="1782497416074" timestamp="29495178" />
+  <Command __id="217" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:21:51 EDT 2026" starttimestamp="1782497416074" timestamp="29495180" />
+  <Command __id="218" _type="ShellCommand" date="Fri Jun 26 22:21:59 EDT 2026" starttimestamp="1782497416074" timestamp="29503566" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="219" _type="ShellCommand" date="Fri Jun 26 22:22:14 EDT 2026" starttimestamp="1782497416074" timestamp="29518365" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="220" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:22:14 EDT 2026" starttimestamp="1782497416074" timestamp="29518468" />
+  <Command __id="221" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:22:14 EDT 2026" starttimestamp="1782497416074" timestamp="29518470" />
+  <Command __id="222" _type="EclipseCommand" commandID="org.eclipse.ui.file.refresh" date="Fri Jun 26 22:22:18 EDT 2026" starttimestamp="1782497416074" timestamp="29522577" />
+  <Command __id="223" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:22:18 EDT 2026" starttimestamp="1782497416074" timestamp="29522733" />
+  <Command __id="224" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:22:18 EDT 2026" starttimestamp="1782497416074" timestamp="29522734" />
+  <Command __id="225" _type="EclipseCommand" commandID="org.eclipse.ui.file.refresh" date="Fri Jun 26 22:22:21 EDT 2026" starttimestamp="1782497416074" timestamp="29525034" />
+  <Command __id="226" _type="EclipseCommand" commandID="org.eclipse.ui.file.refresh" date="Fri Jun 26 22:22:23 EDT 2026" starttimestamp="1782497416074" timestamp="29527196" />
+  <Command __id="227" _type="ShellCommand" date="Fri Jun 26 22:22:23 EDT 2026" starttimestamp="1782497416074" timestamp="29527881" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="228" _type="ShellCommand" date="Fri Jun 26 22:22:27 EDT 2026" starttimestamp="1782497416074" timestamp="29531871" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="229" _type="ShellCommand" date="Fri Jun 26 22:22:35 EDT 2026" starttimestamp="1782497416074" timestamp="29539784" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="230" _type="ShellCommand" date="Fri Jun 26 22:22:42 EDT 2026" starttimestamp="1782497416074" timestamp="29546505" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="231" _type="MoveCaretCommand" caretOffset="231" date="Fri Jun 26 22:22:45 EDT 2026" docOffset="231" starttimestamp="1782497416074" timestamp="29549250" />
+  <Command __id="232" _type="ShellCommand" date="Fri Jun 26 22:22:45 EDT 2026" starttimestamp="1782497416074" timestamp="29549567" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="233" _type="ShellCommand" date="Fri Jun 26 22:23:02 EDT 2026" starttimestamp="1782497416074" timestamp="29566907" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="235" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:23:03 EDT 2026" starttimestamp="1782497416074" timestamp="29567305" />
+  <Command __id="236" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:23:03 EDT 2026" starttimestamp="1782497416074" timestamp="29567323" />
+  <Command __id="237" _type="EclipseCommand" commandID="org.eclipse.ui.file.refresh" date="Fri Jun 26 22:23:04 EDT 2026" starttimestamp="1782497416074" timestamp="29568582" />
+  <Command __id="238" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:23:05 EDT 2026" starttimestamp="1782497416074" timestamp="29569425" />
+  <Command __id="239" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:23:05 EDT 2026" starttimestamp="1782497416074" timestamp="29569425" />
+  <Command __id="240" _type="ShellCommand" date="Fri Jun 26 22:23:16 EDT 2026" starttimestamp="1782497416074" timestamp="29580161" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="241" _type="ShellCommand" date="Fri Jun 26 22:23:21 EDT 2026" starttimestamp="1782497416074" timestamp="29585622" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="242" _type="MoveCaretCommand" caretOffset="231" date="Fri Jun 26 22:23:41 EDT 2026" docOffset="231" starttimestamp="1782497416074" timestamp="29605286" />
+  <Command __id="243" _type="ShellCommand" date="Fri Jun 26 22:23:45 EDT 2026" starttimestamp="1782497416074" timestamp="29609486" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="244" _type="ShellCommand" date="Fri Jun 26 22:23:58 EDT 2026" starttimestamp="1782497416074" timestamp="29622918" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="245" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:23:59 EDT 2026" starttimestamp="1782497416074" timestamp="29623002" />
+  <Command __id="246" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:23:59 EDT 2026" starttimestamp="1782497416074" timestamp="29623021" />
+  <Command __id="248" _type="MoveCaretCommand" caretOffset="0" date="Fri Jun 26 22:23:59 EDT 2026" docOffset="0" starttimestamp="1782497416074" timestamp="29623121" />
+  <Command __id="249" _type="MoveCaretCommand" caretOffset="71" date="Fri Jun 26 22:24:01 EDT 2026" docOffset="71" starttimestamp="1782497416074" timestamp="29625900" />
+  <Command __id="250" _type="MoveCaretCommand" caretOffset="76" date="Fri Jun 26 22:24:05 EDT 2026" docOffset="76" starttimestamp="1782497416074" timestamp="29629820" />
+  <Command __id="251" _type="ShellCommand" date="Fri Jun 26 22:24:06 EDT 2026" starttimestamp="1782497416074" timestamp="29630886" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="252" _type="ShellCommand" date="Fri Jun 26 22:24:07 EDT 2026" starttimestamp="1782497416074" timestamp="29631802" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="253" _type="ShellCommand" date="Fri Jun 26 22:24:07 EDT 2026" starttimestamp="1782497416074" timestamp="29631924" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="254" _type="ShellCommand" date="Fri Jun 26 22:29:10 EDT 2026" starttimestamp="1782497416074" timestamp="29934686" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="255" _type="ShellCommand" date="Fri Jun 26 22:29:13 EDT 2026" starttimestamp="1782497416074" timestamp="29937820" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="256" _type="ShellCommand" date="Fri Jun 26 22:29:20 EDT 2026" starttimestamp="1782497416074" timestamp="29944700" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="257" _type="ShellCommand" date="Fri Jun 26 22:29:27 EDT 2026" starttimestamp="1782497416074" timestamp="29951064" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="258" _type="ShellCommand" date="Fri Jun 26 22:29:27 EDT 2026" starttimestamp="1782497416074" timestamp="29951721" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="264" _type="ShellCommand" date="Fri Jun 26 22:29:50 EDT 2026" starttimestamp="1782497416074" timestamp="29974792" type="ECLIPSE_GAINED_FOCUS" />
+  <DocumentChange __id="165" _type="Insert" date="Fri Jun 26 22:15:13 EDT 2026" docASTNodeCount="17" docActiveCodeLength="108" docExpressionCount="5" docLength="108" length="16" offset="87" repeat="3" starttimestamp="1782497416074" timestamp="29097544" timestamp2="29099162">
+    <text><![CDATA[ {
+    	
+    }]]></text>
+  </DocumentChange>
+  <DocumentChange __id="178" _type="Replace" date="Fri Jun 26 22:16:54 EDT 2026" docASTNodeCount="23" docActiveCodeLength="169" docExpressionCount="6" docLength="169" endLine="7" insertionLength="169" int_docASTNodeCount="1" int_docActiveCodeLength="0" int_docExpressionCount="0" int_docLength="0" length="108" offset="0" startLine="0" starttimestamp="1782497416074" timestamp="29197959">
+    <deletedText><![CDATA[package main;
+
+public class Assignment1 {
+    public static void main(String[] args) {
+    	
+    }
+}
+]]></deletedText>
+    <insertedText><![CDATA[package main;
+
+public class Assignment1 {
+
+    public static void animateLine() {
+        
+    }
+
+    public static void main(String[] args) {
+    	
+    }
+}
+]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="187" _type="Replace" date="Fri Jun 26 22:17:21 EDT 2026" docASTNodeCount="29" docActiveCodeLength="231" docExpressionCount="7" docLength="231" endLine="12" insertionLength="231" int_docASTNodeCount="1" int_docActiveCodeLength="0" int_docExpressionCount="0" int_docLength="0" length="169" offset="0" startLine="0" starttimestamp="1782497416074" timestamp="29224995">
+    <deletedText><![CDATA[package main;
+
+public class Assignment1 {
+
+    public static void animateLine() {
+        
+    }
+
+    public static void main(String[] args) {
+    	
+    }
+}
+]]></deletedText>
+    <insertedText><![CDATA[package main;
+
+public class Assignment1 {
+
+    public static void animateLine() {
+
+    }
+
+    public static void demonstrateBridgeScene() {
+        
+    }
+
+    public static void main(String[] args) {
+    	
+    }
+}
+]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="234" _type="Replace" date="Fri Jun 26 22:23:03 EDT 2026" docASTNodeCount="29" docActiveCodeLength="231" docExpressionCount="7" docLength="231" endLine="16" insertionLength="231" int_docASTNodeCount="1" int_docActiveCodeLength="0" int_docExpressionCount="0" int_docLength="0" length="231" offset="0" startLine="0" starttimestamp="1782497416074" timestamp="29567191">
+    <deletedText><![CDATA[package main;
+
+public class Assignment1 {
+
+    public static void animateLine() {
+
+    }
+
+    public static void demonstrateBridgeScene() {
+        
+    }
+
+    public static void main(String[] args) {
+    	
+    }
+}
+]]></deletedText>
+    <insertedText><![CDATA[package main;
+
+public class Assignment1 {
+
+    public static void animateLine() {
+
+    }
+
+    public static void demonstrateBridgeScene() {
+        
+    }
+
+    public static void main(String[] args) {
+    	
+    }
+}
+]]></insertedText>
+  </DocumentChange>
+  <Command __id="247" _type="DiffBasedFileOpenCommand" date="Fri Jun 26 22:23:59 EDT 2026" docASTNodeCount="10" docActiveCodeLength="76" docExpressionCount="6" docLength="76" projectName="Assignment1" starttimestamp="1782497416074" timestamp="29623048">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\compositeShapes\classes\ABridgeScene.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package grail.compositeShapes.classes;
+
+public class ABridgeScene {
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="266" _type="ShellCommand" date="Fri Jun 26 22:29:55 EDT 2026" starttimestamp="1782497416074" timestamp="29979432" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="267" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:29:55 EDT 2026" starttimestamp="1782497416074" timestamp="29979547" />
+  <Command __id="268" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:29:55 EDT 2026" starttimestamp="1782497416074" timestamp="29979550" />
+  <Command __id="270" _type="MoveCaretCommand" caretOffset="231" date="Fri Jun 26 22:29:57 EDT 2026" docOffset="231" starttimestamp="1782497416074" timestamp="29981174" />
+  <Command __id="271" _type="ShellCommand" date="Fri Jun 26 22:29:57 EDT 2026" starttimestamp="1782497416074" timestamp="29981450" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="272" _type="ShellCommand" date="Fri Jun 26 22:30:09 EDT 2026" starttimestamp="1782497416074" timestamp="29993504" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="273" _type="EclipseCommand" commandID="org.eclipse.ui.file.refresh" date="Fri Jun 26 22:30:12 EDT 2026" starttimestamp="1782497416074" timestamp="29996213" />
+  <Command __id="274" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:30:12 EDT 2026" starttimestamp="1782497416074" timestamp="29996322" />
+  <Command __id="275" _type="EclipseCommand" commandID="" date="Fri Jun 26 22:30:12 EDT 2026" starttimestamp="1782497416074" timestamp="29996324" />
+  <Command __id="276" _type="ShellCommand" date="Fri Jun 26 22:30:13 EDT 2026" starttimestamp="1782497416074" timestamp="29997197" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="277" _type="BalloonCommand" date="Fri Jun 26 23:18:36 EDT 2026" message="*******************************************
+Worked 3 minutes(fixed)/11 minutes(context based) from
+Fri Jun 26 22:18:36 EDT 2026 to Fri Jun 26 22:30:13 EDT 2026
+Edited 0 Projects: 
+Edited 0 Files: 
+Number of insert: 0
+Number of delete: 0
+" starttimestamp="1782497416074" timestamp="32900815">
+    <fineGrainedWorkTime><![CDATA[11]]></fineGrainedWorkTime>
+    <insert><![CDATA[0]]></insert>
+    <startTime><![CDATA[1782526716887]]></startTime>
+    <endTime><![CDATA[1782527413271]]></endTime>
+    <workTime><![CDATA[3]]></workTime>
+    <delete><![CDATA[0]]></delete>
+  </Command>
+  <Command __id="320" _type="DiffBasedFileOpenCommand" date="Sat Jun 27 01:12:04 EDT 2026" docASTNodeCount="223" docActiveCodeLength="1229" docExpressionCount="167" docLength="1303" projectName="JavaTeaching" starttimestamp="1782497416074" timestamp="39708128">
+    <filePath><![CDATA[C:\Users\imarg\git\JavaTeaching\src\lectures\graphics\extra\ACartesianPointTester.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package lectures.graphics.extra;import lectures.composite.objects_shapes.ACartesianPoint;import lectures.composite.objects_shapes.Point;public class ACartesianPointTester {	public void test() {		test(10, 0, 10.0, 0); // 0 degree angle		test(0, 10, 10.0, Math.PI / 2); // 90 degree angle		test(0, -10, 10.0, -Math.PI / 2); // -90 degree angle		test(-10, 0, 10.0, Math.PI); // -180 degree angle	}	public void test(int theX, int theY, double theCorrectRadius,			double theCorrectAngle) {		Point point = new ACartesianPoint(theX, theY);		double computedRadius = point.getRadius();		double computedAngle = point.getAngle();		System.out.println("------------");		System.out.println("X:" + theX);		System.out.println("Y:" + theY);		System.out.println("Expected Radius:" + theCorrectRadius);		System.out.println("Computed Radius:" + computedRadius);		System.out.println("Radius Error:"				+ (theCorrectRadius - computedRadius));		System.out.println("Expected Angle:" + theCorrectAngle);		System.out.println("Computed Angle:" + computedAngle);		System.out.println("Angle Error:" + (theCorrectAngle - computedAngle));		System.out.println("------------");	}		public static void main (String[] args) {		(new ACartesianPointTester()).test();	}}")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <Command __id="330" _type="MoveCaretCommand" caretOffset="876" date="Sat Jun 27 01:30:16 EDT 2026" docOffset="925" starttimestamp="1782497416074" timestamp="40800793" />
+  <Command __id="331" _type="DiffBasedFileOpenCommand" date="Sat Jun 27 01:30:20 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment1" starttimestamp="1782497416074" timestamp="40804558">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;import grader.basics.execution.BasicProjectExecution;import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;import trace.grader.basics.GraderBasicsTraceUtility;public class RunSS26A1Tests {	public static void main(String[] args) {		// if you set this to false, grader steps will not be traced		GraderBasicsTraceUtility.setTracerShowInfo(true);		// if you set this to false, all grader steps will be traced,		// not just the ones that failed		GraderBasicsTraceUtility.setBufferTracedMessages(true);		// Change this number if a test trace gets longer than 600 and is clipped		GraderBasicsTraceUtility.setMaxPrintedTraces(600);		// Change this number if all traces together are longer than 2000		GraderBasicsTraceUtility.setMaxTraces(2000);		// Change this number if your process times out prematurely		BasicProjectExecution.setProcessTimeOut(5);		// You need to always call such a method		SS24Assignment1Suite.main(args);	}}")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <Command __id="332" _type="MoveCaretCommand" caretOffset="991" date="Sat Jun 27 01:30:20 EDT 2026" docOffset="991" starttimestamp="1782497416074" timestamp="40804702" />
+  <Command __id="333" _type="DiffBasedFileOpenCommand" date="Sat Jun 27 01:30:21 EDT 2026" docASTNodeCount="74" docActiveCodeLength="503" docExpressionCount="41" docLength="503" projectName="Assignment1" starttimestamp="1782497416074" timestamp="40805380">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\Assignment1.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;"), Diff(INSERT,"import bus.uigen.OEFrame;import bus.uigen.ObjectEditor;import grail.simpleShapes.classes.RotatingLine;"), Diff(EQUAL,"public class Assignment1 {    public static void animateLine() {    }    public static void demonstrateBridgeScene() {            }    public static void main(String[] args) {    "), Diff(DELETE,"	"), Diff(INSERT,"    RotatingLine myLine = new RotatingLine(50, 50, 100, 0);                OEFrame editor = ObjectEditor.edit(myLine);        editor.hideMainConnections();"), Diff(EQUAL,"    }"), Diff(DELETE,""), Diff(EQUAL,"}"), Diff(INSERT,"")]]></diff>
+    <snapshot><![CDATA[package main;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import grail.simpleShapes.classes.RotatingLine;
+
+public class Assignment1 {
+
+    public static void animateLine() {
+
+    }
+
+    public static void demonstrateBridgeScene() {
+        
+    }
+
+    public static void main(String[] args) {
+        RotatingLine myLine = new RotatingLine(50, 50, 100, 0);
+        
+        OEFrame editor = ObjectEditor.edit(myLine);
+        editor.hideMainConnections();
+    }
+}
+
+]]></snapshot>
+  </Command>
+  <Command __id="336" _type="EclipseCommand" commandID="" date="Sat Jun 27 01:30:21 EDT 2026" starttimestamp="1782497416074" timestamp="40805759" />
+  <Command __id="337" _type="EclipseCommand" commandID="" date="Sat Jun 27 01:30:21 EDT 2026" starttimestamp="1782497416074" timestamp="40805763" />
+  <Command __id="338" _type="MoveCaretCommand" caretOffset="710" date="Sat Jun 27 01:30:21 EDT 2026" docOffset="710" starttimestamp="1782497416074" timestamp="40805925" />
+  <Command __id="339" _type="MoveCaretCommand" caretOffset="792" date="Sat Jun 27 01:30:22 EDT 2026" docOffset="792" starttimestamp="1782497416074" timestamp="40806796" />
+  <Command __id="340" _type="MoveCaretCommand" caretOffset="477" date="Sat Jun 27 01:30:26 EDT 2026" docOffset="477" starttimestamp="1782497416074" timestamp="40810837" />
+  <Command __id="341" _type="ShellCommand" date="Sat Jun 27 01:30:27 EDT 2026" starttimestamp="1782497416074" timestamp="40811274" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="335" _type="DiffBasedFileOpenCommand" date="Sat Jun 27 01:30:21 EDT 2026" docASTNodeCount="71" docActiveCodeLength="601" docExpressionCount="50" docLength="991" projectName="Assignment1" starttimestamp="1782497416074" timestamp="40805709">
+    <filePath><![CDATA[C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java]]></filePath>
+    <diff><![CDATA[Diff(EQUAL,"package main;import grader.basics.execution.BasicProjectExecution;import gradingTools.comp301ss24.assignment1.SS24Assignment1Suite;import trace.grader.basics.GraderBasicsTraceUtility;public class RunSS26A1Tests {	public static void main(String[] args) {		// if you set this to false, grader steps will not be traced		GraderBasicsTraceUtility.setTracerShowInfo(true);		// if you set this to false, all grader steps will be traced,		// not just the ones that failed		GraderBasicsTraceUtility.setBufferTracedMessages(true);		// Change this number if a test trace gets longer than 600 and is clipped		GraderBasicsTraceUtility.setMaxPrintedTraces(600);		// Change this number if all traces together are longer than 2000		GraderBasicsTraceUtility.setMaxTraces(2000);		// Change this number if your process times out prematurely		BasicProjectExecution.setProcessTimeOut(5);		// You need to always call such a method		SS24Assignment1Suite.main(args);	}}")]]></diff>
+    <snapshot><![CDATA[null]]></snapshot>
+  </Command>
+  <Command __id="343" _type="EclipseCommand" commandID="" date="Sat Jun 27 01:33:31 EDT 2026" starttimestamp="1782497416074" timestamp="40995638" />
+  <Command __id="344" _type="EclipseCommand" commandID="" date="Sat Jun 27 01:33:31 EDT 2026" starttimestamp="1782497416074" timestamp="40995710" />
+  <Command __id="346" _type="MoveCaretCommand" caretOffset="0" date="Sat Jun 27 01:33:37 EDT 2026" docOffset="0" starttimestamp="1782497416074" timestamp="41001188" />
+  <Command __id="347" _type="MoveCaretCommand" caretOffset="251" date="Sat Jun 27 01:33:38 EDT 2026" docOffset="399" starttimestamp="1782497416074" timestamp="41002043" />
+  <Command __id="348" _type="MoveCaretCommand" caretOffset="251" date="Sat Jun 27 01:33:43 EDT 2026" docOffset="399" starttimestamp="1782497416074" timestamp="41007862" />
+  <Command __id="349" _type="EclipseCommand" commandID="org.eclipse.jdt.debug.ui.localJavaShortcut.run" date="Sat Jun 27 01:33:47 EDT 2026" starttimestamp="1782497416074" timestamp="41011166" />
+  <Command __id="350" _type="ProgramExecutionEvent" className="/Assignment1/src/main/Main.java" date="Sat Jun 27 01:33:47 EDT 2026" kind="Run" projectName="Assignment1" starttimestamp="1782497416074" timestamp="41011576" type="Run" />
+  <Command __id="351" _type="RunCommand" className="/Assignment1/src/main/Main.java" date="Sat Jun 27 01:33:47 EDT 2026" kind="Run" projectName="Assignment1" starttimestamp="1782497416074" timestamp="41011576" type="Run" />
+  <Command __id="352" _type="ShellCommand" date="Sat Jun 27 01:33:48 EDT 2026" starttimestamp="1782497416074" timestamp="41012786" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="353" _type="ShellCommand" date="Sat Jun 27 01:34:10 EDT 2026" starttimestamp="1782497416074" timestamp="41034113" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="354" _type="ShellCommand" date="Sat Jun 27 01:34:11 EDT 2026" starttimestamp="1782497416074" timestamp="41035189" type="ECLIPSE_LOST_FOCUS" />
+
+</Events>

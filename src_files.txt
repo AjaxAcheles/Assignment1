@@ -1,0 +1,16 @@
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\atomicShapes\classes\CartesianPoint.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\atomicShapes\classes\PolarPoint.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\atomicShapes\classes\Text.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\atomicShapes\interfaces\PointInterface.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\atomicShapes\interfaces\TextInterface.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\compositeShapes\classes\Angle.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\compositeShapes\classes\Avatar.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\compositeShapes\interfaces\AngleInterface.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\compositeShapes\interfaces\AvatarInterface.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\simpleShapes\classes\Image.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\simpleShapes\classes\RotatingLine.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\simpleShapes\interfaces\ImageInterface.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\grail\simpleShapes\interfaces\LineInterface.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\main\Assignment1.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\main\Main.java
+C:\Users\imarg\eclipse-workspace\Assignment1\src\main\RunSS26A1Tests.java
