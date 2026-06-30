@@ -26,12 +26,7 @@ public class RotatingLine implements LineInterface {
         this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_ANGLE_RADIANS);
     }
 
-    /**
-     * @param startX        x-coordinate of start point
-     * @param startY        y-coordinate of start point
-     * @param radius        length of the line
-     * @param angleRadians  angle in radians
-     */
+    
     public RotatingLine(int startX, int startY, double radius, double angleRadians) {
         this.startPoint = new CartesianPoint(startX, startY);
         this.angleRadians = angleRadians;
@@ -60,12 +55,12 @@ public class RotatingLine implements LineInterface {
 
     @Override
     public int getWidth() {
-        return (int) Math.round(this.endPoint.getRadius() * Math.cos(this.angleRadians));
+        return this.endPoint.getX();
     }
 
     @Override
     public int getHeight() {
-        return (int) Math.round(this.endPoint.getRadius() * Math.sin(this.angleRadians));
+        return this.endPoint.getY();
     }
 
     @Override
@@ -108,6 +103,7 @@ public class RotatingLine implements LineInterface {
         int newY = this.startPoint.getY() + moveY;
         this.startPoint.setX(newX);
         this.startPoint.setY(newY);
+        // We're not moving the endPoint because it's coords are relative to the startPoint, so it automatically moves.
     }
     
     @Override

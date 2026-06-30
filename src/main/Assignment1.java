@@ -47,22 +47,21 @@ public class Assignment1 {
     private static final double FULL_CIRCLE_RADIANS = 2 * Math.PI;
     private static final double RIGHT_ANGLE_RADIANS = Math.PI / 2;
     private static final double HALF_CYCLE_RADIANS = Math.PI;
-    // rotate(int)/Avatar.rotate(double) are graded as degree-valued, so they keep a degree constant.
     private static final double RIGHT_ANGLE_DEGREES = 90.0;
 
     private static final int LINE_MODE_X = 100;
     private static final int LINE_MODE_Y = 100;
-    private static final int LINE_MODE_RADIUS = 20;
+    private static final int LINE_MODE_RADIUS = 100;
     private static final int LINE_MODE_ANGLE = 0;
     private static final int LINE_ROTATE_90 = 90;
-    private static final int LINE_ROTATE_MINUS_90 = -90;
+    private static final int LINE_ROTATE_MINUS_45 = -45;
     
     private static final int AVATAR_MOVE_X = 300;
     private static final int AVATAR_MOVE_Y = 300;
     
     public static void main(String[] args) {
-        // animateLine("Avatar");
-        demonstrateBridgeScene();
+        animateLine("Line");
+        // demonstrateBridgeScene();
     }
 
     public static void demonstrateBridgeScene() {
@@ -77,13 +76,13 @@ public class Assignment1 {
             LineInterface testLine = new RotatingLine(LINE_MODE_X, LINE_MODE_Y, LINE_MODE_RADIUS, LINE_MODE_ANGLE); 
             OEFrame editor = ObjectEditor.edit(testLine);
             editor.refresh();
-            ThreadSupport.sleep(PAUSE_TIME_LONG);
+            ThreadSupport.sleep(PAUSE_TIME_SHORT);
 
             testLine.rotate(LINE_ROTATE_90);
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_SHORT);
 
-            testLine.rotate(LINE_ROTATE_MINUS_90);
+            testLine.rotate(LINE_ROTATE_MINUS_45);
             editor.refresh();
         }
 
@@ -153,8 +152,6 @@ public class Assignment1 {
             // One full leg-swing revolution spread over the walk cycle.
             double omegaRadians = FULL_CIRCLE_RADIANS / WALKING_CYCLE_FRAMES;
             // Preserve the original (sub-degree) swing amplitude, now expressed in radians.
-            // The original derived the amplitude in degrees from a degree-based omega, so the
-            // degree-to-radian conversion applies twice: once for omega, once for the amplitude.
             double swingAmplitudeRadians =
                     ANIMATION_STEP / (100.0 * omegaRadians) * RADIANS_PER_DEGREE * RADIANS_PER_DEGREE;
 
