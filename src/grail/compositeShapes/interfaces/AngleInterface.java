@@ -16,5 +16,5 @@ public interface AngleInterface {
     LineInterface getLeftLine();
     LineInterface getRightLine();
     void move(int x, int y);
-    void rotate(int angle);
+    void rotate(double angleRadians);
 }

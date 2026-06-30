@@ -1830,3 +1830,1578 @@ public interface AvatarInterface {
 //END OF FILE
 
 //SESSION END
+
+//SESSION START
+14,Tue Jun 30 10:32:19 EDT 2026,11037
+//START OF FILE: grail/compositeShapes/classes/Avatar.java
+package grail.compositeShapes.classes;
+
+import grail.atomicShapes.classes.Text;
+import grail.atomicShapes.interfaces.TextInterface;
+import grail.compositeShapes.interfaces.AngleInterface;
+import grail.compositeShapes.interfaces.AvatarInterface;
+import grail.simpleShapes.classes.Image;
+import grail.simpleShapes.classes.RotatingLine;
+import grail.simpleShapes.interfaces.ImageInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@Tags(Comp301Tags.AVATAR)
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"X", "Y", "SpeechBubble", "StringShape", "Head", "Arms", "Body", "Legs"})
+@EditablePropertyNames({"X", "Y"})
+public class Avatar implements AvatarInterface {
+    
+    private static final int HEAD_WIDTH = 30;
+    private static final int HEAD_HEIGHT = 30;
+    private static final int BODY_LENGTH = 68;
+    private static final int LEG_RADIUS = 75;
+    private static final int ARM_RADIUS = 60;
+    private static final double LEG_SPLIT_ANGLE_DEGREES = 60.0;
+    private static final double ARM_SPLIT_ANGLE_DEGREES = 90.0;
+    private static final double DOWN_DIRECTION_DEGREES = 90.0;
+    
+    private int x;
+    private int y;
+    private TextInterface speechBubble;
+    private ImageInterface head;
+    private AngleInterface arms;
+    private LineInterface body;
+    private AngleInterface legs;
+
+    public Avatar(int x, int y, String speech, String headImage) {
+        this.x = x;
+        this.y = y;
+
+        // Legs spawn at (x, y) pointing downward
+        this.legs = new Angle(x, y, LEG_RADIUS, LEG_SPLIT_ANGLE_DEGREES, DOWN_DIRECTION_DEGREES);
+
+        // Body spawns at (x, y) and points upward (opposite of down direction)
+        double bodyAngle = -DOWN_DIRECTION_DEGREES;
+        this.body = new RotatingLine(x, y, BODY_LENGTH, bodyAngle);
+
+        // Neck position is body's endpoint (absolute = start + offset)
+        int neckX = this.body.getX() + this.body.getEnd().getX();
+        int neckY = this.body.getY() + this.body.getEnd().getY();
+
+        // Arms attach at the neck, dangling downward
+        this.arms = new Angle(neckX, neckY, ARM_RADIUS, ARM_SPLIT_ANGLE_DEGREES, DOWN_DIRECTION_DEGREES);
+
+        // Head sits directly above the body endpoint
+        this.head = new Image(neckX - HEAD_WIDTH / 2, neckY - HEAD_HEIGHT,
+                              HEAD_WIDTH, HEAD_HEIGHT, "", headImage);
+
+        // Speech bubble positioned above the head
+        this.speechBubble = new Text(speech, this.x + HEAD_WIDTH, neckY - HEAD_HEIGHT);
+    }
+
+    @Override
+    public int getX() {
+        return this.x;
+    }
+
+    @Override
+    public void setX(int newX) {
+        this.x = newX;
+    }
+
+    @Override
+    public int getY() {
+        return this.y;
+    }
+
+    @Override
+    public void setY(int newY) {
+        this.y = newY;
+    }
+    
+    @Override
+    public TextInterface getSpeechBubble() {
+        return this.speechBubble;
+    }
+
+    @Override
+    public ImageInterface getHead() {
+        return this.head;
+    }
+
+    @Override
+    public AngleInterface getArms() {
+        return this.arms;
+    }
+
+    @Override
+    public LineInterface getBody() {
+        return this.body;
+    }
+
+    @Override
+    public AngleInterface getLegs() {
+        return this.legs;
+    }
+
+    @Override
+    public TextInterface getStringShape() {
+        return this.speechBubble;
+    }
+
+    @Override
+    public void scale(double scaleMultiplier) {
+        // Scale the body which represents the torso length
+        this.body.scale(scaleMultiplier);
+
+        // Scale legs and arms by updating their line radii
+        this.legs.getLeftLine().setRadius(this.legs.getLeftLine().getRadius() * scaleMultiplier);
+        this.legs.getRightLine().setRadius(this.legs.getRightLine().getRadius() * scaleMultiplier);
+        this.arms.getLeftLine().setRadius(this.arms.getLeftLine().getRadius() * scaleMultiplier);
+        this.arms.getRightLine().setRadius(this.arms.getRightLine().getRadius() * scaleMultiplier);
+
+        // Scale head dimensions
+        this.head.setWidth((int) Math.round(this.head.getWidth() * scaleMultiplier));
+        this.head.setHeight((int) Math.round(this.head.getHeight() * scaleMultiplier));
+    }
+
+    @Override
+    public void move(int moveX, int moveY) {
+        this.x += moveX;
+        this.y += moveY;
+
+        this.legs.move(moveX, moveY);
+        this.body.move(moveX, moveY);
+        this.arms.move(moveX, moveY);
+        this.head.setX(this.head.getX() + moveX);
+        this.head.setY(this.head.getY() + moveY);
+        this.speechBubble.setX(this.speechBubble.getX() + moveX);
+        this.speechBubble.setY(this.speechBubble.getY() + moveY);
+    }
+
+    @Override
+    public void rotate(double degrees) {
+        int rotationUnits = (int) Math.round(degrees);
+
+        this.legs.rotate(rotationUnits);
+        this.body.rotate(rotationUnits);
+
+        // Neck remains the body endpoint after body rotation
+        int neckX = this.body.getX() + this.body.getEnd().getX();
+        int neckY = this.body.getY() + this.body.getEnd().getY();
+
+        // Move arm pivot to neck before rotating arms
+        int armMoveX = neckX - this.arms.getLeftLine().getX();
+        int armMoveY = neckY - this.arms.getLeftLine().getY();
+        this.arms.move(armMoveX, armMoveY);
+        this.arms.rotate(rotationUnits);
+
+        // Position head along the current body direction so it turns with the avatar
+        double bodyAngle = this.body.getAngle();
+        int headCenterX = neckX + (int) Math.round((this.head.getHeight() / 2.0) * Math.cos(Math.toRadians(bodyAngle)));
+        int headCenterY = neckY + (int) Math.round((this.head.getHeight() / 2.0) * Math.sin(Math.toRadians(bodyAngle)));
+        this.head.setX(headCenterX - this.head.getWidth() / 2);
+        this.head.setY(headCenterY - this.head.getHeight() / 2);
+
+        // Keep speech bubble tied to the head region
+        this.speechBubble.setX(this.head.getX() + this.head.getWidth());
+        this.speechBubble.setY(this.head.getY());
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=796	+StringShape%22, %22	=116	+    %0A    private static final int HEAD_WIDTH = 30;%0A    private static final int HEAD_HEIGHT = 30;%0A    private static final int BODY_LENGTH = 68;%0A    private static final int LEG_RADIUS = 75;%0A    private static final int ARM_RADIUS = 60;%0A    private static final double LEG_SPLIT_ANGLE_DEGREES = 60.0;%0A    private static final double ARM_SPLIT_ANGLE_DEGREES = 90.0;%0A    private static final double DOWN_DIRECTION_DEGREES = 90.0;%0A    %0A	=38	-34	=279	-361	=22	-1	=65	-3	+LEG_	=1	-5	+ADIUS	=2	-3	+LEG_	=1	-4	+PLIT_	=1	-4	+NGLE_DEGREES	=3	-3	+OWN_	=1	-8	+IRECTION_DEGREES	=113	-3	+OWN_	=1	-8	+IRECTION_DEGREES	=45	-4	+BODY_	=1	-5	+ENGTH	=34	+ition	=279	-3	+ARM_	=1	-5	+ADIUS	=2	-3	+ARM_	=1	-4	+PLIT_	=1	-4	+NGLE_DEGREES	=3	-3	+OWN_	=1	-8	+IRECTION_DEGREES	=57	-10	=39	-4	+HEAD_	=1	-4	+IDTH	=14	-4	+HEAD_HEIG	=1	-5	+T	=32	-4	+HEAD_	=1	-4	+IDTH	=2	-4	=1	-5	+EAD_HEIGHT	=124	-4	+HEAD_	=1	-4	+IDTH	=10	-4	=1	-5	+EAD_HEIGHT	=734	+;%0A    %7D%0A%0A    @Override%0A    public TextInterface getStringShape() %7B%0A        return this.speechBubble;%0A    %7D%0A%0A    @Override%0A    public void scale(double scaleMultiplier) %7B%0A        // Scale the body which represents the torso length%0A        this.body.scale(scaleMultiplier);%0A%0A        // Scale legs and arms by updating their line radii%0A        this.legs.getLeftLine().setRadius(this.legs.getLeftLine().getRadius() * scaleMultiplier);%0A        this.legs.getRightLine().setRadius(this.legs.getRightLine().getRadius() * scaleMultiplier);%0A        this.arms.getLeftLine().setRadius(this.arms.getLeftLine().getRadius() * scaleMultiplier);%0A        this.arms.getRightLine().setRadius(this.arms.getRightLine().getRadius() * scaleMultiplier);%0A%0A        // Scale head dimensions%0A        this.head.setWidth((int) Math.round(this.head.getWidth() * scaleMultiplier));%0A        this.head.setHeight((int) Math.round(this.head.getHeight() * scaleMultiplier));%0A    %7D%0A%0A    @Override%0A    public void move(int moveX, int moveY) %7B%0A        this.x += moveX;%0A        this.y += moveY;%0A%0A        this.legs.move(moveX, moveY);%0A        this.body.move(moveX, moveY);%0A        this.arms.move(moveX, moveY);%0A        this.head.setX(this.head.getX() + moveX);%0A        this.head.setY(this.head.getY() + moveY);%0A        this.speechBubble.setX(this.speechBubble.getX() + moveX);%0A        this.speechBubble.setY(this.speechBubble.getY() + moveY);%0A    %7D%0A%0A    @Override%0A    public void rotate(double degrees) %7B%0A        int rotationUnits = (int) Math.round(degrees);%0A%0A        this.legs.rotate(rotationUnits);%0A        this.body.rotate(rotationUnits);%0A%0A        // Neck remains the body endpoint after body rotation%0A        int neckX = this.body.getX() + this.body.getEnd().getX();%0A        int neckY = this.body.getY() + this.body.getEnd().getY();%0A%0A        // Move arm pivot to neck before rotating arms%0A        int armMoveX = neckX - this.arms.getLeftLine().getX();%0A        int armMoveY = neckY - this.arms.getLeftLine().getY();%0A        this.arms.move(armMoveX, armMoveY);%0A        this.arms.rotate(rotationUnits);%0A%0A        // Position head along the current body direction so it turns with the avatar%0A        double bodyAngle = this.body.getAngle();%0A        int headCenterX = neckX + (int) Math.round((this.head.getHeight() / 2.0) * Math.cos(Math.toRadians(bodyAngle)));%0A        int headCenterY = neckY + (int) Math.round((this.head.getHeight() / 2.0) * Math.sin(Math.toRadians(bodyAngle)));%0A        this.head.setX(headCenterX - this.head.getWidth() / 2);%0A        this.head.setY(headCenterY - this.head.getHeight() / 2);%0A%0A        // Keep speech bubble tied to the head region%0A        this.speechBubble.setX(this.head.getX() + this.head.getWidth());%0A        this.speechBubble.setY(this.head.getY())	=9
+//END OF FILE
+//START OF FILE: grail/compositeShapes/interfaces/AngleInterface.java
+package grail.compositeShapes.interfaces;
+
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@Tags(Comp301Tags.ANGLE)
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"LeftLine", "RightLine"})
+@EditablePropertyNames({})
+public interface AngleInterface {
+    LineInterface getLeftLine();
+    LineInterface getRightLine();
+    void move(int x, int y);
+    void rotate(int angle);
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=147	+EditablePropertyNames;%0Aimport util.annotations.PropertyNames;%0Aimport util.annotations.StructurePattern;%0Aimport util.annotations.StructurePatternNames;%0Aimport util.annotations.	=30	+)%0A@StructurePattern(StructurePatternNames.BEAN_PATTERN)%0A@PropertyNames(%7B%22LeftLine%22, %22RightLine%22%7D)%0A@EditablePropertyNames(%7B%7D	=161	-1
+//END OF FILE
+//START OF FILE: grail/atomicShapes/classes/PolarPoint.java
+package grail.atomicShapes.classes;
+
+import grail.atomicShapes.interfaces.PointInterface;
+
+public class PolarPoint implements PointInterface {
+	private double radius;
+	private double angleDegrees;
+	
+	public PolarPoint(double theRadius, double theAngleDegrees) {
+		radius = theRadius;
+		angleDegrees = theAngleDegrees;
+	}
+	
+	public PolarPoint(int theX, int theY) {
+		radius = Math.sqrt(theX * theX + theY * theY);
+		angleDegrees = Math.toDegrees(Math.atan2(theY, theX));
+	}
+	
+	@Override
+	public int getX() {
+		return (int) Math.round(radius * Math.cos(Math.toRadians(angleDegrees)));
+	}
+	
+	@Override
+	public int getY() {
+		return (int) Math.round(radius * Math.sin(Math.toRadians(angleDegrees)));
+	}
+	
+	@Override
+	public double getAngle() {
+		return angleDegrees;
+	}
+	
+	@Override
+	public double getRadius() {
+		return radius;
+	}
+	
+	@Override
+	public void setX(int x) {
+		int currentY = getY();
+		radius = Math.sqrt(x * x + currentY * currentY);
+		angleDegrees = Math.toDegrees(Math.atan2(currentY, x));
+	}
+	
+	@Override
+	public void setY(int y) {
+		int currentX = getX();
+		radius = Math.sqrt(currentX * currentX + y * y);
+		angleDegrees = Math.toDegrees(Math.atan2(y, currentX));
+	}
+	
+	@Override
+	public void setRadius(double newRadius) {
+		this.radius = newRadius;
+	}
+	
+	@Override
+	public void setAngle(double newAngleDegrees) {
+		this.angleDegrees = newAngleDegrees;
+	}
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=165	-1	+;%0A%09private double	=6	+Degrees	=1	+%0A%09	=53	+Degrees	=33	+Degrees	=11	+Degrees	=6	+%0A%09	=65	+ 	=1	+ 	=11	+ 	=1	+ 	=14	+Degrees	=8	+toDegrees(Math.	=4	-1	+2	=1	-8	=4	-1	+, 	=4	+)	=7	+%0A%09	=30	-1	+%0A%09%09	=13	+Math.round	=7	+ 	=1	+ 	=9	+Math.toRadians(	=5	+Degrees)	=3	-1	+%0A%09	=1	+%0A%09	=32	-1	+%0A%09%09	=13	+Math.round	=7	+ 	=1	+ 	=9	+Math.toRadians(	=5	+Degrees)	=3	-1	+%0A%09	=1	+%0A%09	=39	-1	+%0A%09%09	=12	+Degrees	=1	-1	+%0A%09	=1	-1	+%0A%09	=40	-1	+%0A%09%09	=14	+%0A%09	=44	-2	+int	=1	-4	+cu	=1	-3	+re	=2	+Y	=1	+= getY();%0A%09%09rad	=1	+u	=2	+= Ma	=1	+h.sqrt(x * x + cur	=2	-1	+n	=1	-2	+Y	=1	-2	+*	=1	-3	+c	=1	+rren	=1	+Y);%0A%09%09	=1	-1	+ng	=2	-1	+Degrees =	=1	-3	+Math.t	=1	-1	+Degrees(Math.atan2(currentY, x));	=46	-2	+int currentX = getX();%0A%09%09radius =	=1	-3	+M	=1	+th.sq	=1	-3	+t(currentX * curre	=2	+X +	=1	-1	+y * y);%0A%09%09angleDegree	=2	+= Ma	=1	+h.toDeg	=2	+es(M	=2	+h.atan2(y, currentX));%0A%09%7D%0A%09%0A%09@Ov	=1	+rride%0A%09public voi	=2	+setR	=1	+diu	=1	+(double	=1	+newRad	=1	-2	=1	+s) %7B%0A%09%09	=1	+his.r	=1	+dius = newRadius;%0A%09%7D%0A%09%0A%09@Override%0A%09pu	=2	-2	+ic void	=1	+setA	=1	-2	+gle(d	=1	-1	+uble newAngleDegrees) %7B%0A%09%09this.angleDegrees = newAngleDegrees;	=5	-1
+//END OF FILE
+//START OF FILE: grail/simpleShapes/interfaces/LineInterface.java
+package grail.simpleShapes.interfaces;
+import grail.atomicShapes.interfaces.PointInterface;
+import tags301.Comp301Tags;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@Tags(Comp301Tags.ROTATING_LINE)
+@StructurePattern(StructurePatternNames.LINE_PATTERN)
+@PropertyNames({"X", "Y", "Width", "Height", "Radius", "Angle", "End"})
+@EditablePropertyNames({"X", "Y", "Radius", "Angle"})
+public interface LineInterface {
+    int getWidth();
+    int getHeight();
+    
+    int getX();
+    int getY();
+    void setX(int newX);
+    void setY(int newY);
+    
+    double getRadius();
+    double getAngle();
+    void setRadius(double radius);
+    void setAngle(double angle);
+
+    PointInterface getEnd();
+    
+    void rotate(int units);
+    void move(int moveX, int moveY);
+    void scale(double scaleMultiplier);
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=144	+EditablePropertyNames;%0Aimport util.annotations.PropertyNames;%0Aimport util.annotations.	=181	+)%0A@PropertyNames(%7B%22X%22, %22Y%22, %22Width%22, %22Height%22, %22Radius%22, %22Angle%22, %22End%22%7D)%0A@EditablePropertyNames(%7B%22X%22, %22Y%22, %22Radius%22, %22Angle%22%7D	=424
+//END OF FILE
+//START OF FILE: grail/compositeShapes/classes/BridgeScene.java
+package grail.compositeShapes.classes;
+import grail.compositeShapes.interfaces.AvatarInterface;
+import grail.compositeShapes.interfaces.BridgeSceneInterface;
+import tags301.Comp301Tags;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@Tags(Comp301Tags.BRIDGE_SCENE)
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"Arthur", "Lancelot", "Robin", "Galahad", "Guard"})
+public class BridgeScene implements BridgeSceneInterface {
+    private static final int ARTHUR_X = 100;
+    private static final int ARTHUR_Y = 200;
+    private static final int LANCELOT_X = 300;
+    private static final int LANCELOT_Y = 200;
+    private static final int ROBIN_X = 500;
+    private static final int ROBIN_Y = 200;
+    private static final int GALAHAD_X = 700;
+    private static final int GALAHAD_Y = 200;
+    private static final int GUARD_X = 900;
+    private static final int GUARD_Y = 200;
+    private static final String ARTHUR_SPEECH = "I am Arthur";
+    private static final String ARTHUR_IMAGE = "images/arthur.jpg";
+    private static final String LANCELOT_SPEECH = "I am Lancelot";
+    private static final String LANCELOT_IMAGE = "images/lancelot.jpg";
+    private static final String ROBIN_SPEECH = "I am Robin";
+    private static final String ROBIN_IMAGE = "images/robin.jpg";
+    private static final String GALAHAD_SPEECH = "I am Galahad";
+    private static final String GALAHAD_IMAGE = "images/galahad.jpg";
+    private static final String GUARD_SPEECH = "I am random guard";
+    private static final String GUARD_IMAGE = "images/guard.jpg";
+	
+    private AvatarInterface arthur;
+    private AvatarInterface lancelot;
+    private AvatarInterface robin;
+    private AvatarInterface galahad;
+    private AvatarInterface guard;
+
+    public BridgeScene() {
+        this.arthur = new Avatar(ARTHUR_X, ARTHUR_Y, ARTHUR_SPEECH, ARTHUR_IMAGE);
+        this.lancelot = new Avatar(LANCELOT_X, LANCELOT_Y, LANCELOT_SPEECH, LANCELOT_IMAGE);
+        this.robin = new Avatar(ROBIN_X, ROBIN_Y, ROBIN_SPEECH, ROBIN_IMAGE);
+        this.galahad = new Avatar(GALAHAD_X, GALAHAD_Y, GALAHAD_SPEECH, GALAHAD_IMAGE);
+        this.guard = new Avatar(GUARD_X, GUARD_Y, GUARD_SPEECH, GUARD_IMAGE);
+    }
+
+    @Override
+    public AvatarInterface getArthur() {
+        return this.arthur;
+    }
+
+    @Override
+    public AvatarInterface getLancelot() {
+        return this.lancelot;
+    }
+
+    @Override
+    public AvatarInterface getRobin() {
+        return this.robin;
+    }
+
+    @Override
+    public AvatarInterface getGalahad() {
+        return this.galahad;
+    }
+    
+    @Override
+    public AvatarInterface getGuard() {
+        return this.guard;
+    }
+}
+//END OF FILE
+//START OF FILE: grail/atomicShapes/classes/CartesianPoint.java
+package grail.atomicShapes.classes;
+
+import grail.atomicShapes.interfaces.PointInterface;
+
+public class CartesianPoint implements PointInterface {
+    private int x;
+    private int y;
+
+    public CartesianPoint(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public int getX() { 
+        return x; 
+    }
+    @Override
+    public int getY() { 
+        return y; 
+    }
+    
+    @Override
+    public double getAngle() { 
+        return Math.toDegrees(Math.atan2(y, x)); 
+    }
+    @Override
+    public double getRadius() { 
+        return Math.sqrt(x * x + y * y); 
+    }
+    
+    @Override
+    public void setX(int x) {
+        this.x = x;
+    }
+    
+    @Override
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    @Override
+    public void setRadius(double radius) {
+        double angleRadians = Math.atan2(y, x);
+        this.x = (int) Math.round(radius * Math.cos(angleRadians));
+        this.y = (int) Math.round(radius * Math.sin(angleRadians));
+    }
+
+    @Override
+    public void setAngle(double angle) {
+        double radius = getRadius();
+        double angleRadians = Math.toRadians(angle);
+        this.x = (int) Math.round(radius * Math.cos(angleRadians));
+        this.y = (int) Math.round(radius * Math.sin(angleRadians));
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=474	+toDegrees(Math.	=10	+)	=255	-1	=1	+    @Override%0A    public void setRadius(double radius) %7B%0A        double angleRadians = Math.atan2(y, x);%0A        this.x = (int) Math.round(radius * Math.cos(angleRadians));%0A        this.y = (int) Math.round(radius * Math.sin(angleRadians));%0A    %7D%0A%0A    @Override%0A    public void setAngle(double angle) %7B%0A        double radius = getRadius();%0A        double angleRadians = Math.toRadians(angle);%0A        this.x = (int) Math.round(radius * Math.cos(angleRadians));%0A        this.y = (int) Math.round(radius * Math.sin(angleRadians));%0A    %7D%0A%7D
+//END OF FILE
+//START OF FILE: grail/atomicShapes/interfaces/PointInterface.java
+package grail.atomicShapes.interfaces;
+import util.annotations.Explanation;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+@StructurePattern(StructurePatternNames.POINT_PATTERN)
+@Explanation("Location in Java coordinate System.")
+public interface PointInterface {
+	public int getX(); 
+	public int getY(); 	
+	public double getAngle(); 
+	public double getRadius(); 
+	void setX(int x);
+	void setY(int y);
+	void setRadius(double radius);
+	void setAngle(double angle);
+
+}
+
+(DIFF_FROM_PREVIOUS_FILE)
+=444	+%09void setRadius(double radius);%0A%09void setAngle(double angle);%0A	=3
+//END OF FILE
+//START OF FILE: grail/atomicShapes/interfaces/TextInterface.java
+package grail.atomicShapes.interfaces;
+
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.STRING_PATTERN)
+public interface TextInterface {
+    int getX();
+    void setX(int newX);
+    int getY();
+    void setY(int newY);
+    String getText();
+    void setText(String newVal);
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=40	+import util.annotations.StructurePattern;%0Aimport util.annotations.StructurePatternNames;%0A%0A@StructurePattern(StructurePatternNames.STRING_PATTERN)%0A	=171	-1
+//END OF FILE
+//START OF FILE: main/Main.java
+package main;
+
+public class Main {
+    public static void main(String[] args) {
+        Assignment1.main(args);
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=15	-216	=104
+//END OF FILE
+//START OF FILE: grail/simpleShapes/classes/RotatingLine.java
+package grail.simpleShapes.classes;
+
+import grail.atomicShapes.classes.CartesianPoint;
+import grail.atomicShapes.classes.PolarPoint;
+import grail.atomicShapes.interfaces.PointInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@StructurePattern(StructurePatternNames.LINE_PATTERN)
+@Tags(Comp301Tags.ROTATING_LINE)
+public class RotatingLine implements LineInterface {
+    
+    private static final int DEFAULT_X = 100;
+    private static final int DEFAULT_Y = 100;
+    private static final double DEFAULT_RADIUS = 50.0;
+    private static final double DEFAULT_ANGLE_DEGREES = 45.0;
+    
+    private PointInterface startPoint;
+    private PointInterface endPoint;
+    private double angleDegrees;
+
+    public RotatingLine() {
+        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_ANGLE_DEGREES);
+    }
+    
+    /**
+     * @param startX    x-coordinate of start point
+     * @param startY    y-coordinate of start point
+     * @param radius    length of the line
+     * @param angle     angle in degrees
+     */
+    public RotatingLine(int startX, int startY, double radius, double angle) {
+        this.startPoint = new CartesianPoint(startX, startY);
+        this.angleDegrees = angle;
+        this.endPoint = new PolarPoint(radius, angle);
+    }
+
+    @Override
+    public int getX() {
+        return startPoint.getX();
+    }
+    
+    @Override
+    public int getY() {
+        return startPoint.getY();
+    }
+
+    @Override
+    public void setX(int x) {
+        startPoint.setX(x);
+    }
+
+    @Override
+    public void setY(int y) {
+        startPoint.setY(y);
+    }
+
+    @Override
+    public int getWidth() {
+        return (int) Math.round(this.endPoint.getRadius() * Math.cos(Math.toRadians(this.angleDegrees)));
+    }
+    
+    @Override
+    public int getHeight() {
+        return (int) Math.round(this.endPoint.getRadius() * Math.sin(Math.toRadians(this.angleDegrees)));
+    }
+
+    @Override
+    public double getRadius() {
+        return endPoint.getRadius();
+    }
+    
+    @Override
+    public double getAngle() {
+        return this.angleDegrees;
+    }
+
+    @Override
+    public void setRadius(double newRadius) {
+        ((PolarPoint) this.endPoint).setRadius(newRadius);
+    }
+
+    @Override
+    public PointInterface getEnd() {
+        return this.endPoint;
+    }
+
+    @Override
+    public void setAngle(double newAngle) {
+        this.angleDegrees = newAngle;
+        ((PolarPoint) this.endPoint).setAngle(newAngle);
+    }
+
+    @Override
+    public void rotate(int units) {
+        this.angleDegrees += units;
+        ((PolarPoint) this.endPoint).setAngle(this.angleDegrees);
+    }
+
+    @Override
+    public void move(int moveX, int moveY) {
+        int newX = this.startPoint.getX() + moveX;
+        int newY = this.startPoint.getY() + moveY;
+        this.startPoint.setX(newX);
+        this.startPoint.setY(newY);
+    }
+    
+    @Override
+    public void scale(double scaleMultiplier) {
+        this.setRadius(this.getRadius() * scaleMultiplier);
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=724	+DEG	=1	-5	+EE	=4	-15	=4	-1	=210	-2	=1	-3	+EGREE	=203	-2	=1	-21	+egre	=1	-6	+s	=178	-15	=5	-1	=441	+(int) Math.round(this.	=12	-1	+Radius	=1	+) * Math.cos(Math.toRadians(this.angleDegrees))	=72	+(int) Math.round(this.	=12	-1	+Radius	=1	+) * Math.sin(Math.toRadians(this.angleDegrees))	=164	-15	=17	-1	=77	+((PolarPoint) 	=13	-4	+).s	=1	-5	+tR	=1	-3	+d	=1	-2	+us	=10	-35	=9	+%0A    @Override	=161	-15	=8	-1	=10	-20	+((	=10	-1	+) 	=5	-1	=1	-3	+n	=1	+Po	=1	-1	+nt).	=1	+etAngle	=1	-3	=76	-82	=36	-20	+((	=10	-1	+) 	=5	-1	=1	-3	+n	=1	+Po	=1	-3	+nt	=1	-6	=1	+se	=1	-6	+A	=1	-1	+gle	=18	-1	=383
+//END OF FILE
+//START OF FILE: main/Assignment1.java
+package main;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import grail.compositeShapes.interfaces.AngleInterface;
+import grail.compositeShapes.interfaces.AvatarInterface;
+import grail.compositeShapes.interfaces.BridgeSceneInterface;
+import grail.compositeShapes.classes.Angle;
+import grail.compositeShapes.classes.Avatar;
+import grail.compositeShapes.classes.BridgeScene;
+import grail.simpleShapes.classes.RotatingLine;
+import grail.simpleShapes.interfaces.LineInterface;
+import grail.simpleShapes.classes.Image;
+import grail.simpleShapes.interfaces.ImageInterface;
+import util.misc.ThreadSupport;
+import bus.uigen.ObjectEditor;
+import grail.compositeShapes.classes.Angle;
+import grail.compositeShapes.classes.Avatar;
+import grail.compositeShapes.classes.BridgeScene;
+import grail.compositeShapes.interfaces.AngleInterface;
+import grail.compositeShapes.interfaces.AvatarInterface;
+import grail.compositeShapes.interfaces.BridgeSceneInterface;
+import grail.simpleShapes.classes.Image;
+import grail.simpleShapes.classes.RotatingLine;
+import grail.simpleShapes.interfaces.ImageInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+
+public class Assignment1 {
+    
+    private static final int EDITOR_WIDTH = 1000;
+    private static final int EDITOR_HEIGHT = 500;
+    
+    private static final int PAUSE_TIME_SHORT = 2000;
+    private static final int PAUSE_TIME_MEDIUM = 3000;
+    private static final int PAUSE_TIME_LONG = 5000;
+    private static final int PAUSE_TIME_ANIMATION = 30;
+    private static final int PAUSE_TIME_SLOW = 1000;
+    
+    private static final int IMAGE_MOVE_STEP = 5;
+    
+    private static final int ANIMATION_STEP = 1;
+    private static final int ANIMATION_TARGET_X = 300;
+    private static final int ANIMATION_TARGET_Y = 300;
+    
+    private static final int WALKING_CYCLE_FRAMES = 80;
+    private static final double FULL_CIRCLE_DEGREES = 360.0;
+    private static final double RIGHT_ANGLE_DEGREES = 90.0;
+    private static final double HALF_CYCLE_DEGREES = 180.0;
+    
+    private static final int LINE_MODE_X = 100;
+    private static final int LINE_MODE_Y = 100;
+    private static final int LINE_MODE_RADIUS = 20;
+    private static final int LINE_MODE_ANGLE = 0;
+    private static final int LINE_ROTATE_90 = 90;
+    private static final int LINE_ROTATE_MINUS_90 = -90;
+    
+    private static final int AVATAR_MOVE_X = 300;
+    private static final int AVATAR_MOVE_Y = 300;
+    
+    public static void main(String[] args) {
+        // animateLine("Avatar");
+        demonstrateBridgeScene();
+    }
+
+    public static void demonstrateBridgeScene() {
+        BridgeSceneInterface bridgeScene = new BridgeScene();
+        OEFrame editor = ObjectEditor.edit(bridgeScene);
+        editor.setSize(EDITOR_WIDTH, EDITOR_HEIGHT);
+        ThreadSupport.sleep(PAUSE_TIME_LONG);
+    }
+    
+    public static void animateLine(String mode) {
+        if (mode == "Line") {
+            LineInterface testLine = new RotatingLine(LINE_MODE_X, LINE_MODE_Y, LINE_MODE_RADIUS, LINE_MODE_ANGLE); 
+            OEFrame editor = ObjectEditor.edit(testLine);
+            editor.refresh();
+            ThreadSupport.sleep(PAUSE_TIME_LONG);
+
+            testLine.rotate(LINE_ROTATE_90);
+            editor.refresh();
+            ThreadSupport.sleep(PAUSE_TIME_SHORT);
+
+            testLine.rotate(LINE_ROTATE_MINUS_90);
+            editor.refresh();
+        }
+
+        if (mode == "RotatingLine") {
+            LineInterface testLine = new RotatingLine(0, 0, 100, 0); 
+            OEFrame editor = ObjectEditor.edit(testLine);
+
+            int nextY = testLine.getY() + ANIMATION_STEP;
+            int nextX = testLine.getX() + ANIMATION_STEP;
+            while (nextY <= ANIMATION_TARGET_Y && nextX <= ANIMATION_TARGET_X) {
+                testLine.setX(nextX);
+                testLine.setY(nextY);
+                testLine.rotate(ANIMATION_STEP);
+                editor.refresh();
+                ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
+                nextX = testLine.getX() + ANIMATION_STEP;
+                nextY = testLine.getY() + ANIMATION_STEP;
+            }
+    
+            testLine.setX(ANIMATION_TARGET_X);
+            testLine.setY(ANIMATION_TARGET_Y);
+            editor.refresh();
+    
+            while (true) {
+                testLine.rotate(ANIMATION_STEP);
+                ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
+                editor.refresh();
+            }
+        }
+
+        else if (mode == "Image") {
+            ImageInterface testImage = new Image(100, 100, 100, 100, "Test", "images/arthur.jpg");
+            OEFrame editor = ObjectEditor.edit(testImage);
+
+            while (true) {
+                testImage.setX(testImage.getX() + IMAGE_MOVE_STEP);
+                testImage.setY(testImage.getY() + IMAGE_MOVE_STEP);
+                ThreadSupport.sleep(PAUSE_TIME_SLOW);
+                editor.refresh();
+            }
+        }
+
+        else if (mode == "Avatar") {
+            AvatarInterface testAvatar = new Avatar(200, 200, "Hello!", "images/arthur.jpg");
+            OEFrame editor = ObjectEditor.edit(testAvatar);
+            ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
+            
+            testAvatar.move(AVATAR_MOVE_X, AVATAR_MOVE_Y);
+            editor.refresh();
+            ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
+            
+            testAvatar.rotate(RIGHT_ANGLE_DEGREES);
+            editor.refresh();
+        }
+
+        else if (mode == "Angle") {
+            AngleInterface testAngle = new Angle(100, 100, 50, RIGHT_ANGLE_DEGREES, RIGHT_ANGLE_DEGREES);
+            OEFrame editor = ObjectEditor.edit(testAngle);
+            editor.refresh();
+        }
+
+        else if (mode == "WalkingLegs") {
+            AngleInterface testLegs = new Angle(200, 400, 100, RIGHT_ANGLE_DEGREES, RIGHT_ANGLE_DEGREES);
+
+            OEFrame editor = ObjectEditor.edit(testLegs);
+
+            double omegaDeg = FULL_CIRCLE_DEGREES / WALKING_CYCLE_FRAMES;
+            double swingAmplitude = ANIMATION_STEP / (100.0 * omegaDeg);
+
+            int frame = 0;
+            while (true) {
+                testLegs.move(ANIMATION_STEP, 0);
+
+                double phaseDeg = (frame % WALKING_CYCLE_FRAMES) * omegaDeg;
+
+                double leftAngleDeg = RIGHT_ANGLE_DEGREES + swingAmplitude * Math.sin(Math.toRadians(phaseDeg));
+                double rightAngleDeg = RIGHT_ANGLE_DEGREES + swingAmplitude * Math.sin(Math.toRadians(phaseDeg + HALF_CYCLE_DEGREES));
+
+                testLegs.getLeftLine().setAngle(leftAngleDeg);
+                testLegs.getRightLine().setAngle(rightAngleDeg);
+
+                editor.refresh();
+                ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
+                frame++;
+            }
+        }
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=85	+compositeShapes.interfaces.AngleInterface;%0Aimport grail.compositeShapes.interfaces.AvatarInterface;%0Aimport grail.compositeShapes.interfaces.BridgeSceneInterface;%0Aimport grail.compositeShapes.classes.Angle;%0Aimport grail.compositeShapes.classes.Avatar;%0Aimport grail.compositeShapes.classes.BridgeScene;%0Aimport grail.	=100	+simpleShapes.classes.Image;%0Aimport grail.simpleShapes.interfaces.ImageInterface;%0Aimport util.misc.ThreadSupport;%0Aimport bus.uigen.ObjectEditor;%0Aimport grail.	=60	+classes.Avatar;%0Aimport grail.compositeShapes.classes.BridgeScene;%0Aimport grail.compositeShapes.	=56	-2	+interf	=1	-2	+c	=9	+Interface;%0Aimport grail.compositeShapes.interfaces.BridgeSceneInterface	=69	+classes.RotatingLine;%0Aimport grail.simpleShapes.	=34	-2	+gra	=3	+si	=1	+pleShapes.	=1	-1	+nterfa	=1	+es	=1	+LineInterface;%0A%0Apublic class Assignment1 %7B%0A    %0A    private static final int EDI	=1	-1	+OR_WIDTH = 1000;%0A    private static final int EDITOR_HEIGHT = 500;%0A    %0A    private static final int PAUSE_TIME_SHORT = 2000;%0A    private static final int PAUSE_TIME_MEDIUM = 3000;%0A    p	=1	+ivat	=1	+ st	=1	-1	+tic final int PAU	=1	-1	+E_TIME_LONG = 5000;%0A    	=1	+rivate static final int PAUSE_TIME_ANIMATION = 30;%0A    	=1	-1	=1	+iva	=1	+e static final int PAUSE_TIME_SLOW = 1000	=2	+    	=1	+    	=1	+rivate static final int IMAGE_MOVE_STEP = 5;%0A    %0A    private static final int ANIMATION_STEP = 1;%0A    private static final int ANIMATION_TARGET_X = 300;%0A    private static final int ANIMATION_TARGET_Y = 300;%0A    %0A    private static final int WALKING_CYCLE_FRAMES = 80;%0A    private static final do	=3	+e FULL_CIRCLE_DEGREES = 360.0;%0A    private stat	=3	+final double RIGHT_ANGLE_DEGREES = 90.0;%0A    private stati	=1	+ fina	=1	+ double HALF_CYCLE_DEGREES = 180.0;%0A    %0A    priv	=1	+te 	=1	+tatic final int LINE_MODE_X = 100;%0A    private 	=1	+tatic	=1	+final int LINE_MODE_Y = 100;%0A    private static final int LINE_MODE_R	=1	+DIUS = 20;%0A    private 	=1	+tatic final int LINE_MODE_ANGLE = 0;%0A    private 	=1	+tat	=1	-1	+c final int LINE_ROTATE_90 = 90;%0A    private static fi	=1	-1	+al int LINE_ROTATE_MINUS_90 = -90;%0A    %0A    privat	=1	+ static final i	=2	-1	=1	-1	+AVATAR_MOVE_X = 300;%0A    private static final int AVATAR_MOVE_Y = 300;%0A    	=54	+// 	=27	+    demonstrateBridgeScene();%0A    %7D%0A%0A    public static void demonstrateBridgeScene() %7B%0A        BridgeSceneInterface bridgeScene = new BridgeScene();%0A        OEFrame editor = ObjectEditor.edit(bridgeScene);%0A        editor.setSize(EDITOR_WIDTH, EDITOR_HEIGHT);%0A        ThreadSupport.sleep(PAUSE_TIME_LONG);%0A    	=141	-3	+LINE_MODE_X	=2	-3	+LINE_MODE_Y	=2	-2	+LINE_MODE_RADIUS	=2	-1	+LINE_MODE_ANGLE	=124	-4	+PAUSE_TIME_LONG	=32	+LINE_ROTATE_	=67	-4	+PAUSE_TIME_SHORT	=32	-1	+LINE_ROTATE_MINUS_	=212	-191	=43	-9	+ANIMATION_	=1	-3	+TEP	=44	-9	+ANIMATION_	=1	-3	+TEP	=30	-6	+ANIMATION_TARGET_	=14	-6	+ANIMATION_TARGET_	=5	-10	=5	-24	=11	-5	=26	-39	=34	-27	=32	-1	+ANIMATION_STEP	=2	-44	=71	-5	+PAUSE_	=1	-3	+IME_ANIMATION	=19	-51	=26	-9	+ANIMATION_	=1	-3	+TEP	=44	-9	+ANIMATION_	=1	-3	+TEP	=47	-6	+ANIMATION_TARGET_	=30	-6	+ANIMATION_TARGET_	=51	-48	=47	-1	+ANIMATION_STEP	=39	-5	+PAUSE_	=1	-3	+IME_ANIMATION	=83	+ 	=2	+ 	=247	-1	+IMAGE_MOVE_STEP	=53	-1	+IMAGE_MOVE_STEP	=39	-4	+PAUSE_TIME_SLOW	=117	+Interface	=30	-1	+2	=108	+ThreadSupport.sleep(PAUSE_TIME_MEDIUM);%0A            %0A            testAvatar.move(AVATAR_MOVE_X, AVATAR_MOVE_Y);%0A            	=26	-1	+    ThreadSupport.sleep(PAUSE_TIME_MEDIUM);	=1	+            	=1	+ 	=8	+   t	=1	-1	=1	+tAvatar.rotat	=1	+(RIGHT_ANGLE_DEGREES);%0A           	=1	+ed	=1	-4	+t	=1	-1	+r.r	=1	-7	+fr	=1	-1	+sh(	=1	-2	+;	=8	+ %7D%0A%0A	=5	-2	=1	-3	+ 	=1	-1	=1	-2	+ls	=1	+ if (mod	=1	-1	=1	+=	=2	-6	+%22A	=2	-1	=2	-2	+%22) %7B	=64	-7	=1	-12	+IGHT_ANGLE_DEGREES	=2	-7	+RIGHT_ANGLE_DEG	=1	-12	+EES	=157	-64	=51	-7	+RIGHT_ANGLE_DEG	=1	-12	+EES	=2	-7	=1	-12	+IGHT_ANGLE_DEGREES	=75	-173	=18	-5	+FULL_CIRCLE_DEGREES	=3	-5	+WALKING_CYCLE_	=1	-5	+RAMES	=1	-22	=37	-9	+ANIMATION_	=1	-3	+TEP	=108	-9	+ANIMATION_	=1	-3	+TEP	=50	-5	+WALKING_CYCLE_	=1	-5	+RAMES	=31	-79	=22	-4	+RIGHT_ANGLE_DEGREES	=95	-4	+RIGHT_ANGLE_DEGREES	=55	-5	+HALF_CYCLE_DEGREES	=53	-15	=12	-1	=52	-15	=13	-1	=74	-5	+PAUSE_TIME_ANIMA	=1	-3	+ION	=59
+//END OF FILE
+//START OF FILE: grail/compositeShapes/classes/Angle.java
+package grail.compositeShapes.classes;
+
+import grail.compositeShapes.interfaces.AngleInterface;
+import grail.simpleShapes.classes.RotatingLine;
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@Tags(Comp301Tags.ANGLE)
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"LeftLine", "RightLine"})
+@EditablePropertyNames({})
+public class Angle implements AngleInterface {
+    private static final int DEFAULT_X = 0;
+    private static final int DEFAULT_Y = 0;
+    private static final double DEFAULT_RADIUS = 50;
+    private static final double DEFAULT_SPLIT_ANGLE_DEGREES = 90.0;
+    private static final double DEFAULT_DOWN_DIRECTION_DEGREES = 90.0;
+	
+    private LineInterface leftLine;
+    private LineInterface rightLine;
+    private double radius;
+    private double splitAngleDegrees;
+    private double downDirectionDegrees;
+
+    public Angle() {
+        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_SPLIT_ANGLE_DEGREES, DEFAULT_DOWN_DIRECTION_DEGREES);
+    }
+
+    public Angle(int x, int y, double radius, double splitAngleDegrees, double downDirectionDegrees) {
+        this.radius = radius;
+        this.splitAngleDegrees = splitAngleDegrees;
+        this.downDirectionDegrees = downDirectionDegrees;
+
+        // downDirection determines what is "down" and the left and right lines are positioned splitAngle/2 to the left and right of the downDirection
+        this.leftLine = new RotatingLine(x, y, radius, downDirectionDegrees - splitAngleDegrees / 2);
+        this.rightLine = new RotatingLine(x, y, radius, downDirectionDegrees + splitAngleDegrees / 2);
+    }
+
+    @Override
+    public LineInterface getLeftLine() {
+        return this.leftLine;
+    }
+
+    @Override
+    public LineInterface getRightLine() {
+        return this.rightLine;
+    }
+
+    @Override
+    public void move(int x, int y) {
+        this.leftLine.move(x, y);
+        this.rightLine.move(x, y);
+    }
+
+    @Override
+    public void rotate(int angle) {
+        this.leftLine.rotate(angle);
+        this.rightLine.rotate(angle);
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=637	+static final int DEFAULT_X = 0;%0A    private static final int DEFAULT_Y = 0;%0A    private static final double DEFAULT_RADIUS = 50;%0A    private static final double DEFAULT_SPLIT_ANGLE_DEGREES = 90.0;%0A    private static final double DEFAULT_DOWN_DIRECTION_DEGREES = 90.0;%0A%09%0A    private 	=117	+Degrees	=34	+Degrees	=20	+) %7B%0A        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_SPLIT_ANGLE_DEGREES, DEFAULT_DOWN_DIRECTION_DEGREES);%0A    %7D%0A%0A    public Angle(	=46	+Degrees	=22	+Degrees	=57	+Degrees	=13	+Degrees	=28	+Degrees	=16	+Degrees	=53	-1	=169	+Degrees	=13	+Degrees 	=1	+ 	=73	+Degrees	=13	+Degrees 	=1	+ 	=456	-1
+//END OF FILE
+//START OF FILE: grail/compositeShapes/interfaces/AvatarInterface.java
+package grail.compositeShapes.interfaces;
+
+import grail.atomicShapes.interfaces.TextInterface;
+import grail.simpleShapes.interfaces.ImageInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@Tags(Comp301Tags.AVATAR)
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"X", "Y", "SpeechBubble", "Head", "Arms", "Body", "Legs"})
+@EditablePropertyNames({"X", "Y"})
+public interface AvatarInterface {
+    int getX();
+    void setX(int newX);
+    int getY();
+    void setY(int newY);
+    TextInterface getSpeechBubble();
+    TextInterface getStringShape();
+    ImageInterface getHead();
+    AngleInterface getArms();
+    LineInterface getBody();
+    AngleInterface getLegs();
+    void move(int moveX, int moveY);
+    void rotate(double degrees);
+    void scale(double scaleMultiplier);
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=200	+import tags301.Comp301Tags;	=1	+import util.annotations.EditablePropertyNames;%0Aimport util.annotations.PropertyNames;%0Aimport util.annotations.StructurePattern;%0Aimport util.annotations.StructurePatternNames;%0Aimport util.annotations.Tags;%0A%0A@Tags(Comp301Tags.AVATAR)%0A@StructurePattern(StructurePatternNames.BEAN_PATTERN)%0A@PropertyNames(%7B%22X%22, %22Y%22, %22SpeechBubble%22, %22Head%22, %22Arms%22, %22Body%22, %22Legs%22%7D)%0A@EditablePropertyNames(%7B%22X%22, %22Y%22%7D)	=155	+    TextInterface getStringShape();%0A	=116	+);%0A    void move(int moveX, int moveY);%0A    void rotate(double degrees);%0A    void scale(double scaleMultiplier	=4
+//END OF FILE
+//START OF FILE: grail/compositeShapes/interfaces/BridgeSceneInterface.java
+package grail.compositeShapes.interfaces;
+import tags301.Comp301Tags;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@Tags(Comp301Tags.BRIDGE_SCENE)
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"Arthur", "Lancelot", "Robin", "Galahad", "Guard"})
+@EditablePropertyNames({})
+public interface BridgeSceneInterface {
+    AvatarInterface getArthur();
+    AvatarInterface getLancelot();
+    AvatarInterface getRobin();
+    AvatarInterface getGalahad();
+    AvatarInterface getGuard();
+}
+//END OF FILE
+//START OF FILE: grail/simpleShapes/interfaces/ImageInterface.java
+package grail.simpleShapes.interfaces;
+
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.IMAGE_PATTERN)
+public interface ImageInterface {
+    int getX();
+    void setX(int newX);
+    int getY();
+    void setY(int newY);
+    int getWidth();
+    void setWidth(int newVal);
+    int getHeight();
+    void setHeight(int newVal);
+    String getText();
+    void setText(String newVal);
+    String getImageFileName();
+    void setImageFileName(String newVal);
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=40	+import util.annotations.StructurePattern;%0Aimport util.annotations.StructurePatternNames;%0A%0A@StructurePattern(StructurePatternNames.IMAGE_PATTERN)%0A	=349	-1
+//END OF FILE
+
+//SESSION END
+
+//SESSION START
+15,Tue Jun 30 13:17:07 EDT 2026,-29
+//START OF FILE: grail/simpleShapes/classes/RotatingLine.java
+package grail.simpleShapes.classes;
+
+import grail.atomicShapes.classes.CartesianPoint;
+import grail.atomicShapes.classes.PolarPoint;
+import grail.atomicShapes.interfaces.PointInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@StructurePattern(StructurePatternNames.LINE_PATTERN)
+@Tags(Comp301Tags.ROTATING_LINE)
+public class RotatingLine implements LineInterface {
+    
+    private static final int DEFAULT_X = 100;
+    private static final int DEFAULT_Y = 100;
+    private static final double DEFAULT_RADIUS = 50.0;
+    private static final double DEFAULT_ANGLE_DEGREES = 45.0;
+    
+    private PointInterface startPoint;
+    private PointInterface endPoint;
+    private double angleDegrees;
+
+    public RotatingLine() {
+        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_ANGLE_DEGREES);
+    }
+    
+    public RotatingLine(int startX, int startY, double radius, double angle) {
+        this.startPoint = new CartesianPoint(startX, startY);
+        this.angleDegrees = angle;
+        this.endPoint = new PolarPoint(radius, angle);
+    }
+
+    @Override
+    public int getX() {
+        return startPoint.getX();
+    }
+    
+    @Override
+    public int getY() {
+        return startPoint.getY();
+    }
+
+    @Override
+    public void setX(int x) {
+        startPoint.setX(x);
+    }
+
+    @Override
+    public void setY(int y) {
+        startPoint.setY(y);
+    }
+
+    @Override
+    public int getWidth() {
+        return (int) Math.round(this.endPoint.getRadius() * Math.cos(Math.toRadians(this.angleDegrees)));
+    }
+    
+    @Override
+    public int getHeight() {
+        //int height = (int) startPoint.getY() - endPoint.getY();
+        //if (height < 0)  {
+
+        //} 
+        return abs((int) startPoint.getY() - endPoint.getY());
+        // return (int) Math.round(this.endPoint.getRadius() * Math.sin(Math.toRadians(this.angleDegrees)));
+    }
+
+    @Override
+    public double getRadius() {
+        return this.endPoint.getRadius();
+    }
+    
+    @Override
+    public double getAngle() {
+        return this.angleDegrees;
+    }
+
+    @Override
+    public void setRadius(double newRadius) {
+        ((PolarPoint) this.endPoint).setRadius(newRadius);
+    }
+
+    @Override
+    public PointInterface getEnd() {
+        return this.endPoint;
+    }
+
+    @Override
+    public void setAngle(double newAngle) {
+        this.angleDegrees = newAngle;
+        ((PolarPoint) this.endPoint).setAngle(newAngle);
+    }
+
+    @Override
+    public void rotate(int units) {
+        this.angleDegrees += units;
+        ((PolarPoint) this.endPoint).setAngle(this.angleDegrees);
+    }
+
+    @Override
+    public void move(int moveX, int moveY) {
+        int newX = this.startPoint.getX() + moveX;
+        int newY = this.startPoint.getY() + moveY;
+        this.startPoint.setX(newX);
+        this.startPoint.setY(newY);
+    }
+    
+    @Override
+    public void scale(double scaleMultiplier) {
+        this.setRadius(this.getRadius() * scaleMultiplier);
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=973	-204	=764	+//int height = (int) startPoint.getY() - endPoint.getY();%0A        //if (height %3C 0)  %7B%0A%0A        //%7D %0A        return abs((int) startPoint.getY() - endPoint.getY());%0A        // 	=166	+this.	=1025
+//END OF FILE
+//START OF FILE: main/Assignment1.java
+package main;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import grail.compositeShapes.interfaces.AngleInterface;
+import grail.compositeShapes.interfaces.AvatarInterface;
+import grail.compositeShapes.interfaces.BridgeSceneInterface;
+import grail.compositeShapes.classes.Angle;
+import grail.compositeShapes.classes.Avatar;
+import grail.compositeShapes.classes.BridgeScene;
+import grail.simpleShapes.classes.RotatingLine;
+import grail.simpleShapes.interfaces.LineInterface;
+import grail.simpleShapes.classes.Image;
+import grail.simpleShapes.interfaces.ImageInterface;
+import util.misc.ThreadSupport;
+import bus.uigen.ObjectEditor;
+import grail.compositeShapes.classes.Angle;
+import grail.compositeShapes.classes.Avatar;
+import grail.compositeShapes.classes.BridgeScene;
+import grail.compositeShapes.interfaces.AngleInterface;
+import grail.compositeShapes.interfaces.AvatarInterface;
+import grail.compositeShapes.interfaces.BridgeSceneInterface;
+import grail.simpleShapes.classes.Image;
+import grail.simpleShapes.classes.RotatingLine;
+import grail.simpleShapes.interfaces.ImageInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+
+public class Assignment1 {
+    
+    private static final int EDITOR_WIDTH = 1000;
+    private static final int EDITOR_HEIGHT = 500;
+    
+    private static final int PAUSE_TIME_SHORT = 2000;
+    private static final int PAUSE_TIME_MEDIUM = 3000;
+    private static final int PAUSE_TIME_LONG = 5000;
+    private static final int PAUSE_TIME_ANIMATION = 30;
+    private static final int PAUSE_TIME_SLOW = 1000;
+    
+    private static final int IMAGE_MOVE_STEP = 5;
+    
+    private static final int ANIMATION_STEP = 1;
+    private static final int ANIMATION_TARGET_X = 300;
+    private static final int ANIMATION_TARGET_Y = 300;
+    
+    private static final int WALKING_CYCLE_FRAMES = 80;
+    private static final double FULL_CIRCLE_DEGREES = 360.0;
+    private static final double RIGHT_ANGLE_DEGREES = 90.0;
+    private static final double HALF_CYCLE_DEGREES = 180.0;
+    
+    private static final int LINE_MODE_X = 100;
+    private static final int LINE_MODE_Y = 100;
+    private static final int LINE_MODE_RADIUS = 20;
+    private static final int LINE_MODE_ANGLE = 0;
+    private static final int LINE_ROTATE_90 = 90;
+    private static final int LINE_ROTATE_MINUS_90 = -90;
+    
+    private static final int AVATAR_MOVE_X = 300;
+    private static final int AVATAR_MOVE_Y = 300;
+    
+    public static void main(String[] args) {
+        animateLine("Line");
+        // demonstrateBridgeScene();
+    }
+
+    public static void demonstrateBridgeScene() {
+        BridgeSceneInterface bridgeScene = new BridgeScene();
+        OEFrame editor = ObjectEditor.edit(bridgeScene);
+        editor.setSize(EDITOR_WIDTH, EDITOR_HEIGHT);
+        ThreadSupport.sleep(PAUSE_TIME_LONG);
+    }
+    
+    public static void animateLine(String mode) {
+        if (mode == "Line") {
+            LineInterface testLine = new RotatingLine(LINE_MODE_X, LINE_MODE_Y, LINE_MODE_RADIUS, LINE_MODE_ANGLE); 
+            OEFrame editor = ObjectEditor.edit(testLine);
+            editor.refresh();
+            ThreadSupport.sleep(PAUSE_TIME_LONG);
+
+            testLine.rotate(LINE_ROTATE_90);
+            editor.refresh();
+            ThreadSupport.sleep(PAUSE_TIME_SHORT);
+
+            testLine.rotate(50);
+            editor.refresh();
+        }
+
+        if (mode == "RotatingLine") {
+            LineInterface testLine = new RotatingLine(0, 0, 100, 0); 
+            OEFrame editor = ObjectEditor.edit(testLine);
+
+            int nextY = testLine.getY() + ANIMATION_STEP;
+            int nextX = testLine.getX() + ANIMATION_STEP;
+            while (nextY <= ANIMATION_TARGET_Y && nextX <= ANIMATION_TARGET_X) {
+                testLine.setX(nextX);
+                testLine.setY(nextY);
+                testLine.rotate(ANIMATION_STEP);
+                editor.refresh();
+                ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
+                nextX = testLine.getX() + ANIMATION_STEP;
+                nextY = testLine.getY() + ANIMATION_STEP;
+            }
+    
+            testLine.setX(ANIMATION_TARGET_X);
+            testLine.setY(ANIMATION_TARGET_Y);
+            editor.refresh();
+    
+            while (true) {
+                testLine.rotate(ANIMATION_STEP);
+                ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
+                editor.refresh();
+            }
+        }
+
+        else if (mode == "Image") {
+            ImageInterface testImage = new Image(100, 100, 100, 100, "Test", "images/arthur.jpg");
+            OEFrame editor = ObjectEditor.edit(testImage);
+
+            while (true) {
+                testImage.setX(testImage.getX() + IMAGE_MOVE_STEP);
+                testImage.setY(testImage.getY() + IMAGE_MOVE_STEP);
+                ThreadSupport.sleep(PAUSE_TIME_SLOW);
+                editor.refresh();
+            }
+        }
+
+        else if (mode == "Avatar") {
+            AvatarInterface testAvatar = new Avatar(200, 200, "Hello!", "images/arthur.jpg");
+            OEFrame editor = ObjectEditor.edit(testAvatar);
+            ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
+            
+            testAvatar.move(AVATAR_MOVE_X, AVATAR_MOVE_Y);
+            editor.refresh();
+            ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
+            
+            testAvatar.rotate(RIGHT_ANGLE_DEGREES);
+            editor.refresh();
+        }
+
+        else if (mode == "Angle") {
+            AngleInterface testAngle = new Angle(100, 100, 50, RIGHT_ANGLE_DEGREES, RIGHT_ANGLE_DEGREES);
+            OEFrame editor = ObjectEditor.edit(testAngle);
+            editor.refresh();
+        }
+
+        else if (mode == "WalkingLegs") {
+            AngleInterface testLegs = new Angle(200, 400, 100, RIGHT_ANGLE_DEGREES, RIGHT_ANGLE_DEGREES);
+
+            OEFrame editor = ObjectEditor.edit(testLegs);
+
+            double omegaDeg = FULL_CIRCLE_DEGREES / WALKING_CYCLE_FRAMES;
+            double swingAmplitude = ANIMATION_STEP / (100.0 * omegaDeg);
+
+            int frame = 0;
+            while (true) {
+                testLegs.move(ANIMATION_STEP, 0);
+
+                double phaseDeg = (frame % WALKING_CYCLE_FRAMES) * omegaDeg;
+
+                double leftAngleDeg = RIGHT_ANGLE_DEGREES + swingAmplitude * Math.sin(Math.toRadians(phaseDeg));
+                double rightAngleDeg = RIGHT_ANGLE_DEGREES + swingAmplitude * Math.sin(Math.toRadians(phaseDeg + HALF_CYCLE_DEGREES));
+
+                testLegs.getLeftLine().setAngle(leftAngleDeg);
+                testLegs.getRightLine().setAngle(rightAngleDeg);
+
+                editor.refresh();
+                ThreadSupport.sleep(PAUSE_TIME_ANIMATION);
+                frame++;
+            }
+        }
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=2494	-3	=13	-6	+Line	=11	+ //	=804	-19	+5	=3367
+//END OF FILE
+//START OF FILE: grail/compositeShapes/interfaces/AvatarInterface.java
+package grail.compositeShapes.interfaces;
+
+import grail.atomicShapes.interfaces.TextInterface;
+import grail.simpleShapes.interfaces.ImageInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@Tags(Comp301Tags.AVATAR)
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"X", "Y", "SpeechBubble", "Head", "Arms", "Body", "Legs", "stringShape"})
+@EditablePropertyNames({"X", "Y"})
+public interface AvatarInterface {
+    int getX();
+    void setX(int newX);
+    int getY();
+    void setY(int newY);
+    TextInterface getSpeechBubble();
+    TextInterface getStringShape();
+    ImageInterface getHead();
+    AngleInterface getArms();
+    LineInterface getBody();
+    AngleInterface getLegs();
+    void move(int moveX, int moveY);
+    void rotate(double degrees);
+    void scale(double scaleMultiplier);
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=586	+, %22stringShape%22	=458
+//END OF FILE
+
+//SESSION END
+
+//SESSION START
+16,Tue Jun 30 13:19:40 EDT 2026,-251
+//START OF FILE: grail/simpleShapes/classes/RotatingLine.java
+package grail.simpleShapes.classes;
+
+import grail.atomicShapes.classes.CartesianPoint;
+import grail.atomicShapes.classes.PolarPoint;
+import grail.atomicShapes.interfaces.PointInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@StructurePattern(StructurePatternNames.LINE_PATTERN)
+@Tags(Comp301Tags.ROTATING_LINE)
+public class RotatingLine implements LineInterface {
+    
+    private static final int DEFAULT_X = 100;
+    private static final int DEFAULT_Y = 100;
+    private static final double DEFAULT_RADIUS = 50.0;
+    private static final double DEFAULT_ANGLE_DEGREES = 45.0;
+    
+    private PointInterface startPoint;
+    private PointInterface endPoint;
+    private double angleDegrees;
+
+    public RotatingLine() {
+        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_ANGLE_DEGREES);
+    }
+    
+    public RotatingLine(int startX, int startY, double radius, double angle) {
+        this.startPoint = new CartesianPoint(startX, startY);
+        this.angleDegrees = angle;
+        this.endPoint = new PolarPoint(radius, angle);
+    }
+
+    @Override
+    public int getX() {
+        return startPoint.getX();
+    }
+    
+    @Override
+    public int getY() {
+        return startPoint.getY();
+    }
+
+    @Override
+    public void setX(int x) {
+        startPoint.setX(x);
+    }
+
+    @Override
+    public void setY(int y) {
+        startPoint.setY(y);
+    }
+
+    @Override
+    public int getWidth() {
+        return Math.abs((int) startPoint.getX() - endPoint.getX());
+    }
+    
+    @Override
+    public int getHeight() {
+        return Math.abs((int) startPoint.getY() - endPoint.getY());
+    }
+
+    @Override
+    public double getRadius() {
+        return this.endPoint.getRadius();
+    }
+    
+    @Override
+    public double getAngle() {
+        return this.angleDegrees;
+    }
+
+    @Override
+    public void setRadius(double newRadius) {
+        ((PolarPoint) this.endPoint).setRadius(newRadius);
+    }
+
+    @Override
+    public PointInterface getEnd() {
+        return this.endPoint;
+    }
+
+    @Override
+    public void setAngle(double newAngle) {
+        this.angleDegrees = newAngle;
+        ((PolarPoint) this.endPoint).setAngle(newAngle);
+    }
+
+    @Override
+    public void rotate(int units) {
+        this.angleDegrees += units;
+        ((PolarPoint) this.endPoint).setAngle(this.angleDegrees);
+    }
+
+    @Override
+    public void move(int moveX, int moveY) {
+        int newX = this.startPoint.getX() + moveX;
+        int newY = this.startPoint.getY() + moveY;
+        this.startPoint.setX(newX);
+        this.startPoint.setY(newY);
+    }
+    
+    @Override
+    public void scale(double scaleMultiplier) {
+        this.setRadius(this.getRadius() * scaleMultiplier);
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=1584	+Math.abs(	=6	-1	+st	=1	-3	=1	-5	=1	-7	=9	-6	+X	=3	-1	+-	=1	-18	+en	=1	+Po	=1	-1	=1	-2	=1	-3	=1	-2	=1	-1	=1	-8	+tX(	=66	-7	+r	=1	-3	=1	-5	+ur	=1	-2	=1	-2	+M	=1	-1	=1	-5	+h	=1	-84	=44	-109	=1102
+//END OF FILE
+
+//SESSION END
+
+//SESSION START
+17,Tue Jun 30 13:41:19 EDT 2026,26
+//START OF FILE: grail/simpleShapes/classes/RotatingLine.java
+package grail.simpleShapes.classes;
+
+import grail.atomicShapes.classes.CartesianPoint;
+import grail.atomicShapes.classes.PolarPoint;
+import grail.atomicShapes.interfaces.PointInterface;
+import grail.simpleShapes.interfaces.LineInterface;
+import tags301.Comp301Tags;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Tags;
+
+@StructurePattern(StructurePatternNames.LINE_PATTERN)
+@Tags(Comp301Tags.ROTATING_LINE)
+public class RotatingLine implements LineInterface {
+    
+    private static final int DEFAULT_X = 100;
+    private static final int DEFAULT_Y = 100;
+    private static final double DEFAULT_RADIUS = 50.0;
+    private static final double DEFAULT_ANGLE_DEGREES = 45.0;
+    
+    private PointInterface startPoint;
+    private PointInterface endPoint;
+    private double angleDegrees;
+
+    public RotatingLine() {
+        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_ANGLE_DEGREES);
+    }
+    
+    public RotatingLine(int startX, int startY, double radius, double angle) {
+        this.startPoint = new CartesianPoint(startX, startY);
+        this.angleDegrees = angle;
+        this.endPoint = new PolarPoint(radius, angle);
+    }
+
+    @Override
+    public int getX() {
+        return startPoint.getX();
+    }
+    
+    @Override
+    public int getY() {
+        return startPoint.getY();
+    }
+
+    @Override
+    public void setX(int x) {
+        startPoint.setX(x);
+    }
+
+    @Override
+    public void setY(int y) {
+        startPoint.setY(y);
+    }
+
+    @Override
+    public int getWidth() {
+        return Math.abs((int) (startPoint.getX() - endPoint.getX()));
+    }
+    
+    @Override
+    public int getHeight() {
+        return Math.abs((int) (startPoint.getY() - endPoint.getY()));
+    }
+
+    @Override
+    public double getRadius() {
+        return this.endPoint.getRadius();
+    }
+    
+    @Override
+    public double getAngle() {
+        return this.angleDegrees;
+    }
+
+    @Override
+    public void setRadius(double newRadius) {
+        ((PolarPoint) this.endPoint).setRadius(newRadius);
+    }
+
+    @Override
+    public PointInterface getEnd() {
+        return this.endPoint;
+    }
+
+    @Override
+    public void setAngle(double newAngle) {
+        this.angleDegrees = newAngle;
+        ((PolarPoint) this.endPoint).setAngle(newAngle);
+    }
+
+    @Override
+    public void rotate(int units) {
+        this.angleDegrees += units;
+        ((PolarPoint) this.endPoint).setAngle(this.angleDegrees);
+    }
+
+    @Override
+    public void move(int moveX, int moveY) {
+        int newX = this.startPoint.getX() + moveX;
+        int newY = this.startPoint.getY() + moveY;
+        this.startPoint.setX(newX);
+        this.startPoint.setY(newY);
+    }
+    
+    @Override
+    public void scale(double scaleMultiplier) {
+        this.setRadius(this.getRadius() * scaleMultiplier);
+    }
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=1599	+(	=34	+)	=88	+(	=34	+)	=1102
+//END OF FILE
+//START OF FILE: grail/atomicShapes/classes/PolarPoint.java
+package grail.atomicShapes.classes;
+
+import grail.atomicShapes.interfaces.PointInterface;
+
+public class PolarPoint implements PointInterface {
+	private double radius;
+	private double angleDegrees;
+
+	public PolarPoint(double theRadius, double theAngleDegrees) {
+		radius = theRadius;
+		angleDegrees = theAngleDegrees;
+	}
+
+	public PolarPoint(int theX, int theY) {
+		radius = Math.sqrt(theX * theX + theY * theY);
+		angleDegrees = Math.toDegrees(Math.atan2(theY, theX));
+	}
+
+	@Override
+	public int getX() {
+		return (int) Math.round(radius * Math.cos(Math.toRadians(angleDegrees)));
+	}
+
+	@Override
+	public int getY() {
+		return (int) Math.round(radius * Math.sin(Math.toRadians(angleDegrees)));
+	}
+
+	@Override
+	public double getAngle() {
+		return Math.toRadians(angleDegrees);
+	}
+
+	@Override
+	public double getRadius() {
+		return radius;
+	}
+
+	@Override
+	public void setX(int x) {
+		int currentY = getY();
+		radius = Math.sqrt(x * x + currentY * currentY);
+		angleDegrees = Math.toDegrees(Math.atan2(currentY, x));
+	}
+
+	@Override
+	public void setY(int y) {
+		int currentX = getX();
+		radius = Math.sqrt(currentX * currentX + y * y);
+		angleDegrees = Math.toDegrees(Math.atan2(y, currentX));
+	}
+
+	@Override
+	public void setRadius(double newRadius) {
+		this.radius = newRadius;
+	}
+
+	@Override
+	public void setAngle(double newAngleRadians) {
+		this.angleDegrees = Math.toDegrees(newAngleRadians);
+	}
+}
+(DIFF_FROM_PREVIOUS_FILE)
+=197	-1	=1	+	=122	-1	=1	+	=150	-1	=1	+	=111	-1	=1	+	=111	-1	=1	+	=48	+Math.toRadians(	=12	+)	=5	-1	=1	+	=60	-1	=1	+	=175	-1	=1	+	=175	-1	=1	+	=84	-1	=1	+	=48	-6	+Radian	=27	+Math.toDegrees(	=8	-6	+Radian	=1	+)	=6
+//END OF FILE
+
+//SESSION END

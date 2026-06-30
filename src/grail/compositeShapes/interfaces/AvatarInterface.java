@@ -12,7 +12,7 @@ import util.annotations.Tags;
 
 @Tags(Comp301Tags.AVATAR)
 @StructurePattern(StructurePatternNames.BEAN_PATTERN)
-@PropertyNames({"X", "Y", "SpeechBubble", "Head", "Arms", "Body", "Legs"})
+@PropertyNames({"X", "Y", "SpeechBubble", "Head", "Arms", "Body", "Legs", "stringShape"})
 @EditablePropertyNames({"X", "Y"})
 public interface AvatarInterface {
     int getX();
@@ -26,6 +26,6 @@ public interface AvatarInterface {
     LineInterface getBody();
     AngleInterface getLegs();
     void move(int moveX, int moveY);
-    void rotate(double degrees);
+    void rotate(double radians);
     void scale(double scaleMultiplier);
 }

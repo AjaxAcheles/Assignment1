@@ -685,3 +685,797 @@
 55,Mon Jun 29 19:27:27 EDT 2026,true,main\Assignment1.java,superTypes,None
 55,Mon Jun 29 19:27:27 EDT 2026,true,main\Assignment1.java,interfaces,[]
 55,Mon Jun 29 19:27:27 EDT 2026,true,main\Assignment1.java,tags,None
+56,Tue Jun 30 10:29:34 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,main\Main.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,main\Assignment1.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,grail\atomicShapes\classes\Text.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,grail\compositeShapes\classes\Angle.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,grail\simpleShapes\classes\Image.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,main\RunSS26A1Tests.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:34 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,expectedTypes,[@Comp301Tags.GREETING_MAIN]
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,variables,Variables:[]
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,accessModifiersUsed,Access Modifiers Used: [(grail.simpleShapes.interfaces.ImageInterface, public, public, 0, grail.compositeShapes.classes.Avatar, null )]
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[default getX:->int, default getY:->int, default getWidth:->int, default getHeight:->int, default getText:->String, default getImageFileName:->String]Setters:[default setX:int->void, default setY:int->void, default setWidth:int->void, default setHeight:int->void, default setText:String->void, default setImageFileName:String->void]
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,properties,Properties:[editable, g-s:0 p-v:5 access:package ImageFileName:String(default ,default ), editable, g-s:0 p-v:5 access:package X:int(default ,default ), editable, g-s:0 p-v:5 access:package Y:int(default ,default ), editable, g-s:0 p-v:5 access:package Height:int(default ,default ), editable, g-s:0 p-v:5 access:package Text:String(default ,default ), editable, g-s:0 p-v:5 access:package Width:int(default ,default )]
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:12 Number of Functions:6 Number of Non Getter Functions:0 Number of Getters and Setters:12 Number of Non Public Methods:12 Public Methods Fraction:0.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:1.0 Private  Methods Fraction:0.0 Average Method Access:2.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:6 Public Properties Fraction:0.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:1.0 Private  Properties Fraction:0.0 Editable Properties Fraction:1.0 ReadOnly Access Properties Fraction:0.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:2.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,innerTypes,[]
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,superTypes,[]
+56,Tue Jun 30 10:29:42 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,grail.simpleShapes.interfaces.ImageInterface,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,grail.simpleShapes.interfaces.ImageInterface,simple
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,grail.simpleShapes.interfaces.ImageInterface,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,grail.simpleShapes.interfaces.ImageInterface,interfaces
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,grail.simpleShapes.interfaces.ImageInterface,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,grail.simpleShapes.interfaces.ImageInterface,interface
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,newX,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,newX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,newY,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,newY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,newVal,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\ImageInterface.java,nameInDictionary,newVal,val
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,expectedTypes,[@Comp301Tags.GREETING_MAIN]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,variables,Variables:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,accessModifiersUsed,Access Modifiers Used: [(grail.simpleShapes.interfaces.LineInterface, public, public, 0, main.Assignment1, null ), (grail.simpleShapes.interfaces.LineInterface, public, public, 0, grail.compositeShapes.classes.Angle, null ), (grail.simpleShapes.interfaces.LineInterface, public, public, 0, grail.compositeShapes.classes.Avatar, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,methods,NonGetterFunctions:[]NonSetterProcedures:[default rotate:int->void, default move:int;int->void, default scale:double->void]Getters:[default getWidth:->int, default getHeight:->int, default getX:->int, default getY:->int, default getRadius:->double, default getAngle:->double, default getEnd:->grail.atomicShapes.interfaces.PointInterface]Setters:[default setX:int->void, default setY:int->void, default setRadius:double->void, default setAngle:double->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,properties,Properties:[editable, g-s:0 p-v:5 access:package Radius:double(default ,default ), editable, g-s:0 p-v:5 access:package Angle:double(default ,default ), editable, g-s:0 p-v:5 access:package X:int(default ,default ), editable, g-s:0 p-v:5 access:package Y:int(default ,default ), readonly  p-v:5 access:package Height:int(default , null), readonly  p-v:5 access:package End:grail.atomicShapes.interfaces.PointInterface(default , null), readonly  p-v:5 access:package Width:int(default , null)]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:14 Number of Functions:7 Number of Non Getter Functions:0 Number of Getters and Setters:11 Number of Non Public Methods:14 Public Methods Fraction:0.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:1.0 Private  Methods Fraction:0.0 Average Method Access:2.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:7 Public Properties Fraction:0.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:1.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.5714285714285714 ReadOnly Access Properties Fraction:0.42857142857142855 WriteOnly  Properties Fraction:0.0 Average Properties Access:2.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,superTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,grail.simpleShapes.interfaces.LineInterface,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,grail.simpleShapes.interfaces.LineInterface,simple
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,grail.simpleShapes.interfaces.LineInterface,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,grail.simpleShapes.interfaces.LineInterface,interfaces
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,grail.simpleShapes.interfaces.LineInterface,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,grail.simpleShapes.interfaces.LineInterface,interface
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,newX,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,newX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,newY,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,newY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,radius,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,angle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,units,units
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,moveX,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,moveX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,moveY,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,moveY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,scaleMultiplier,scale
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,nameInDictionary,scaleMultiplier,multiplier
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\interfaces\LineInterface.java,variableHasInterfaceType,PointInterface,getEnd
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,variables,Variables:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,accessModifiersUsed,Access Modifiers Used: [(grail.compositeShapes.interfaces.AvatarInterface, public, public, 0, main.Assignment1, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,methods,NonGetterFunctions:[]NonSetterProcedures:[default move:int;int->void, default rotate:double->void, default scale:double->void]Getters:[default getX:->int, default getY:->int, default getSpeechBubble:->grail.atomicShapes.interfaces.TextInterface, default getStringShape:->grail.atomicShapes.interfaces.TextInterface, default getHead:->grail.simpleShapes.interfaces.ImageInterface, default getArms:->grail.compositeShapes.interfaces.AngleInterface, default getBody:->grail.simpleShapes.interfaces.LineInterface, default getLegs:->grail.compositeShapes.interfaces.AngleInterface]Setters:[default setX:int->void, default setY:int->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,properties,Properties:[readonly  p-v:5 access:package Legs:grail.compositeShapes.interfaces.AngleInterface(default , null), readonly  p-v:5 access:package Head:grail.simpleShapes.interfaces.ImageInterface(default , null), readonly  p-v:5 access:package SpeechBubble:grail.atomicShapes.interfaces.TextInterface(default , null), readonly  p-v:5 access:package StringShape:grail.atomicShapes.interfaces.TextInterface(default , null), editable, g-s:0 p-v:5 access:package X:int(default ,default ), readonly  p-v:5 access:package Arms:grail.compositeShapes.interfaces.AngleInterface(default , null), editable, g-s:0 p-v:5 access:package Y:int(default ,default ), readonly  p-v:5 access:package Body:grail.simpleShapes.interfaces.LineInterface(default , null)]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:13 Number of Functions:8 Number of Non Getter Functions:0 Number of Getters and Setters:10 Number of Non Public Methods:13 Public Methods Fraction:0.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:1.0 Private  Methods Fraction:0.0 Average Method Access:2.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:8 Public Properties Fraction:0.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:1.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.25 ReadOnly Access Properties Fraction:0.75 WriteOnly  Properties Fraction:0.0 Average Properties Access:2.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,superTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AvatarInterface,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AvatarInterface,composite
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AvatarInterface,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AvatarInterface,interfaces
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AvatarInterface,avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AvatarInterface,interface
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,newX,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,newX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,newY,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,newY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,moveX,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,moveX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,moveY,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,moveY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,degrees,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,scaleMultiplier,scale
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,nameInDictionary,scaleMultiplier,multiplier
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,variableHasInterfaceType,TextInterface,getSpeechBubble
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,variableHasInterfaceType,TextInterface,getStringShape
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,variableHasInterfaceType,ImageInterface,getHead
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,variableHasInterfaceType,AngleInterface,getArms
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,variableHasInterfaceType,LineInterface,getBody
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AvatarInterface.java,variableHasInterfaceType,AngleInterface,getLegs
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,variables,Variables:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,accessModifiersUsed,Access Modifiers Used: []
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[default getX:->int, default getY:->int, default getText:->String]Setters:[default setX:int->void, default setY:int->void, default setText:String->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,properties,Properties:[editable, g-s:0 p-v:5 access:package X:int(default ,default ), editable, g-s:0 p-v:5 access:package Y:int(default ,default ), editable, g-s:0 p-v:5 access:package Text:String(default ,default )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:6 Number of Functions:3 Number of Non Getter Functions:0 Number of Getters and Setters:6 Number of Non Public Methods:6 Public Methods Fraction:0.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:1.0 Private  Methods Fraction:0.0 Average Method Access:2.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:3 Public Properties Fraction:0.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:1.0 Private  Properties Fraction:0.0 Editable Properties Fraction:1.0 ReadOnly Access Properties Fraction:0.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:2.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,superTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,grail.atomicShapes.interfaces.TextInterface,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,grail.atomicShapes.interfaces.TextInterface,atomic
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,grail.atomicShapes.interfaces.TextInterface,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,grail.atomicShapes.interfaces.TextInterface,interfaces
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,grail.atomicShapes.interfaces.TextInterface,text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,grail.atomicShapes.interfaces.TextInterface,interface
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,newX,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,newX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,newY,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,newY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,newVal,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\TextInterface.java,nameInDictionary,newVal,val
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,variables,Variables:[private double radius, private double angleDegrees]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,accessModifiersUsed,Access Modifiers Used: [(grail.atomicShapes.classes.PolarPoint, public, public, 0, grail.simpleShapes.classes.RotatingLine, null ), (grail.atomicShapes.classes.PolarPoint, public, private, 3, grail.atomicShapes.classes.PolarPoint, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getX:->int, public  getY:->int, public  getAngle:->double, public  getRadius:->double]Setters:[public  setX:int->void, public  setY:int->void, public  setRadius:double->void, public  setAngle:double->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,properties,Properties:[editable, g-s:0 p-v:3 access:public Radius:double(public ,public ), editable, g-s:0 p-v:3 access:public Angle:double(public ,public ), editable, g-s:0 p-v:5 access:public X:int(public ,public ), editable, g-s:0 p-v:5 access:public Y:int(public ,public )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:8 Number of Functions:4 Number of Non Getter Functions:0 Number of Getters and Setters:8 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:2 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:4 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:1.0 ReadOnly Access Properties Fraction:0.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:NaN Average Local References per Variable:8.0 Average Local Assignments per Variable:8.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,grail.atomicShapes.classes.PolarPoint,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,grail.atomicShapes.classes.PolarPoint,atomic
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,grail.atomicShapes.classes.PolarPoint,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,grail.atomicShapes.classes.PolarPoint,classes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,grail.atomicShapes.classes.PolarPoint,polar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,grail.atomicShapes.classes.PolarPoint,point
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,radius,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,angleDegrees,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,angleDegrees,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,currentY,current
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,currentY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,currentX,current
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,currentX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,newRadius,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,newRadius,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,newAngleDegrees,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,newAngleDegrees,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,nameInDictionary,newAngleDegrees,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public X:int(public ,public ),PolarPoint,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Y:int(public ,public ),PolarPoint,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Radius:double(public ,public ),PolarPoint,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Angle:double(public ,public ),PolarPoint,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public X:int(public ,public ),PolarPoint,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Y:int(public ,public ),PolarPoint,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public X:int(public ,public ),PolarPoint,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Y:int(public ,public ),PolarPoint,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Radius:double(public ,public ),PolarPoint,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Angle:double(public ,public ),PolarPoint,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public X:int(public ,public ),PolarPoint,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Y:int(public ,public ),PolarPoint,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public X:int(public ,public ),PolarPoint,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Y:int(public ,public ),PolarPoint,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,publicMethodsOverride,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,variables,Variables:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,accessModifiersUsed,Access Modifiers Used: [(grail.atomicShapes.interfaces.PointInterface, public, public, 0, grail.simpleShapes.classes.RotatingLine, null ), (grail.atomicShapes.interfaces.PointInterface, public, public, 0, grail.compositeShapes.classes.Avatar, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getX:->int, public  getY:->int, public  getAngle:->double, public  getRadius:->double]Setters:[default setX:int->void, default setY:int->void, default setRadius:double->void, default setAngle:double->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,properties,Properties:[editable, g-s:2 p-v:5 access:package Radius:double(public ,default ), editable, g-s:2 p-v:5 access:package Angle:double(public ,default ), editable, g-s:2 p-v:5 access:package X:int(public ,default ), editable, g-s:2 p-v:5 access:package Y:int(public ,default )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:8 Number of Functions:4 Number of Non Getter Functions:0 Number of Getters and Setters:8 Number of Non Public Methods:4 Public Methods Fraction:0.5 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.5 Private  Methods Fraction:0.0 Average Method Access:1.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:4 Public Properties Fraction:0.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:1.0 Private  Properties Fraction:0.0 Editable Properties Fraction:1.0 ReadOnly Access Properties Fraction:0.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:2.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,superTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,grail.atomicShapes.interfaces.PointInterface,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,grail.atomicShapes.interfaces.PointInterface,atomic
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,grail.atomicShapes.interfaces.PointInterface,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,grail.atomicShapes.interfaces.PointInterface,interfaces
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,grail.atomicShapes.interfaces.PointInterface,point
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,grail.atomicShapes.interfaces.PointInterface,interface
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,radius,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\interfaces\PointInterface.java,nameInDictionary,angle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,variables,Variables:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,accessModifiersUsed,Access Modifiers Used: []
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[default getArthur:->grail.compositeShapes.interfaces.AvatarInterface, default getLancelot:->grail.compositeShapes.interfaces.AvatarInterface, default getRobin:->grail.compositeShapes.interfaces.AvatarInterface, default getGalahad:->grail.compositeShapes.interfaces.AvatarInterface, default getGuard:->grail.compositeShapes.interfaces.AvatarInterface]Setters:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,properties,Properties:[readonly  p-v:5 access:package Arthur:grail.compositeShapes.interfaces.AvatarInterface(default , null), readonly  p-v:5 access:package Guard:grail.compositeShapes.interfaces.AvatarInterface(default , null), readonly  p-v:5 access:package Lancelot:grail.compositeShapes.interfaces.AvatarInterface(default , null), readonly  p-v:5 access:package Galahad:grail.compositeShapes.interfaces.AvatarInterface(default , null), readonly  p-v:5 access:package Robin:grail.compositeShapes.interfaces.AvatarInterface(default , null)]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:5 Number of Functions:5 Number of Non Getter Functions:0 Number of Getters and Setters:5 Number of Non Public Methods:5 Public Methods Fraction:0.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:1.0 Private  Methods Fraction:0.0 Average Method Access:2.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:5 Public Properties Fraction:0.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:1.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:2.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,superTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,nameInDictionary,grail.compositeShapes.interfaces.BridgeSceneInterface,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,nameInDictionary,grail.compositeShapes.interfaces.BridgeSceneInterface,composite
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,nameInDictionary,grail.compositeShapes.interfaces.BridgeSceneInterface,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,nameInDictionary,grail.compositeShapes.interfaces.BridgeSceneInterface,interfaces
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,nameInDictionary,grail.compositeShapes.interfaces.BridgeSceneInterface,bridge
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,nameInDictionary,grail.compositeShapes.interfaces.BridgeSceneInterface,scene
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,nameInDictionary,grail.compositeShapes.interfaces.BridgeSceneInterface,interface
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,variableHasInterfaceType,AvatarInterface,getArthur
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,variableHasInterfaceType,AvatarInterface,getLancelot
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,variableHasInterfaceType,AvatarInterface,getRobin
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,variableHasInterfaceType,AvatarInterface,getGalahad
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\BridgeSceneInterface.java,variableHasInterfaceType,AvatarInterface,getGuard
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,variables,Variables:[private static int DEFAULT_X, private static int DEFAULT_Y, private static double DEFAULT_RADIUS, private static double DEFAULT_ANGLE_DEGREES, private grail.atomicShapes.interfaces.PointInterface startPoint, private grail.atomicShapes.interfaces.PointInterface endPoint, private double angleDegrees]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,accessModifiersUsed,Access Modifiers Used: [(grail.simpleShapes.classes.RotatingLine, public, public, 0, main.Assignment1, null ), (grail.simpleShapes.classes.RotatingLine, public, private, 3, grail.simpleShapes.classes.RotatingLine, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,methods,NonGetterFunctions:[]NonSetterProcedures:[public  rotate:int->void, public  move:int;int->void, public  scale:double->void]Getters:[public  getX:->int, public  getY:->int, public  getWidth:->int, public  getHeight:->int, public  getRadius:->double, public  getAngle:->double, public  getEnd:->grail.atomicShapes.interfaces.PointInterface]Setters:[public  setX:int->void, public  setY:int->void, public  setRadius:double->void, public  setAngle:double->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,properties,Properties:[editable, g-s:0 p-v:3 access:public Radius:double(public ,public ), editable, g-s:0 p-v:3 access:public Angle:double(public ,public ), editable, g-s:0 p-v:3 access:public X:int(public ,public ), editable, g-s:0 p-v:3 access:public Y:int(public ,public ), readonly  p-v:5 access:public Height:int(public , null), readonly  p-v:3 access:public End:grail.atomicShapes.interfaces.PointInterface(public , null), readonly  p-v:5 access:public Width:int(public , null)]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:14 Number of Functions:7 Number of Non Getter Functions:0 Number of Getters and Setters:11 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:7 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:7 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.5714285714285714 ReadOnly Access Properties Fraction:0.42857142857142855 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:1.0 Average Local References per Variable:4.0 Average Local Assignments per Variable:4.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,grail.simpleShapes.classes.RotatingLine,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,grail.simpleShapes.classes.RotatingLine,simple
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,grail.simpleShapes.classes.RotatingLine,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,grail.simpleShapes.classes.RotatingLine,classes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,grail.simpleShapes.classes.RotatingLine,rotating
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,grail.simpleShapes.classes.RotatingLine,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_X,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_Y,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_RADIUS,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_RADIUS,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_ANGLE_DEGREES,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_ANGLE_DEGREES,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,DEFAULT_ANGLE_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,startPoint,start
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,startPoint,point
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,endPoint,end
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,endPoint,point
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,angleDegrees,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,angleDegrees,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,newRadius,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,newRadius,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,newAngle,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,newAngle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,units,units
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,newX,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,newX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,newY,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,newY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,moveX,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,moveX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,moveY,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,moveY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,scaleMultiplier,scale
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,nameInDictionary,scaleMultiplier,multiplier
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,variableHasInterfaceType,PointInterface,startPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,variableHasInterfaceType,PointInterface,endPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,variableHasInterfaceType,PointInterface,getEnd
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),RotatingLine,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),RotatingLine,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,readonly  p-v:5 access:public Height:int(public , null),RotatingLine,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,readonly  p-v:5 access:public Width:int(public , null),RotatingLine,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Radius:double(public ,public ),RotatingLine,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Angle:double(public ,public ),RotatingLine,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),RotatingLine,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),RotatingLine,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),RotatingLine,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),RotatingLine,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Radius:double(public ,public ),RotatingLine,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Angle:double(public ,public ),RotatingLine,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),RotatingLine,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),RotatingLine,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),RotatingLine,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),RotatingLine,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,publicMethodsOverride,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,setterAssignsGlobal,setX
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,setterAssignsGlobal,setY
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,variables,Variables:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,accessModifiersUsed,Access Modifiers Used: [(grail.compositeShapes.interfaces.AngleInterface, public, public, 0, main.Assignment1, null ), (grail.compositeShapes.interfaces.AngleInterface, public, public, 0, grail.compositeShapes.classes.Avatar, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,methods,NonGetterFunctions:[]NonSetterProcedures:[default move:int;int->void, default rotate:int->void]Getters:[default getLeftLine:->grail.simpleShapes.interfaces.LineInterface, default getRightLine:->grail.simpleShapes.interfaces.LineInterface]Setters:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,properties,Properties:[readonly  p-v:5 access:package RightLine:grail.simpleShapes.interfaces.LineInterface(default , null), readonly  p-v:5 access:package LeftLine:grail.simpleShapes.interfaces.LineInterface(default , null)]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:4 Number of Functions:2 Number of Non Getter Functions:0 Number of Getters and Setters:2 Number of Non Public Methods:4 Public Methods Fraction:0.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:1.0 Private  Methods Fraction:0.0 Average Method Access:2.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:2 Public Properties Fraction:0.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:1.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:2.0 Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,superTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AngleInterface,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AngleInterface,composite
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AngleInterface,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AngleInterface,interfaces
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AngleInterface,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,grail.compositeShapes.interfaces.AngleInterface,interface
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,nameInDictionary,angle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,variableHasInterfaceType,LineInterface,getLeftLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\interfaces\AngleInterface.java,variableHasInterfaceType,LineInterface,getRightLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,variables,Variables:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,accessModifiersUsed,Access Modifiers Used: []
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,properties,Properties:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,interfaces,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,nameInDictionary,main.Main,main
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Main.java,nameInDictionary,args,args
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,variables,Variables:[private static int EDITOR_WIDTH, private static int EDITOR_HEIGHT, private static int PAUSE_TIME_SHORT, private static int PAUSE_TIME_MEDIUM, private static int PAUSE_TIME_LONG, private static int PAUSE_TIME_ANIMATION, private static int PAUSE_TIME_SLOW, private static int IMAGE_MOVE_STEP, private static int ANIMATION_STEP, private static int ANIMATION_TARGET_X, private static int ANIMATION_TARGET_Y, private static int WALKING_CYCLE_FRAMES, private static double FULL_CIRCLE_DEGREES, private static double RIGHT_ANGLE_DEGREES, private static double HALF_CYCLE_DEGREES, private static int LINE_MODE_X, private static int LINE_MODE_Y, private static int LINE_MODE_RADIUS, private static int LINE_MODE_ANGLE, private static int LINE_ROTATE_90, private static int LINE_ROTATE_MINUS_90, private static int AVATAR_MOVE_X, private static int AVATAR_MOVE_Y]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,accessModifiersUsed,Access Modifiers Used: [(main.Assignment1, public, private, 3, main.Assignment1, null ), (main.Assignment1, public, package, 2, main.RunSS26A1Tests, null ), (main.Assignment1, public, package, 2, main.Main, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void, static public  demonstrateBridgeScene:->void, static public  animateLine:String->void]Getters:[]Setters:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,properties,Properties:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:3 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:23 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:1.9130434782608696 Average Local References per Variable:1.9130434782608696 Average Local Assignments per Variable:1.9130434782608696
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,interfaces,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameNotInDictionary,omegaDeg,deg
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameNotInDictionary,phaseDeg,deg
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameNotInDictionary,leftAngleDeg,deg
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameNotInDictionary,rightAngleDeg,deg
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,main.Assignment1,main
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,main.Assignment1,assignment
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,EDITOR_WIDTH,editor
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,EDITOR_WIDTH,width
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,EDITOR_HEIGHT,editor
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,EDITOR_HEIGHT,height
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_SHORT,pause
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_SHORT,time
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_SHORT,short
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_MEDIUM,pause
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_MEDIUM,time
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_MEDIUM,medium
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_LONG,pause
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_LONG,time
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_LONG,long
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_ANIMATION,pause
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_ANIMATION,time
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_ANIMATION,animation
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_SLOW,pause
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_SLOW,time
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,PAUSE_TIME_SLOW,slow
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,IMAGE_MOVE_STEP,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,IMAGE_MOVE_STEP,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,IMAGE_MOVE_STEP,step
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,ANIMATION_STEP,animation
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,ANIMATION_STEP,step
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,ANIMATION_TARGET_X,animation
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,ANIMATION_TARGET_X,target
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,ANIMATION_TARGET_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,ANIMATION_TARGET_Y,animation
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,ANIMATION_TARGET_Y,target
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,ANIMATION_TARGET_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,WALKING_CYCLE_FRAMES,walking
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,WALKING_CYCLE_FRAMES,cycle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,WALKING_CYCLE_FRAMES,frames
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,FULL_CIRCLE_DEGREES,full
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,FULL_CIRCLE_DEGREES,circle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,FULL_CIRCLE_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,RIGHT_ANGLE_DEGREES,right
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,RIGHT_ANGLE_DEGREES,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,RIGHT_ANGLE_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,HALF_CYCLE_DEGREES,half
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,HALF_CYCLE_DEGREES,cycle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,HALF_CYCLE_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_X,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_X,mode
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_Y,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_Y,mode
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_RADIUS,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_RADIUS,mode
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_RADIUS,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_ANGLE,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_ANGLE,mode
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_MODE_ANGLE,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_ROTATE_90,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_ROTATE_90,rotate
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_ROTATE_MINUS_90,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_ROTATE_MINUS_90,rotate
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,LINE_ROTATE_MINUS_90,minus
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,AVATAR_MOVE_X,avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,AVATAR_MOVE_X,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,AVATAR_MOVE_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,AVATAR_MOVE_Y,avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,AVATAR_MOVE_Y,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,AVATAR_MOVE_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,args,args
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,bridgeScene,bridge
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,bridgeScene,scene
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,editor,editor
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testLine,test
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testLine,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,nextY,next
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,nextY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,nextX,next
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,nextX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testImage,test
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testImage,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testAvatar,test
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testAvatar,avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testAngle,test
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testAngle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testLegs,test
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,testLegs,legs
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,omegaDeg,omega
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,swingAmplitude,swing
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,swingAmplitude,amplitude
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,frame,frame
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,phaseDeg,phase
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,leftAngleDeg,left
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,leftAngleDeg,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,rightAngleDeg,right
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,rightAngleDeg,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nameInDictionary,mode,mode
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,variableHasInterfaceType,BridgeSceneInterface,bridgeScene
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,variableHasInterfaceType,LineInterface,testLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,elseBranching,animateLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,nestedBlockDepth,2,1
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,methodBlockLimit,Assignment1,METHOD_DEF[72x4],2,1
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,variableHasInterfaceType,ImageInterface,testImage
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,methodBlockLimit,Assignment1,METHOD_DEF[72x4],3,1
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,variableHasInterfaceType,AvatarInterface,testAvatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,variableHasInterfaceType,AngleInterface,testAngle
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,variableHasInterfaceType,AngleInterface,testLegs
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\Assignment1.java,methodBlockLimit,Assignment1,METHOD_DEF[72x4],4,1
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,variables,Variables:[private String text, private int x, private int y]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,accessModifiersUsed,Access Modifiers Used: [(grail.atomicShapes.classes.Text, public, private, 3, grail.atomicShapes.classes.Text, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getX:->int, public  getY:->int, public  getText:->String]Setters:[public  setX:int->void, public  setY:int->void, public  setText:String->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,properties,Properties:[editable, g-s:0 p-v:3 access:public X:int(public ,public ), editable, g-s:0 p-v:3 access:public Y:int(public ,public ), editable, g-s:0 p-v:3 access:public Text:String(public ,public )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:6 Number of Functions:3 Number of Non Getter Functions:0 Number of Getters and Setters:6 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:3 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:3 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:1.0 ReadOnly Access Properties Fraction:0.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:NaN Average Local References per Variable:3.0 Average Local Assignments per Variable:3.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,grail.atomicShapes.classes.Text,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,grail.atomicShapes.classes.Text,atomic
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,grail.atomicShapes.classes.Text,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,grail.atomicShapes.classes.Text,classes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,grail.atomicShapes.classes.Text,text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,text,text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,newX,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,newX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,newY,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,newY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,newVal,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,nameInDictionary,newVal,val
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Text,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Text,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Text:String(public ,public ),Text,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Text,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Text,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Text,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Text,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Text,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Text,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Text,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Text,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\Text.java,publicMethodsOverride,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,variables,Variables:[private static int DEFAULT_X, private static int DEFAULT_Y, private static double DEFAULT_RADIUS, private static double DEFAULT_SPLIT_ANGLE_DEGREES, private static double DEFAULT_DOWN_DIRECTION_DEGREES, private grail.simpleShapes.interfaces.LineInterface leftLine, private grail.simpleShapes.interfaces.LineInterface rightLine, private double radius, private double splitAngleDegrees, private double downDirectionDegrees]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,accessModifiersUsed,Access Modifiers Used: [(grail.compositeShapes.classes.Angle, public, private, 3, grail.compositeShapes.classes.Angle, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,methods,NonGetterFunctions:[]NonSetterProcedures:[public  move:int;int->void, public  rotate:int->void]Getters:[public  getLeftLine:->grail.simpleShapes.interfaces.LineInterface, public  getRightLine:->grail.simpleShapes.interfaces.LineInterface]Setters:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,properties,Properties:[readonly  p-v:3 access:public RightLine:grail.simpleShapes.interfaces.LineInterface(public , null), readonly  p-v:3 access:public LeftLine:grail.simpleShapes.interfaces.LineInterface(public , null)]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:4 Number of Functions:2 Number of Non Getter Functions:0 Number of Getters and Setters:2 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:10 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:2 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:1.0 Average Local References per Variable:2.8 Average Local Assignments per Variable:2.8
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,grail.compositeShapes.classes.Angle,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,grail.compositeShapes.classes.Angle,composite
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,grail.compositeShapes.classes.Angle,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,grail.compositeShapes.classes.Angle,classes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,grail.compositeShapes.classes.Angle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_X,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_Y,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_RADIUS,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_RADIUS,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_SPLIT_ANGLE_DEGREES,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_SPLIT_ANGLE_DEGREES,split
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_SPLIT_ANGLE_DEGREES,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_SPLIT_ANGLE_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_DOWN_DIRECTION_DEGREES,default
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_DOWN_DIRECTION_DEGREES,down
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_DOWN_DIRECTION_DEGREES,direction
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,DEFAULT_DOWN_DIRECTION_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,leftLine,left
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,leftLine,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,rightLine,right
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,rightLine,line
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,radius,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,splitAngleDegrees,split
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,splitAngleDegrees,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,splitAngleDegrees,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,downDirectionDegrees,down
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,downDirectionDegrees,direction
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,downDirectionDegrees,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,nameInDictionary,angle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,variableHasInterfaceType,LineInterface,leftLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,variableHasInterfaceType,LineInterface,rightLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,variableHasInterfaceType,LineInterface,getLeftLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,variableHasInterfaceType,LineInterface,getRightLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Angle.java,publicMethodsOverride,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,variables,Variables:[private int x, private int y, private int width, private int height, private String text, private String imageFileName]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,accessModifiersUsed,Access Modifiers Used: [(grail.simpleShapes.classes.Image, public, private, 3, grail.simpleShapes.classes.Image, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getX:->int, public  getY:->int, public  getWidth:->int, public  getHeight:->int, public  getText:->String, public  getImageFileName:->String]Setters:[public  setX:int->void, public  setY:int->void, public  setWidth:int->void, public  setHeight:int->void, public  setText:String->void, public  setImageFileName:String->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,properties,Properties:[editable, g-s:0 p-v:3 access:public ImageFileName:String(public ,public ), editable, g-s:0 p-v:3 access:public X:int(public ,public ), editable, g-s:0 p-v:3 access:public Y:int(public ,public ), editable, g-s:0 p-v:3 access:public Height:int(public ,public ), editable, g-s:0 p-v:3 access:public Text:String(public ,public ), editable, g-s:0 p-v:3 access:public Width:int(public ,public )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:12 Number of Functions:6 Number of Non Getter Functions:0 Number of Getters and Setters:12 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:6 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:6 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:1.0 ReadOnly Access Properties Fraction:0.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:NaN Average Local References per Variable:5.0 Average Local Assignments per Variable:5.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,grail.simpleShapes.classes.Image,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,grail.simpleShapes.classes.Image,simple
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,grail.simpleShapes.classes.Image,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,grail.simpleShapes.classes.Image,classes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,grail.simpleShapes.classes.Image,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,width,width
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,height,height
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,text,text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,imageFileName,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,imageFileName,file
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,imageFileName,name
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,newX,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,newX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,newY,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,newY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,newVal,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,nameInDictionary,newVal,val
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Image,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Image,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Image,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Image,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Text:String(public ,public ),Image,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Image,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Image,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Height:int(public ,public ),Image,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Width:int(public ,public ),Image,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Image,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Image,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Image,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Image,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\simpleShapes\classes\Image.java,publicMethodsOverride,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,variables,Variables:[private int x, private int y]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,accessModifiersUsed,Access Modifiers Used: [(grail.atomicShapes.classes.CartesianPoint, public, private, 3, grail.atomicShapes.classes.CartesianPoint, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getX:->int, public  getY:->int, public  getAngle:->double, public  getRadius:->double]Setters:[public  setX:int->void, public  setY:int->void, public  setRadius:double->void, public  setAngle:double->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,properties,Properties:[editable, g-s:0 p-v:5 access:public Radius:double(public ,public ), editable, g-s:0 p-v:5 access:public Angle:double(public ,public ), editable, g-s:0 p-v:3 access:public X:int(public ,public ), editable, g-s:0 p-v:3 access:public Y:int(public ,public )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:8 Number of Functions:4 Number of Non Getter Functions:0 Number of Getters and Setters:8 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:2 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:4 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:1.0 ReadOnly Access Properties Fraction:0.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:NaN Average Local References per Variable:13.0 Average Local Assignments per Variable:13.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameNotInDictionary,angleRadians,radians
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,grail.atomicShapes.classes.CartesianPoint,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,grail.atomicShapes.classes.CartesianPoint,atomic
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,grail.atomicShapes.classes.CartesianPoint,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,grail.atomicShapes.classes.CartesianPoint,classes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,grail.atomicShapes.classes.CartesianPoint,cartesian
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,grail.atomicShapes.classes.CartesianPoint,point
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,angleRadians,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,radius,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,nameInDictionary,angle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),CartesianPoint,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),CartesianPoint,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),CartesianPoint,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),CartesianPoint,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Radius:double(public ,public ),CartesianPoint,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Angle:double(public ,public ),CartesianPoint,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),CartesianPoint,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),CartesianPoint,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Radius:double(public ,public ),CartesianPoint,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:5 access:public Angle:double(public ,public ),CartesianPoint,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),CartesianPoint,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),CartesianPoint,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),CartesianPoint,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),CartesianPoint,grail.compositeShapes.classes.Avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,publicMethodsOverride,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variables,Variables:[private static int HEAD_WIDTH, private static int HEAD_HEIGHT, private static int BODY_LENGTH, private static int LEG_RADIUS, private static int ARM_RADIUS, private static double LEG_SPLIT_ANGLE_DEGREES, private static double ARM_SPLIT_ANGLE_DEGREES, private static double DOWN_DIRECTION_DEGREES, private int x, private int y, private grail.atomicShapes.interfaces.TextInterface speechBubble, private grail.simpleShapes.interfaces.ImageInterface head, private grail.compositeShapes.interfaces.AngleInterface arms, private grail.simpleShapes.interfaces.LineInterface body, private grail.compositeShapes.interfaces.AngleInterface legs]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,accessModifiersUsed,Access Modifiers Used: [(grail.compositeShapes.classes.Avatar, public, private, 3, grail.compositeShapes.classes.Avatar, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,methods,NonGetterFunctions:[]NonSetterProcedures:[public  scale:double->void, public  move:int;int->void, public  rotate:double->void]Getters:[public  getX:->int, public  getY:->int, public  getSpeechBubble:->grail.atomicShapes.interfaces.TextInterface, public  getHead:->grail.simpleShapes.interfaces.ImageInterface, public  getArms:->grail.compositeShapes.interfaces.AngleInterface, public  getBody:->grail.simpleShapes.interfaces.LineInterface, public  getLegs:->grail.compositeShapes.interfaces.AngleInterface, public  getStringShape:->grail.atomicShapes.interfaces.TextInterface]Setters:[public  setX:int->void, public  setY:int->void]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,properties,Properties:[readonly  p-v:3 access:public Legs:grail.compositeShapes.interfaces.AngleInterface(public , null), readonly  p-v:3 access:public Head:grail.simpleShapes.interfaces.ImageInterface(public , null), readonly  p-v:3 access:public SpeechBubble:grail.atomicShapes.interfaces.TextInterface(public , null), readonly  p-v:3 access:public StringShape:grail.atomicShapes.interfaces.TextInterface(public , null), editable, g-s:0 p-v:3 access:public X:int(public ,public ), readonly  p-v:3 access:public Arms:grail.compositeShapes.interfaces.AngleInterface(public , null), editable, g-s:0 p-v:3 access:public Y:int(public ,public ), readonly  p-v:3 access:public Body:grail.simpleShapes.interfaces.LineInterface(public , null)]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:13 Number of Functions:8 Number of Non Getter Functions:0 Number of Getters and Setters:10 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:15 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:8 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.25 ReadOnly Access Properties Fraction:0.75 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:1.75 Average Local References per Variable:6.133333333333334 Average Local Assignments per Variable:6.133333333333334
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,grail.compositeShapes.classes.Avatar,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,grail.compositeShapes.classes.Avatar,composite
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,grail.compositeShapes.classes.Avatar,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,grail.compositeShapes.classes.Avatar,classes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,grail.compositeShapes.classes.Avatar,avatar
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,HEAD_WIDTH,head
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,HEAD_WIDTH,width
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,HEAD_HEIGHT,head
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,HEAD_HEIGHT,height
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,BODY_LENGTH,body
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,BODY_LENGTH,length
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,LEG_RADIUS,leg
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,LEG_RADIUS,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,ARM_RADIUS,arm
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,ARM_RADIUS,radius
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,LEG_SPLIT_ANGLE_DEGREES,leg
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,LEG_SPLIT_ANGLE_DEGREES,split
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,LEG_SPLIT_ANGLE_DEGREES,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,LEG_SPLIT_ANGLE_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,ARM_SPLIT_ANGLE_DEGREES,arm
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,ARM_SPLIT_ANGLE_DEGREES,split
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,ARM_SPLIT_ANGLE_DEGREES,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,ARM_SPLIT_ANGLE_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,DOWN_DIRECTION_DEGREES,down
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,DOWN_DIRECTION_DEGREES,direction
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,DOWN_DIRECTION_DEGREES,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,x,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,speechBubble,speech
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,speechBubble,bubble
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,head,head
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,arms,arms
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,body,body
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,legs,legs
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,newX,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,newX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,newY,new
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,newY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,scaleMultiplier,scale
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,scaleMultiplier,multiplier
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,moveX,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,moveX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,moveY,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,moveY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,rotationUnits,rotation
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,rotationUnits,units
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,neckX,neck
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,neckX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,neckY,neck
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,neckY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,armMoveX,arm
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,armMoveX,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,armMoveX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,armMoveY,arm
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,armMoveY,move
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,armMoveY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,bodyAngle,body
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,bodyAngle,angle
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,headCenterX,head
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,headCenterX,center
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,headCenterX,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,headCenterY,head
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,headCenterY,center
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,headCenterY,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,nameInDictionary,degrees,degrees
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,TextInterface,speechBubble
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,ImageInterface,head
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,AngleInterface,arms
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,LineInterface,body
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,AngleInterface,legs
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,TextInterface,getSpeechBubble
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,ImageInterface,getHead
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,AngleInterface,getArms
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,LineInterface,getBody
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,AngleInterface,getLegs
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,variableHasInterfaceType,TextInterface,getStringShape
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Avatar,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Avatar,grail.simpleShapes.classes.Image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Avatar,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Avatar,grail.atomicShapes.classes.CartesianPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Avatar,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Avatar,grail.atomicShapes.classes.Text
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Avatar,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Avatar,grail.simpleShapes.classes.RotatingLine
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public X:int(public ,public ),Avatar,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,peerDoesNotHaveCommonProperties,editable, g-s:0 p-v:3 access:public Y:int(public ,public ),Avatar,grail.atomicShapes.classes.PolarPoint
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,publicMethodsOverride,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,variables,Variables:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,accessModifiersUsed,Access Modifiers Used: []
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void]Getters:[]Setters:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,properties,Properties:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:1 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,interfaces,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,nameInDictionary,main.RunSS26A1Tests,main
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,nameInDictionary,main.RunSS26A1Tests,run
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,nameInDictionary,main.RunSS26A1Tests,a
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,nameInDictionary,main.RunSS26A1Tests,tests
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,nameInDictionary,args,args
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,liberalMagicNumber,600,EXPR 600
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,liberalMagicNumber,2000,EXPR 2000
+56,Tue Jun 30 10:29:43 EDT 2026,true,main\RunSS26A1Tests.java,liberalMagicNumber,5,EXPR 5
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variables,Variables:[private static int ARTHUR_X, private static int ARTHUR_Y, private static int LANCELOT_X, private static int LANCELOT_Y, private static int ROBIN_X, private static int ROBIN_Y, private static int GALAHAD_X, private static int GALAHAD_Y, private static int GUARD_X, private static int GUARD_Y, private static String ARTHUR_SPEECH, private static String ARTHUR_IMAGE, private static String LANCELOT_SPEECH, private static String LANCELOT_IMAGE, private static String ROBIN_SPEECH, private static String ROBIN_IMAGE, private static String GALAHAD_SPEECH, private static String GALAHAD_IMAGE, private static String GUARD_SPEECH, private static String GUARD_IMAGE, private grail.compositeShapes.interfaces.AvatarInterface arthur, private grail.compositeShapes.interfaces.AvatarInterface lancelot, private grail.compositeShapes.interfaces.AvatarInterface robin, private grail.compositeShapes.interfaces.AvatarInterface galahad, private grail.compositeShapes.interfaces.AvatarInterface guard]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,accessModifiersUsed,Access Modifiers Used: [(grail.compositeShapes.classes.BridgeScene, public, private, 3, grail.compositeShapes.classes.BridgeScene, null )]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[public  getArthur:->grail.compositeShapes.interfaces.AvatarInterface, public  getLancelot:->grail.compositeShapes.interfaces.AvatarInterface, public  getRobin:->grail.compositeShapes.interfaces.AvatarInterface, public  getGalahad:->grail.compositeShapes.interfaces.AvatarInterface, public  getGuard:->grail.compositeShapes.interfaces.AvatarInterface]Setters:[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,properties,Properties:[readonly  p-v:3 access:public Arthur:grail.compositeShapes.interfaces.AvatarInterface(public , null), readonly  p-v:3 access:public Guard:grail.compositeShapes.interfaces.AvatarInterface(public , null), readonly  p-v:3 access:public Lancelot:grail.compositeShapes.interfaces.AvatarInterface(public , null), readonly  p-v:3 access:public Galahad:grail.compositeShapes.interfaces.AvatarInterface(public , null), readonly  p-v:3 access:public Robin:grail.compositeShapes.interfaces.AvatarInterface(public , null)]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:5 Number of Functions:5 Number of Non Getter Functions:0 Number of Getters and Setters:5 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:25 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:5 Public Properties Fraction:1.0 Protected Properties Fraction:0.0 Package Access Properties Fraction:0.0 Private  Properties Fraction:0.0 Editable Properties Fraction:0.0 ReadOnly Access Properties Fraction:1.0 WriteOnly  Properties Fraction:0.0 Average Properties Access:0.0 Average Local References per Constant:1.0 Average Local References per Variable:1.2 Average Local Assignments per Variable:1.2
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,innerTypes,[]
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,superTypes,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,tags,None
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,classDefined,No Expected Tag
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,grail.compositeShapes.classes.BridgeScene,grail
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,grail.compositeShapes.classes.BridgeScene,composite
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,grail.compositeShapes.classes.BridgeScene,shapes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,grail.compositeShapes.classes.BridgeScene,classes
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,grail.compositeShapes.classes.BridgeScene,bridge
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,grail.compositeShapes.classes.BridgeScene,scene
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ARTHUR_X,arthur
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ARTHUR_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ARTHUR_Y,arthur
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ARTHUR_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,LANCELOT_X,lancelot
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,LANCELOT_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,LANCELOT_Y,lancelot
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,LANCELOT_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ROBIN_X,robin
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ROBIN_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ROBIN_Y,robin
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ROBIN_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GALAHAD_X,galahad
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GALAHAD_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GALAHAD_Y,galahad
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GALAHAD_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GUARD_X,guard
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GUARD_X,x
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GUARD_Y,guard
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GUARD_Y,y
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ARTHUR_SPEECH,arthur
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ARTHUR_SPEECH,speech
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ARTHUR_IMAGE,arthur
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ARTHUR_IMAGE,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,LANCELOT_SPEECH,lancelot
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,LANCELOT_SPEECH,speech
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,LANCELOT_IMAGE,lancelot
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,LANCELOT_IMAGE,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ROBIN_SPEECH,robin
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ROBIN_SPEECH,speech
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ROBIN_IMAGE,robin
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,ROBIN_IMAGE,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GALAHAD_SPEECH,galahad
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GALAHAD_SPEECH,speech
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GALAHAD_IMAGE,galahad
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GALAHAD_IMAGE,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GUARD_SPEECH,guard
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GUARD_SPEECH,speech
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GUARD_IMAGE,guard
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,GUARD_IMAGE,image
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,arthur,arthur
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,lancelot,lancelot
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,robin,robin
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,galahad,galahad
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,nameInDictionary,guard,guard
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,arthur
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,lancelot
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,robin
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,galahad
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,guard
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,getArthur
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,getLancelot
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,getRobin
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,getGalahad
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,variableHasInterfaceType,AvatarInterface,getGuard
+56,Tue Jun 30 10:29:43 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,publicMethodsOverride,[]
+57,Tue Jun 30 12:59:03 EDT 2026,true,grail\atomicShapes\classes\PolarPoint.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,grail\simpleShapes\classes\RotatingLine.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,main\Main.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,main\Assignment1.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,grail\atomicShapes\classes\Text.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,grail\compositeShapes\classes\Angle.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,grail\simpleShapes\classes\Image.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,grail\atomicShapes\classes\CartesianPoint.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,grail\compositeShapes\classes\Avatar.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,main\RunSS26A1Tests.java,classDefined,No Expected Tag
+57,Tue Jun 30 12:59:04 EDT 2026,true,grail\compositeShapes\classes\BridgeScene.java,classDefined,No Expected Tag
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,variables,Variables:[private static int EDITOR_WIDTH, private static int EDITOR_HEIGHT, private static int PAUSE_TIME_SHORT, private static int PAUSE_TIME_MEDIUM, private static int PAUSE_TIME_LONG, private static int PAUSE_TIME_ANIMATION, private static int PAUSE_TIME_SLOW, private static int IMAGE_MOVE_STEP, private static int ANIMATION_STEP, private static int ANIMATION_TARGET_X, private static int ANIMATION_TARGET_Y, private static int WALKING_CYCLE_FRAMES, private static double FULL_CIRCLE_DEGREES, private static double RIGHT_ANGLE_DEGREES, private static double HALF_CYCLE_DEGREES, private static int LINE_MODE_X, private static int LINE_MODE_Y, private static int LINE_MODE_RADIUS, private static int LINE_MODE_ANGLE, private static int LINE_ROTATE_90, private static int LINE_ROTATE_MINUS_90, private static int AVATAR_MOVE_X, private static int AVATAR_MOVE_Y]
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,accessModifiersUsed,Access Modifiers Used: [(main.Assignment1, public, private, 3, main.Assignment1, null ), (main.Assignment1, public, package, 2, main.Main, null )]
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void, static public  demonstrateBridgeScene:->void, static public  animateLine:String->void]Getters:[]Setters:[]
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,properties,Properties:[]
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:3 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:23 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:1.9130434782608696 Average Local References per Variable:1.9130434782608696 Average Local Assignments per Variable:1.9130434782608696
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,innerTypes,[]
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,superTypes,None
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,interfaces,[]
+59,Tue Jun 30 13:09:49 EDT 2026,true,main\Assignment1.java,tags,None
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,expectedTypes,[@Comp301Tags.GREETING_MAIN]
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,variables,Variables:[private static int EDITOR_WIDTH, private static int EDITOR_HEIGHT, private static int PAUSE_TIME_SHORT, private static int PAUSE_TIME_MEDIUM, private static int PAUSE_TIME_LONG, private static int PAUSE_TIME_ANIMATION, private static int PAUSE_TIME_SLOW, private static int IMAGE_MOVE_STEP, private static int ANIMATION_STEP, private static int ANIMATION_TARGET_X, private static int ANIMATION_TARGET_Y, private static int WALKING_CYCLE_FRAMES, private static double FULL_CIRCLE_DEGREES, private static double RIGHT_ANGLE_DEGREES, private static double HALF_CYCLE_DEGREES, private static int LINE_MODE_X, private static int LINE_MODE_Y, private static int LINE_MODE_RADIUS, private static int LINE_MODE_ANGLE, private static int LINE_ROTATE_90, private static int LINE_ROTATE_MINUS_90, private static int AVATAR_MOVE_X, private static int AVATAR_MOVE_Y]
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,accessModifiersUsed,Access Modifiers Used: [(main.Assignment1, public, private, 3, main.Assignment1, null ), (main.Assignment1, public, package, 2, main.Main, null )]
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,methods,NonGetterFunctions:[]NonSetterProcedures:[static public  main:String[]->void, static public  demonstrateBridgeScene:->void, static public  animateLine:String->void]Getters:[]Setters:[]
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,properties,Properties:[]
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:3 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:1.0 Protected Methods Fraction:0.0 Package Access Methods Fraction:0.0 Private  Methods Fraction:0.0 Average Method Access:0.0 Number of Variables:23 Public Variables Fraction:0.0 Protected Variables Fraction:0.0 Package Access Variables Fraction:0.0 Private  Variable Fraction:1.0 Average Variable Access:3.0 Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:1.9130434782608696 Average Local References per Variable:1.9130434782608696 Average Local Assignments per Variable:1.9130434782608696
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,innerTypes,[]
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,superTypes,None
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,interfaces,[]
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,tags,None
+59,Tue Jun 30 13:10:36 EDT 2026,true,main\Assignment1.java,classDefined,No Expected Tag
+59,Tue Jun 30 13:10:56 EDT 2026,true,main\Assignment1.java,variables,Variables:[]
+59,Tue Jun 30 13:10:56 EDT 2026,true,main\Assignment1.java,accessModifiersUsed,Access Modifiers Used: []
+59,Tue Jun 30 13:10:56 EDT 2026,true,main\Assignment1.java,methods,NonGetterFunctions:[]NonSetterProcedures:[]Getters:[]Setters:[]
+59,Tue Jun 30 13:10:56 EDT 2026,true,main\Assignment1.java,aggregateStatistics, Is Abstract:false Number of Abstract Methods:0 Is Generic:false Number of Generic Methods:0 Number of Asserts:0 Number of Ternary Conditionals:0 Number of Methods:0 Number of Functions:0 Number of Non Getter Functions:0 Number of Getters and Setters:0 Number of Non Public Methods:0 Public Methods Fraction:NaN Protected Methods Fraction:NaN Package Access Methods Fraction:NaN Private  Methods Fraction:NaN Average Method Access:NaN Number of Variables:0 Public Variables Fraction:NaN Protected Variables Fraction:NaN Package Access Variables Fraction:NaN Private  Variable Fraction:NaN Average Variable Access:NaN Number of Properties:0 Public Properties Fraction:NaN Protected Properties Fraction:NaN Package Access Properties Fraction:NaN Private  Properties Fraction:NaN Editable Properties Fraction:NaN ReadOnly Access Properties Fraction:NaN WriteOnly  Properties Fraction:NaN Average Properties Access:NaN Average Local References per Constant:-1.0 Average Local References per Variable:-1.0 Average Local Assignments per Variable:-1.0

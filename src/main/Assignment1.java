@@ -13,6 +13,17 @@ import grail.simpleShapes.interfaces.LineInterface;
 import grail.simpleShapes.classes.Image;
 import grail.simpleShapes.interfaces.ImageInterface;
 import util.misc.ThreadSupport;
+import bus.uigen.ObjectEditor;
+import grail.compositeShapes.classes.Angle;
+import grail.compositeShapes.classes.Avatar;
+import grail.compositeShapes.classes.BridgeScene;
+import grail.compositeShapes.interfaces.AngleInterface;
+import grail.compositeShapes.interfaces.AvatarInterface;
+import grail.compositeShapes.interfaces.BridgeSceneInterface;
+import grail.simpleShapes.classes.Image;
+import grail.simpleShapes.classes.RotatingLine;
+import grail.simpleShapes.interfaces.ImageInterface;
+import grail.simpleShapes.interfaces.LineInterface;
 
 public class Assignment1 {
     
@@ -32,23 +43,23 @@ public class Assignment1 {
     private static final int ANIMATION_TARGET_Y = 300;
     
     private static final int WALKING_CYCLE_FRAMES = 80;
-    private static final double FULL_CIRCLE_DEGREES = 360.0;
-    private static final double RIGHT_ANGLE_DEGREES = 90.0;
-    private static final double HALF_CYCLE_DEGREES = 180.0;
+    private static final double FULL_CIRCLE_RADIANS = 2 * Math.PI;
+    private static final double RIGHT_ANGLE_RADIANS = Math.PI / 2;
+    private static final double HALF_CYCLE_RADIANS = Math.PI;
     
     private static final int LINE_MODE_X = 100;
     private static final int LINE_MODE_Y = 100;
     private static final int LINE_MODE_RADIUS = 20;
-    private static final int LINE_MODE_ANGLE = 0;
-    private static final int LINE_ROTATE_90 = 90;
-    private static final int LINE_ROTATE_MINUS_90 = -90;
+    private static final double LINE_MODE_ANGLE = 0;
+    private static final double LINE_ROTATE_90 = Math.PI / 2;
+    private static final double LINE_ROTATE_MINUS_90 = -Math.PI / 2;
     
     private static final int AVATAR_MOVE_X = 300;
     private static final int AVATAR_MOVE_Y = 300;
     
     public static void main(String[] args) {
-        // animateLine("Avatar");
-        demonstrateBridgeScene();
+        animateLine("Line");
+        // demonstrateBridgeScene();
     }
 
     public static void demonstrateBridgeScene() {
@@ -69,7 +80,7 @@ public class Assignment1 {
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_SHORT);
 
-            testLine.rotate(LINE_ROTATE_MINUS_90);
+            testLine.rotate(50);
             editor.refresh();
         }
 
@@ -121,35 +132,35 @@ public class Assignment1 {
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
             
-            testAvatar.rotate(RIGHT_ANGLE_DEGREES);
+            testAvatar.rotate(RIGHT_ANGLE_RADIANS);
             editor.refresh();
         }
 
         else if (mode == "Angle") {
-            AngleInterface testAngle = new Angle(100, 100, 50, RIGHT_ANGLE_DEGREES, RIGHT_ANGLE_DEGREES);
+            AngleInterface testAngle = new Angle(100, 100, 50, RIGHT_ANGLE_RADIANS, RIGHT_ANGLE_RADIANS);
             OEFrame editor = ObjectEditor.edit(testAngle);
             editor.refresh();
         }
 
         else if (mode == "WalkingLegs") {
-            AngleInterface testLegs = new Angle(200, 400, 100, RIGHT_ANGLE_DEGREES, RIGHT_ANGLE_DEGREES);
+            AngleInterface testLegs = new Angle(200, 400, 100, RIGHT_ANGLE_RADIANS, RIGHT_ANGLE_RADIANS);
 
             OEFrame editor = ObjectEditor.edit(testLegs);
 
-            double omegaDeg = FULL_CIRCLE_DEGREES / WALKING_CYCLE_FRAMES;
-            double swingAmplitude = ANIMATION_STEP / (100.0 * omegaDeg);
+            double omegaRad = FULL_CIRCLE_RADIANS / WALKING_CYCLE_FRAMES;
+            double swingAmplitude = ANIMATION_STEP / (100.0 * omegaRad);
 
             int frame = 0;
             while (true) {
                 testLegs.move(ANIMATION_STEP, 0);
 
-                double phaseDeg = (frame % WALKING_CYCLE_FRAMES) * omegaDeg;
+                double phaseRad = (frame % WALKING_CYCLE_FRAMES) * omegaRad;
 
-                double leftAngleDeg = RIGHT_ANGLE_DEGREES + swingAmplitude * Math.sin(Math.toRadians(phaseDeg));
-                double rightAngleDeg = RIGHT_ANGLE_DEGREES + swingAmplitude * Math.sin(Math.toRadians(phaseDeg + HALF_CYCLE_DEGREES));
+                double leftAngleRad = RIGHT_ANGLE_RADIANS + swingAmplitude * Math.sin(phaseRad);
+                double rightAngleRad = RIGHT_ANGLE_RADIANS + swingAmplitude * Math.sin(phaseRad + HALF_CYCLE_RADIANS);
 
-                testLegs.getLeftLine().setAngle(leftAngleDeg);
-                testLegs.getRightLine().setAngle(rightAngleDeg);
+                testLegs.getLeftLine().setAngle(leftAngleRad);
+                testLegs.getRightLine().setAngle(rightAngleRad);
 
                 editor.refresh();
                 ThreadSupport.sleep(PAUSE_TIME_ANIMATION);

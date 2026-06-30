@@ -22,7 +22,7 @@ public class CartesianPoint implements PointInterface {
     
     @Override
     public double getAngle() { 
-        return Math.toDegrees(Math.atan2(y, x)); 
+        return Math.atan2(y, x); 
     }
     @Override
     public double getRadius() { 
@@ -47,10 +47,9 @@ public class CartesianPoint implements PointInterface {
     }
 
     @Override
-    public void setAngle(double angle) {
+    public void setAngle(double newAngleRadians) {
         double radius = getRadius();
-        double angleRadians = Math.toRadians(angle);
-        this.x = (int) Math.round(radius * Math.cos(angleRadians));
-        this.y = (int) Math.round(radius * Math.sin(angleRadians));
+        this.x = (int) Math.round(radius * Math.cos(newAngleRadians));
+        this.y = (int) Math.round(radius * Math.sin(newAngleRadians));
     }
 }
