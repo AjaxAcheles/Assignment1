@@ -11,5 +11,7 @@ public interface PointInterface {
 	public double getRadius(); 
 	void setX(int x);
 	void setY(int y);
+	void setRadius(double radius);
+	void setAngle(double angle);
 
 }

@@ -17,7 +17,7 @@ import util.annotations.Tags;
 
 @Tags(Comp301Tags.AVATAR)
 @StructurePattern(StructurePatternNames.BEAN_PATTERN)
-@PropertyNames({"X", "Y", "SpeechBubble", "Head", "Arms", "Body", "Legs"})
+@PropertyNames({"X", "Y", "SpeechBubble", "StringShape", "Head", "Arms", "Body", "Legs"})
 @EditablePropertyNames({"X", "Y"})
 public class Avatar implements AvatarInterface {
     
@@ -107,6 +107,27 @@ public class Avatar implements AvatarInterface {
     @Override
     public AngleInterface getLegs() {
         return this.legs;
+    }
+
+    @Override
+    public TextInterface getStringShape() {
+        return this.speechBubble;
+    }
+
+    @Override
+    public void scale(double scaleMultiplier) {
+        // Scale the body which represents the torso length
+        this.body.scale(scaleMultiplier);
+
+        // Scale legs and arms by updating their line radii
+        this.legs.getLeftLine().setRadius(this.legs.getLeftLine().getRadius() * scaleMultiplier);
+        this.legs.getRightLine().setRadius(this.legs.getRightLine().getRadius() * scaleMultiplier);
+        this.arms.getLeftLine().setRadius(this.arms.getLeftLine().getRadius() * scaleMultiplier);
+        this.arms.getRightLine().setRadius(this.arms.getRightLine().getRadius() * scaleMultiplier);
+
+        // Scale head dimensions
+        this.head.setWidth((int) Math.round(this.head.getWidth() * scaleMultiplier));
+        this.head.setHeight((int) Math.round(this.head.getHeight() * scaleMultiplier));
     }
 
     @Override

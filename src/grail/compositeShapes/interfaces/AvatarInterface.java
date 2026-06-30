@@ -20,10 +20,12 @@ public interface AvatarInterface {
     int getY();
     void setY(int newY);
     TextInterface getSpeechBubble();
+    TextInterface getStringShape();
     ImageInterface getHead();
     AngleInterface getArms();
     LineInterface getBody();
     AngleInterface getLegs();
     void move(int moveX, int moveY);
     void rotate(double degrees);
+    void scale(double scaleMultiplier);
 }

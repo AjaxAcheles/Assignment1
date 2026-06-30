@@ -38,4 +38,19 @@ public class CartesianPoint implements PointInterface {
     public void setY(int y) {
         this.y = y;
     }
+
+    @Override
+    public void setRadius(double radius) {
+        double angleRadians = Math.atan2(y, x);
+        this.x = (int) Math.round(radius * Math.cos(angleRadians));
+        this.y = (int) Math.round(radius * Math.sin(angleRadians));
+    }
+
+    @Override
+    public void setAngle(double angle) {
+        double radius = getRadius();
+        double angleRadians = Math.toRadians(angle);
+        this.x = (int) Math.round(radius * Math.cos(angleRadians));
+        this.y = (int) Math.round(radius * Math.sin(angleRadians));
+    }
 }

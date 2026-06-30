@@ -15,11 +15,21 @@ import util.annotations.Tags;
 @PropertyNames({"LeftLine", "RightLine"})
 @EditablePropertyNames({})
 public class Angle implements AngleInterface {
+    private static final int DEFAULT_X = 0;
+    private static final int DEFAULT_Y = 0;
+    private static final double DEFAULT_RADIUS = 50;
+    private static final double DEFAULT_SPLIT_ANGLE_DEGREES = 90.0;
+    private static final double DEFAULT_DOWN_DIRECTION_DEGREES = 90.0;
+	
     private LineInterface leftLine;
     private LineInterface rightLine;
     private double radius;
     private double splitAngleDegrees;
     private double downDirectionDegrees;
+
+    public Angle() {
+        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_SPLIT_ANGLE_DEGREES, DEFAULT_DOWN_DIRECTION_DEGREES);
+    }
 
     public Angle(int x, int y, double radius, double splitAngleDegrees, double downDirectionDegrees) {
         this.radius = radius;

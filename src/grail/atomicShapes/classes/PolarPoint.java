@@ -18,12 +18,12 @@ public class PolarPoint implements PointInterface {
 	
 	@Override
 	public int getX() {
-		return (int) (radius * Math.cos(Math.toRadians(angleDegrees)));
+		return (int) Math.round(radius * Math.cos(Math.toRadians(angleDegrees)));
 	}
 	
 	@Override
 	public int getY() {
-		return (int) (radius * Math.sin(Math.toRadians(angleDegrees)));
+		return (int) Math.round(radius * Math.sin(Math.toRadians(angleDegrees)));
 	}
 	
 	@Override
@@ -50,10 +50,12 @@ public class PolarPoint implements PointInterface {
 		angleDegrees = Math.toDegrees(Math.atan2(y, currentX));
 	}
 	
+	@Override
 	public void setRadius(double newRadius) {
 		this.radius = newRadius;
 	}
 	
+	@Override
 	public void setAngle(double newAngleDegrees) {
 		this.angleDegrees = newAngleDegrees;
 	}

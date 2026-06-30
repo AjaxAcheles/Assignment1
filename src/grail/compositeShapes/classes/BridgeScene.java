@@ -11,6 +11,27 @@ import util.annotations.Tags;
 @StructurePattern(StructurePatternNames.BEAN_PATTERN)
 @PropertyNames({"Arthur", "Lancelot", "Robin", "Galahad", "Guard"})
 public class BridgeScene implements BridgeSceneInterface {
+    private static final int ARTHUR_X = 100;
+    private static final int ARTHUR_Y = 200;
+    private static final int LANCELOT_X = 300;
+    private static final int LANCELOT_Y = 200;
+    private static final int ROBIN_X = 500;
+    private static final int ROBIN_Y = 200;
+    private static final int GALAHAD_X = 700;
+    private static final int GALAHAD_Y = 200;
+    private static final int GUARD_X = 900;
+    private static final int GUARD_Y = 200;
+    private static final String ARTHUR_SPEECH = "I am Arthur";
+    private static final String ARTHUR_IMAGE = "images/arthur.jpg";
+    private static final String LANCELOT_SPEECH = "I am Lancelot";
+    private static final String LANCELOT_IMAGE = "images/lancelot.jpg";
+    private static final String ROBIN_SPEECH = "I am Robin";
+    private static final String ROBIN_IMAGE = "images/robin.jpg";
+    private static final String GALAHAD_SPEECH = "I am Galahad";
+    private static final String GALAHAD_IMAGE = "images/galahad.jpg";
+    private static final String GUARD_SPEECH = "I am random guard";
+    private static final String GUARD_IMAGE = "images/guard.jpg";
+	
     private AvatarInterface arthur;
     private AvatarInterface lancelot;
     private AvatarInterface robin;
@@ -18,11 +39,11 @@ public class BridgeScene implements BridgeSceneInterface {
     private AvatarInterface guard;
 
     public BridgeScene() {
-        this.arthur = new Avatar(100, 200, "I am Arthur", "images/arthur.jpg");
-        this.lancelot = new Avatar(300, 200, "I am Lancelot", "images/lancelot.jpg");
-        this.robin = new Avatar(500, 200, "I am Robin", "images/robin.jpg");
-        this.galahad = new Avatar(700, 200, "I am Galahad", "images/galahad.jpg");
-        this.guard = new Avatar(900, 200, "I am random guard", "images/guard.jpg");
+        this.arthur = new Avatar(ARTHUR_X, ARTHUR_Y, ARTHUR_SPEECH, ARTHUR_IMAGE);
+        this.lancelot = new Avatar(LANCELOT_X, LANCELOT_Y, LANCELOT_SPEECH, LANCELOT_IMAGE);
+        this.robin = new Avatar(ROBIN_X, ROBIN_Y, ROBIN_SPEECH, ROBIN_IMAGE);
+        this.galahad = new Avatar(GALAHAD_X, GALAHAD_Y, GALAHAD_SPEECH, GALAHAD_IMAGE);
+        this.guard = new Avatar(GUARD_X, GUARD_Y, GUARD_SPEECH, GUARD_IMAGE);
     }
 
     @Override

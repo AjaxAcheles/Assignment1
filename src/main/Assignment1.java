@@ -36,6 +36,16 @@ public class Assignment1 {
     private static final double RIGHT_ANGLE_DEGREES = 90.0;
     private static final double HALF_CYCLE_DEGREES = 180.0;
     
+    private static final int LINE_MODE_X = 100;
+    private static final int LINE_MODE_Y = 100;
+    private static final int LINE_MODE_RADIUS = 20;
+    private static final int LINE_MODE_ANGLE = 0;
+    private static final int LINE_ROTATE_90 = 90;
+    private static final int LINE_ROTATE_MINUS_90 = -90;
+    
+    private static final int AVATAR_MOVE_X = 300;
+    private static final int AVATAR_MOVE_Y = 300;
+    
     public static void main(String[] args) {
         // animateLine("Avatar");
         demonstrateBridgeScene();
@@ -45,20 +55,21 @@ public class Assignment1 {
         BridgeSceneInterface bridgeScene = new BridgeScene();
         OEFrame editor = ObjectEditor.edit(bridgeScene);
         editor.setSize(EDITOR_WIDTH, EDITOR_HEIGHT);
+        ThreadSupport.sleep(PAUSE_TIME_LONG);
     }
     
     public static void animateLine(String mode) {
         if (mode == "Line") {
-            LineInterface testLine = new RotatingLine(100, 100, 20, 0); 
+            LineInterface testLine = new RotatingLine(LINE_MODE_X, LINE_MODE_Y, LINE_MODE_RADIUS, LINE_MODE_ANGLE); 
             OEFrame editor = ObjectEditor.edit(testLine);
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_LONG);
 
-            testLine.rotate(90);
+            testLine.rotate(LINE_ROTATE_90);
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_SHORT);
 
-            testLine.rotate(-90);
+            testLine.rotate(LINE_ROTATE_MINUS_90);
             editor.refresh();
         }
 
@@ -106,7 +117,7 @@ public class Assignment1 {
             OEFrame editor = ObjectEditor.edit(testAvatar);
             ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
             
-            testAvatar.move(300, 300);
+            testAvatar.move(AVATAR_MOVE_X, AVATAR_MOVE_Y);
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_MEDIUM);
             
