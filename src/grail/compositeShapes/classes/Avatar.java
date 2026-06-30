@@ -26,9 +26,9 @@ public class Avatar implements AvatarInterface {
     private static final int BODY_LENGTH = 68;
     private static final int LEG_RADIUS = 75;
     private static final int ARM_RADIUS = 60;
-    private static final double LEG_SPLIT_ANGLE_RADIANS = Math.PI / 3;
-    private static final double ARM_SPLIT_ANGLE_RADIANS = Math.PI / 2;
-    private static final double DOWN_DIRECTION_RADIANS = Math.PI / 2;
+    private static final double LEG_SPLIT_ANGLE_DEGREES = 60.0;
+    private static final double ARM_SPLIT_ANGLE_DEGREES = 90.0;
+    private static final double DOWN_DIRECTION_DEGREES = 90.0;
     
     private int x;
     private int y;
@@ -43,10 +43,10 @@ public class Avatar implements AvatarInterface {
         this.y = y;
 
         // Legs spawn at (x, y) pointing downward
-        this.legs = new Angle(x, y, LEG_RADIUS, LEG_SPLIT_ANGLE_RADIANS, DOWN_DIRECTION_RADIANS);
+        this.legs = new Angle(x, y, LEG_RADIUS, LEG_SPLIT_ANGLE_DEGREES, DOWN_DIRECTION_DEGREES);
 
         // Body spawns at (x, y) and points upward (opposite of down direction)
-        double bodyAngle = -DOWN_DIRECTION_RADIANS;
+        double bodyAngle = -DOWN_DIRECTION_DEGREES;
         this.body = new RotatingLine(x, y, BODY_LENGTH, bodyAngle);
 
         // Neck position is body's endpoint (absolute = start + offset)
@@ -54,7 +54,7 @@ public class Avatar implements AvatarInterface {
         int neckY = this.body.getY() + this.body.getEnd().getY();
 
         // Arms attach at the neck, dangling downward
-        this.arms = new Angle(neckX, neckY, ARM_RADIUS, ARM_SPLIT_ANGLE_RADIANS, DOWN_DIRECTION_RADIANS);
+        this.arms = new Angle(neckX, neckY, ARM_RADIUS, ARM_SPLIT_ANGLE_DEGREES, DOWN_DIRECTION_DEGREES);
 
         // Head sits directly above the body endpoint
         this.head = new Image(neckX - HEAD_WIDTH / 2, neckY - HEAD_HEIGHT,
@@ -145,9 +145,11 @@ public class Avatar implements AvatarInterface {
     }
 
     @Override
-    public void rotate(double radians) {
-        this.legs.rotate(radians);
-        this.body.rotate(radians);
+    public void rotate(double degrees) {
+        int rotationUnits = (int) Math.round(degrees);
+
+        this.legs.rotate(rotationUnits);
+        this.body.rotate(rotationUnits);
 
         // Neck remains the body endpoint after body rotation
         int neckX = this.body.getX() + this.body.getEnd().getX();
@@ -157,12 +159,12 @@ public class Avatar implements AvatarInterface {
         int armMoveX = neckX - this.arms.getLeftLine().getX();
         int armMoveY = neckY - this.arms.getLeftLine().getY();
         this.arms.move(armMoveX, armMoveY);
-        this.arms.rotate(radians);
+        this.arms.rotate(rotationUnits);
 
         // Position head along the current body direction so it turns with the avatar
         double bodyAngle = this.body.getAngle();
-        int headCenterX = neckX + (int) Math.round((this.head.getHeight() / 2.0) * Math.cos(bodyAngle));
-        int headCenterY = neckY + (int) Math.round((this.head.getHeight() / 2.0) * Math.sin(bodyAngle));
+        int headCenterX = neckX + (int) Math.round((this.head.getHeight() / 2.0) * Math.cos(Math.toRadians(bodyAngle)));
+        int headCenterY = neckY + (int) Math.round((this.head.getHeight() / 2.0) * Math.sin(Math.toRadians(bodyAngle)));
         this.head.setX(headCenterX - this.head.getWidth() / 2);
         this.head.setY(headCenterY - this.head.getHeight() / 2);
 

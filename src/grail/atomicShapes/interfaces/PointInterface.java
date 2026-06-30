@@ -12,6 +12,6 @@ public interface PointInterface {
 	void setX(int x);
 	void setY(int y);
 	void setRadius(double radius);
-	void setAngle(double angleRadians);
+	void setAngle(double angle);
 
 }

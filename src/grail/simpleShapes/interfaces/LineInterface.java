@@ -23,11 +23,11 @@ public interface LineInterface {
     double getRadius();
     double getAngle();
     void setRadius(double radius);
-    void setAngle(double angleRadians);
+    void setAngle(double angle);
 
     PointInterface getEnd();
     
-    void rotate(double units);
+    void rotate(int units);
     void move(int moveX, int moveY);
     void scale(double scaleMultiplier);
 }

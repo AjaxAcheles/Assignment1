@@ -64,59 +64,59 @@ import grail.atomicShapes.interfaces.PointInterface;
 public class PolarPoint implements PointInterface {
 	private double radius;
 	private double angleDegrees;
-
+	
 	public PolarPoint(double theRadius, double theAngleDegrees) {
 		radius = theRadius;
 		angleDegrees = theAngleDegrees;
 	}
-
+	
 	public PolarPoint(int theX, int theY) {
 		radius = Math.sqrt(theX * theX + theY * theY);
 		angleDegrees = Math.toDegrees(Math.atan2(theY, theX));
 	}
-
+	
 	@Override
 	public int getX() {
 		return (int) Math.round(radius * Math.cos(Math.toRadians(angleDegrees)));
 	}
-
+	
 	@Override
 	public int getY() {
 		return (int) Math.round(radius * Math.sin(Math.toRadians(angleDegrees)));
 	}
-
+	
 	@Override
 	public double getAngle() {
-		return Math.toRadians(angleDegrees);
+		return angleDegrees;
 	}
-
+	
 	@Override
 	public double getRadius() {
 		return radius;
 	}
-
+	
 	@Override
 	public void setX(int x) {
 		int currentY = getY();
 		radius = Math.sqrt(x * x + currentY * currentY);
 		angleDegrees = Math.toDegrees(Math.atan2(currentY, x));
 	}
-
+	
 	@Override
 	public void setY(int y) {
 		int currentX = getX();
 		radius = Math.sqrt(currentX * currentX + y * y);
 		angleDegrees = Math.toDegrees(Math.atan2(y, currentX));
 	}
-
+	
 	@Override
 	public void setRadius(double newRadius) {
 		this.radius = newRadius;
 	}
-
+	
 	@Override
-	public void setAngle(double newAngleRadians) {
-		this.angleDegrees = Math.toDegrees(newAngleRadians);
+	public void setAngle(double newAngleDegrees) {
+		this.angleDegrees = newAngleDegrees;
 	}
 }
 //END OF FILE
@@ -564,7 +564,7 @@ import util.annotations.Tags;
 
 @Tags(Comp301Tags.AVATAR)
 @StructurePattern(StructurePatternNames.BEAN_PATTERN)
-@PropertyNames({"X", "Y", "SpeechBubble", "Head", "Arms", "Body", "Legs", "stringShape"})
+@PropertyNames({"X", "Y", "SpeechBubble", "Head", "Arms", "Body", "Legs"})
 @EditablePropertyNames({"X", "Y"})
 public interface AvatarInterface {
     int getX();
@@ -720,6 +720,12 @@ public class RotatingLine implements LineInterface {
         this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_ANGLE_DEGREES);
     }
     
+    /**
+     * @param startX    x-coordinate of start point
+     * @param startY    y-coordinate of start point
+     * @param radius    length of the line
+     * @param angle     angle in degrees
+     */
     public RotatingLine(int startX, int startY, double radius, double angle) {
         this.startPoint = new CartesianPoint(startX, startY);
         this.angleDegrees = angle;
@@ -748,17 +754,17 @@ public class RotatingLine implements LineInterface {
 
     @Override
     public int getWidth() {
-        return Math.abs((int) (startPoint.getX() - endPoint.getX()));
+        return (int) Math.round(this.endPoint.getRadius() * Math.cos(Math.toRadians(this.angleDegrees)));
     }
     
     @Override
     public int getHeight() {
-        return Math.abs((int) (startPoint.getY() - endPoint.getY()));
+        return (int) Math.round(this.endPoint.getRadius() * Math.sin(Math.toRadians(this.angleDegrees)));
     }
 
     @Override
     public double getRadius() {
-        return this.endPoint.getRadius();
+        return endPoint.getRadius();
     }
     
     @Override
@@ -920,8 +926,8 @@ public class Assignment1 {
     private static final int AVATAR_MOVE_Y = 300;
     
     public static void main(String[] args) {
-        animateLine("Line");
-        // demonstrateBridgeScene();
+        // animateLine("Avatar");
+        demonstrateBridgeScene();
     }
 
     public static void demonstrateBridgeScene() {
@@ -942,7 +948,7 @@ public class Assignment1 {
             editor.refresh();
             ThreadSupport.sleep(PAUSE_TIME_SHORT);
 
-            testLine.rotate(50);
+            testLine.rotate(LINE_ROTATE_MINUS_90);
             editor.refresh();
         }
 

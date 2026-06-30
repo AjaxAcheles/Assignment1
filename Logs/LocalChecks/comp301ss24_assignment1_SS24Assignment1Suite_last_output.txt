@@ -10,6 +10,139 @@ TaggedRotatingLine,100.0% complete,2.0,2.0,
 TaggedAvatar,100.0% complete,2.0,2.0,
 <<
 >>Test Result:
+AvatarHeadProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+AvatarStringShapeProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+AvatarArmsProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+AvatarLegsProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+AvatarInstantiatesAngle,0.0% complete,0.0,2.0,
+Preceding test AvatarArmsProperty failed.
+Please correct the problems identified by preceding test:AvatarArmsProperty before running this test
+<<
+>>Test Result:
+TaggedBridgeScene,100.0% complete,2.0,2.0,
+<<
+>>Test Result:
+BridgeSceneArthurProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+BridgeSceneInstantiatesAvatar,0.0% complete,0.0,2.0,
+Preceding test BridgeSceneArthurProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneArthurProperty before running this test
+<<
+>>Test Result:
+BridgeSceneGalahadProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+BridgeSceneLancelotProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+BridgeSceneRobinProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+BridgeSceneGuardProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+BridgeSceneArthurLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneArthurProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneArthurProperty before running this test
+<<
+>>Test Result:
+BridgeSceneLancelotLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneLancelotProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneLancelotProperty before running this test
+<<
+>>Test Result:
+BridgeSceneGalahadLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneGalahadProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneGalahadProperty before running this test
+<<
+>>Test Result:
+BridgeSceneRobinLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneRobinProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneRobinProperty before running this test
+<<
+>>Test Result:
+BridgeSceneGuardLeftArmMovesWithAvatar,0.0% complete,0.0,5.0,
+Preceding test BridgeSceneGuardProperty failed.
+Please correct the problems identified by preceding test:BridgeSceneGuardProperty before running this test
+<<
+>>Test Result:
+LineXProperty,0.0% complete,0.0,0.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineXEditableProperty,0.0% complete,0.0,0.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineYProperty,0.0% complete,0.0,0.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineYEditableProperty,0.0% complete,0.0,0.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineRadiusProperty,0.0% complete,0.0,0.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineRadiusEditableProperty,0.0% complete,0.0,0.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineAngleProperty,0.0% complete,0.0,0.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineAngleEditableProperty,0.0% complete,0.0,0.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineRotateDefined,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+LineMoveDefined,0.0% complete,0.0,2.0,
+Preceding test LineRotateDefined failed.
+Please correct the problems identified by preceding test:LineRotateDefined before running this test
+<<
+>>Test Result:
+RotatingLineZeroDegree,100.0% complete,4.3,4.25,
+<<
+>>Test Result:
+RotatingLineFortyFiveDegree,0.0% complete,0.0,4.25,In: grail.simpleShapes.classes.RotatingLine@7ba1b9f0 computedHeight 0 != correctHeight 4
+<<
+>>Test Result:
+RotatingLineNinetyDegree,0.0% complete,0.0,4.25,In: grail.simpleShapes.classes.RotatingLine@7ba1b9f0 computedHeight 0 != correctHeight 5
+<<
+>>Test Result:
+RotatingLine180Degree,0.0% complete,0.0,4.25,In: grail.simpleShapes.classes.RotatingLine@7ba1b9f0 computedWidth 5 != correctWidth -5
+<<
+>>Test Result:
+MovingRotatingLineFortyFiveDegree,0.0% complete,0.0,4.25,In: grail.simpleShapes.classes.RotatingLine@7ba1b9f0 computedHeight 0 != correctHeight 4
+<<
+>>Test Result:
+MovingRotatingLineMinusFortyFiveDegree,0.0% complete,0.0,4.25,In: grail.simpleShapes.classes.RotatingLine@7ba1b9f0 computedHeight 0 != correctHeight -4
+<<
+>>Test Result:
+DetachedRotatingLineFortyFiveDegree,0.0% complete,0.0,4.25,In: grail.simpleShapes.classes.RotatingLine@7ba1b9f0 computedHeight 0 != correctHeight -4
+<<
+>>Test Result:
+DetachedRotatingLineMinusFortyFiveDegree,0.0% complete,0.0,4.25,In: grail.simpleShapes.classes.RotatingLine@7ba1b9f0 computedHeight 0 != correctHeight -4
+<<
+>>Test Result:
+A1NamedConstants,0.0% complete,0.0,16.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+A1InterfaceAsType,0.0% complete,0.0,10.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+A1PublicMethodsOverride,0.0% complete,0.0,10.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
+A1NoStarImports,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
+<<
+>>Test Result:
 AvatarScaleDefined,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
 <<
 >>Test Result:
@@ -28,18 +161,9 @@ Preceding test AvatarScaleDefined failed.
 Please correct the problems identified by preceding test:AvatarScaleDefined before running this test
 <<
 >>Test Result:
-TaggedBridgeScene,100.0% complete,2.0,2.0,
-<<
->>Test Result:
-BridgeSceneLancelotProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
-<<
->>Test Result:
 BridgeSceneLancelotLeftArmScales,0.0% complete,0.0,4.0,
 Preceding test BridgeSceneLancelotProperty failed.
 Please correct the problems identified by preceding test:BridgeSceneLancelotProperty before running this test
-<<
->>Test Result:
-BridgeSceneRobinProperty,0.0% complete,0.0,2.0,No checkstyle output, check console error messages
 <<
 >>Test Result:
 BridgeSceneRobinLeftArmScales,0.0% complete,0.0,4.0,

@@ -16,20 +16,26 @@ public class RotatingLine implements LineInterface {
     private static final int DEFAULT_X = 100;
     private static final int DEFAULT_Y = 100;
     private static final double DEFAULT_RADIUS = 50.0;
-    private static final double DEFAULT_ANGLE_RADIANS = Math.PI / 4;
+    private static final double DEFAULT_ANGLE_DEGREES = 45.0;
     
     private PointInterface startPoint;
     private PointInterface endPoint;
-    private double angleRadians;
+    private double angleDegrees;
 
     public RotatingLine() {
-        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_ANGLE_RADIANS);
+        this(DEFAULT_X, DEFAULT_Y, DEFAULT_RADIUS, DEFAULT_ANGLE_DEGREES);
     }
     
-    public RotatingLine(int startX, int startY, double radius, double angleRadians) {
+    /**
+     * @param startX    x-coordinate of start point
+     * @param startY    y-coordinate of start point
+     * @param radius    length of the line
+     * @param angle     angle in degrees
+     */
+    public RotatingLine(int startX, int startY, double radius, double angle) {
         this.startPoint = new CartesianPoint(startX, startY);
-        this.angleRadians = angleRadians;
-        this.endPoint = new PolarPoint(radius, angleRadians);
+        this.angleDegrees = angle;
+        this.endPoint = new PolarPoint(radius, angle);
     }
 
     @Override
@@ -54,22 +60,22 @@ public class RotatingLine implements LineInterface {
 
     @Override
     public int getWidth() {
-        return Math.abs((int) (startPoint.getX() - endPoint.getX()));
+        return (int) Math.round(this.endPoint.getRadius() * Math.cos(Math.toRadians(this.angleDegrees)));
     }
     
     @Override
     public int getHeight() {
-        return Math.abs((int) (startPoint.getY() - endPoint.getY()));
+        return (int) Math.round(this.endPoint.getRadius() * Math.sin(Math.toRadians(this.angleDegrees)));
     }
 
     @Override
     public double getRadius() {
-        return this.endPoint.getRadius();
+        return endPoint.getRadius();
     }
     
     @Override
     public double getAngle() {
-        return this.angleRadians;
+        return this.angleDegrees;
     }
 
     @Override
@@ -83,15 +89,15 @@ public class RotatingLine implements LineInterface {
     }
 
     @Override
-    public void setAngle(double newAngleRadians) {
-        this.angleRadians = newAngleRadians;
-        ((PolarPoint) this.endPoint).setAngle(newAngleRadians);
+    public void setAngle(double newAngle) {
+        this.angleDegrees = newAngle;
+        ((PolarPoint) this.endPoint).setAngle(newAngle);
     }
 
     @Override
-    public void rotate(double units) {
-        this.angleRadians += units;
-        ((PolarPoint) this.endPoint).setAngle(this.angleRadians);
+    public void rotate(int units) {
+        this.angleDegrees += units;
+        ((PolarPoint) this.endPoint).setAngle(this.angleDegrees);
     }
 
     @Override

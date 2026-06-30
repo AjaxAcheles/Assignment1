@@ -2542,13 +2542,4 @@ Please correct the problems identified by preceding test:AngleLeftLineProperty b
   <Command __id="204" _type="EclipseCommand" commandID="org.eclipse.ui.views.showView" date="Tue Jun 30 10:32:50 EDT 2026" starttimestamp="1782829749367" timestamp="221622" />
   <Command __id="205" _type="EclipseCommand" commandID="org.eclipse.ui.views.showView" date="Tue Jun 30 10:32:50 EDT 2026" starttimestamp="1782829749367" timestamp="221622" />
   <Command __id="206" _type="ShellCommand" date="Tue Jun 30 10:32:51 EDT 2026" starttimestamp="1782829749367" timestamp="221653" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="208" _type="ExportCommand" date="Tue Jun 30 10:33:01 EDT 2026" project="Assignment1" starttimestamp="1782829749367" timestamp="232064">
-    <success><![CDATA[true]]></success>
-  </Command>
-  <Command __id="209" _type="ShellCommand" date="Tue Jun 30 10:33:02 EDT 2026" starttimestamp="1782829749367" timestamp="232906" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="210" _type="ShellCommand" date="Tue Jun 30 10:33:29 EDT 2026" starttimestamp="1782829749367" timestamp="259725" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="211" _type="MoveCaretCommand" caretOffset="870" date="Tue Jun 30 10:33:29 EDT 2026" docOffset="991" starttimestamp="1782829749367" timestamp="259803" />
-  <Command __id="212" _type="ShellCommand" date="Tue Jun 30 10:33:34 EDT 2026" starttimestamp="1782829749367" timestamp="264746" type="ECLIPSE_LOST_FOCUS" />
-  <Command __id="213" _type="ShellCommand" date="Tue Jun 30 10:35:11 EDT 2026" starttimestamp="1782829749367" timestamp="361795" type="ECLIPSE_GAINED_FOCUS" />
-  <Command __id="214" _type="MoveCaretCommand" caretOffset="328" date="Tue Jun 30 10:35:11 EDT 2026" docOffset="449" starttimestamp="1782829749367" timestamp="361872" />
 </Events>
